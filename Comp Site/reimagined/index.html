@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Complementary</title>
+
+    <root span style="--ThemeColor: var(--ReimaginedColor);">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/CompLogo180x.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/CompLogo16x.png">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+                   
+                    <a href="/" class="site-title"><span>Complementary</span> Development</a>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="/">Home</a></li>
+                        <li class="active"><a href="/reimagined" data-toggle="dropdown" style="--ThemeColor: var(--ReimaginedColor);">Reimagined</a></li>
+                        <li><a href="/shaders-v4" style="--ThemeColor: var(--VersionFourColor);">Version 4</a></li>
+                        <li><a href="/contact">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>   
+        </nav><!-- /.site-navigation -->
+    </header><!-- /#mastheaed -->
+
+    <div id="hero" class="hero overlay reimagined-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Complementary<br><span style="color: var(--ThemeColor)">Reimagined Shaders</span></h1>
+                    <p>Reimagining the original Minecraft design. Releasing on June 17.</p>
+                    <a href="#trailer" class="btn btn-border">Watch the Trailer</a>
+                    <a href="https://www.patreon.com/emingt" class="btn btn-border">Get Early Access</a>
+                    <p id="countdown" style="max-height: 0px;">.</p>
+                    <script>
+                        var countDownDate = new Date(Date.UTC(2022, 5, 17, 20, 0, 0)).getTime();
+
+                        function setDate() {
+                            var currentDate = new Date().getTime();
+                            var distance = countDownDate - currentDate;
+                            
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                            
+                            document.getElementById("countdown").innerHTML = days+"d "+hours+"h "+minutes+"m "+seconds+"s ";
+                            
+                            if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("countdown").innerHTML = "";
+                            }
+                        }
+
+                        setDate();
+                        setInterval(setDate, 1000);
+                    </script>
+                </div><!-- /.hero-text -->
+            </div><!-- /.hero-content -->
+    </div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+        <section class="site-section section-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="text-align:center;">
+                        <p>
+                            Complementary Reimagined Shaders is a Minecraft Java Edition shader pack that aims for perfection, while preserving the core aesthetics of Minecraft.
+                            <br>Reimagined offers a ton of high quality effects, incredible attention to detail, an issueless experience, and top tier optimization.
+                            <br>There is no better summary for Reimagined other than that it is a shaderpack trying to achieve the ultimate vanilla Minecraft visuals.
+                            <br>Trying to complement Minecraft in the best way possible, Reimagined aims to please everyone that love Minecraft.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-features -->
+        <section class="site-section section-screenshots">
+            <div class="hero-text">
+                <h2>Screenshots</h2>
+            </div>
+            <img src="/assets/img/IceSpikesR.jpg"></img>
+            <img src="/assets/img/customVillage.jpg"></img>
+            <img src="/assets/img/end.jpg"></img>
+        </section><!-- /.section-features -->
+
+    </main><!-- /#main -->
+
+    <footer id="colophon" class="site-footer">
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="social-links">
+                            <a class="discord-bg" href="/discord"></a>
+                            <a class="patreon-bg" href="/patreon"></a>
+                            <a class="github-bg" href="/github"></a>
+                        </div><!-- /.social-links -->
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="text-right">
+                            <p>Complementary Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.copyright -->
+    </footer><!-- /#footer -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  
+</body>
+
+<div id="trailer" class="overlayer">
+    <a class="close" href=""></a>
+    <div class="popup">
+        <div class="content">
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/q897tXWMccM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+</html>

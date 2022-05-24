@@ -38,6 +38,7 @@
     --CompRed: rgb(255, 66, 66);
     --CompOrange: rgb(222, 144, 64);
     --CompBlue: rgb(114, 114, 255);
+    --CompMiddle: rgb(255, 125, 222);
 
     --IndexColor: var(--CompOrange);
     --VersionFourColor: var(--CompRed);
@@ -47,7 +48,9 @@
 
     --VeryDarkGray: rgb(40, 40, 41);
     --DarkGray: rgb(68, 68, 72);
-    --VeryLightGray: rgb(222, 222, 222);
+    --VeryLightGray: rgb(254, 254, 254);
+
+    --ScreenshotOverlayColor: rgba(0, 0, 0, 0);
 }
 
 @font-face {
@@ -837,7 +840,7 @@ html, body {
 /* HERO
 ================================================== */
 .hero { 
-    background: url(../img/Taiga.png) no-repeat top / cover; 
+    background: url(../img/end.jpg) no-repeat top / cover;
     height: 100%;
     width: 100%;
     display: table;
@@ -846,7 +849,7 @@ html, body {
 
 .overlay:before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--ScreenshotOverlayColor);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -856,16 +859,59 @@ html, body {
 }
 
 .index-shader {
+    max-width: 890px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 40px 15px;
+    text-align: center;
+
     border-radius: 10px;
-
-}
-
-.index-v4 {
-    background: url(../img/IceSpikes.png) no-repeat top / cover; 
 }
 
 .index-reimagined {
-    background: url(../img/Rdeepslate.png) no-repeat top / cover;
+    float: left;
+    max-width: 50%;
+    background: url(../img/reimage.jpg) no-repeat top / cover;
+}
+
+.index-v4 {
+    float: right;
+    max-width: 50%;
+    background: url(../img/v4image.jpg) no-repeat top / cover;
+}
+
+.index-shader h2 {
+    font-family: 'minecraftchmc';
+    position: relative;
+    margin: 0;
+    color: var(--VeryLightGray);;
+    font-size: 40px;
+}
+
+.index-shader p {
+    position: relative;
+    margin: 30px 0 30px;
+    font-size: 20px;
+    color: var(--VeryLightGray);;
+    max-width: 100%;
+}
+
+.index-shader .btn {
+    position: relative;
+    margin: 5px;
+    background-color: transparent;
+    max-width: 100%;
+}
+
+.index-shader .btn:focus {
+    color: var(--VeryLightGray);
+}
+.index-shader .btn:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: var(--ThemeColor);
+    border-color: var(--VeryLightGray);
 }
 
 .hero-content {
@@ -943,16 +989,12 @@ html, body {
     -ms-transform: translateX(-50%);
 }
 
-.index-version-four {
-    background: url(../img/IceSpikes.png) no-repeat top / cover; 
-}
-
 .subpage-hero {
     height: 400px;
 }
 
 .subpage-hero.overlay:before {
-    background-color: rgba(38, 39, 45, 0.25);
+    background-color: var(--ScreenshotOverlayColor);
 }
 
 .subpage-hero .hero-content,
@@ -966,11 +1008,11 @@ html, body {
 }
 
 .reimagined-hero {
-    background: url(../img/Rdeepslate.png) no-repeat center / cover;     
+    background: url(../img/reimage.jpg) no-repeat center / cover;
 }
 
 .shaders-v4-hero {
-    background: url(../img/IceSpikes.png) no-repeat center / cover;     
+    background: url(../img/v4image.jpg) no-repeat center / cover;   
 }
 
 .portfolio-hero {
@@ -982,7 +1024,7 @@ html, body {
 }
 
 .contact-hero {
-    background: url(../img/MountainsNearOcean.png) no-repeat center / cover;     
+    background: url(../img/MountainsNearOcean.jpg) no-repeat center / cover;     
 }
 
 .overlayer {
@@ -1034,9 +1076,24 @@ html, body {
 
 /* SITEMAIN
 ================================================== */
+
+
+table, th, td {
+    margin-top: 35px;
+    margin-left: auto; 
+    margin-right: auto;
+
+    border:1px solid var(--VeryLightGray);
+
+    text-align:center;
+    font-size: 16px;
+    padding: 4px;
+}
+
+
 /* site-section */
 .site-section {
-   padding: 60px 0 60px;
+   padding: 50px 0 60px;
    background-color: var(--VeryDarkGray);
 }
 
@@ -1072,7 +1129,6 @@ html, body {
 }
 
 .section-features p {
-
     color: var(--VeryLightGray);
 }
 
@@ -1080,6 +1136,20 @@ html, body {
     position: absolute;
     right: 15px;
     height: 380px;
+}
+
+/* Section: Screenshots */
+.section-screenshots {
+    margin-top: -65px;
+}
+.section-screenshots img {
+    padding-top: 50px;
+    display: block;
+    width: 960px;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 /* Section: Services */
@@ -1103,26 +1173,6 @@ html, body {
 
 .service-info {
     font-size: 13px; 
-}
-
-/* Section: Map Feature */
-.section-map-feature {
-    padding-top: 250px;
-    background: #071021 url(../img/map.png) no-repeat top center / cover; 
-}
-
-.section-map-feature h2 {
-    padding-bottom: 30px;
-    margin: 0;
-}
-
-.section-map-feature h2,
-.section-map-feature p {
-    color: #fff;
-}
-
-.section-map-feature .btn {
-    margin: 80px 0 215px;
 }
 
 .counter {

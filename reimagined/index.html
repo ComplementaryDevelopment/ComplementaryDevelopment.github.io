@@ -79,22 +79,59 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Complementary<br><span style="color: var(--ThemeColor)">Reimagined Shaders</span></h1>
-                    <p>Reimagining the original Minecraft design.</p>
+                    <p>Reimagining the original Minecraft design. Releasing on June 17.</p>
                     <a href="#trailer" class="btn btn-border">Watch the Trailer</a>
+                    <a href="https://www.patreon.com/emingt" class="btn btn-border">Get Early Access</a>
+                    <p id="countdown" style="max-height: 0px;">.</p>
+                    <script>
+                        var countDownDate = new Date(Date.UTC(2022, 5, 17, 20, 0, 0)).getTime();
+
+                        function setDate() {
+                            var currentDate = new Date().getTime();
+                            var distance = countDownDate - currentDate;
+                            
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                            
+                            document.getElementById("countdown").innerHTML = days+"d "+hours+"h "+minutes+"m "+seconds+"s ";
+                            
+                            if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("countdown").innerHTML = "";
+                            }
+                        }
+
+                        setDate();
+                        setInterval(setDate, 1000);
+                    </script>
                 </div><!-- /.hero-text -->
             </div><!-- /.hero-content -->
     </div><!-- /.hero -->
 
     <main id="main" class="site-main">
-
         <section class="site-section section-features">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12" style="text-align:center;">
-                        <p>Complementary Shaders Reimagined is a Minecraft Java Edition shader pack that follows the standards of Complementary Shaders Version 4 while adding a new standard to the table. Embracing the blocky Minecraft style unlike Version 4. Reimagined is a challenge to achieve the great shader visuals without discarding the design decisions of Minecraft. But this does not mean the amount of complex effects are compromised. Reimagined has more effects going on by default than most popular shaderpacks, while still being good at performance. Trying to complement Minecraft in the best way possible, Reimagined aims to please everyone that love Minecraft.</p>
+                        <p>
+                            Complementary Reimagined Shaders is a Minecraft Java Edition shader pack that aims for perfection, while preserving the core aesthetics of Minecraft.
+                            <br>Reimagined offers a ton of high quality effects, incredible attention to detail, an issueless experience, and top tier optimization.
+                            <br>There is no better summary for Reimagined other than that it is a shaderpack trying to achieve the ultimate vanilla Minecraft visuals.
+                            <br>Trying to complement Minecraft in the best way possible, Reimagined aims to please everyone that love Minecraft.
+                        </p>
                     </div>
                 </div>
             </div>
+        </section><!-- /.section-features -->
+        <section class="site-section section-screenshots">
+            <div class="hero-text">
+                <h2>Screenshots</h2>
+            </div>
+            <img src="/assets/img/IceSpikesR.jpg"></img>
+            <img src="/assets/img/customVillage.jpg"></img>
+            <img src="/assets/img/end.jpg"></img>
         </section><!-- /.section-features -->
 
     </main><!-- /#main -->
@@ -138,7 +175,7 @@
     <a class="close" href=""></a>
     <div class="popup">
         <div class="content">
-            <iframe width="960" height="540" src="https://www.youtube.com/embed/M5_ThBK0Wqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="960" height="540" src="https://www.youtube.com/embed/q897tXWMccM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </div>

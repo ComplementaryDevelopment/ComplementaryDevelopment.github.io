@@ -840,7 +840,7 @@ html, body {
 /* HERO
 ================================================== */
 .hero { 
-    background: url(../img/end.jpg) no-repeat top / cover;
+    background: url(../img/end.webp) no-repeat top / cover;
     height: 100%;
     width: 100%;
     display: table;
@@ -873,13 +873,13 @@ html, body {
 .index-reimagined {
     float: left;
     max-width: 50%;
-    background: url(../img/reimage.jpg) no-repeat top / cover;
+    background: url(../img/reimage.webp) no-repeat top / cover;
 }
 
 .index-v4 {
     float: right;
     max-width: 50%;
-    background: url(../img/v4image.jpg) no-repeat top / cover;
+    background: url(../img/v4image.webp) no-repeat top / cover;
 }
 
 .index-shader h2 {
@@ -1008,11 +1008,11 @@ html, body {
 }
 
 .reimagined-hero {
-    background: url(../img/reimage.jpg) no-repeat center / cover;
+    background: url(../img/reimage.webp) no-repeat center / cover;
 }
 
 .shaders-v4-hero {
-    background: url(../img/v4image.jpg) no-repeat center / cover;   
+    background: url(../img/v4image.webp) no-repeat center / cover;
 }
 
 .portfolio-hero {
@@ -1024,7 +1024,7 @@ html, body {
 }
 
 .contact-hero {
-    background: url(../img/MountainsNearOcean.jpg) no-repeat center / cover;     
+    background: url(../img/MountainsNearOcean.webp) no-repeat center / cover;
 }
 
 .overlayer {
@@ -1369,36 +1369,36 @@ table, th, td {
 a.discord-bg {
     color: #5865F2;
     border-color: #5865F2; 
-    background: url(../img/companylogo/discord2.png) no-repeat center;
+    background: url(../img/companylogo/discord2.webp) no-repeat center;
     background-color: #5865F2;
 }
 
 a.discord-bg:hover {
-    background: url(../img/companylogo/discord.png) no-repeat center;
+    background: url(../img/companylogo/discord.webp) no-repeat center;
     background-color: white;
 }
 
 a.patreon-bg {
     color: #FF424D;
     border-color: #FF424D;
-    background: url(../img/companylogo/patreon2.png) no-repeat center;
+    background: url(../img/companylogo/patreon2.webp) no-repeat center;
     background-color: #FF424D;
 }
 
 a.patreon-bg:hover {
-    background: url(../img/companylogo/patreon.png) no-repeat center;
+    background: url(../img/companylogo/patreon.webp) no-repeat center;
     background-color: white;
 }
 
 a.github-bg {
     color: rgb(23,21,22);
     border-color: rgb(23,21,22);
-    background: url(../img/companylogo/github2.png) no-repeat center;
+    background: url(../img/companylogo/github2.webp) no-repeat center;
     background-color: rgb(23,21,22);
 }
 
 a.github-bg:hover {
-    background: url(../img/companylogo/github.png) no-repeat center;
+    background: url(../img/companylogo/github.webp) no-repeat center;
     background-color: white;
 }
 

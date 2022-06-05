@@ -1024,7 +1024,7 @@ html, body {
 }
 
 .contact-hero {
-    background: url(../img/MountainsNearOcean.jpg) no-repeat center / cover;     
+    background: url(../img/v4screenshots/MountainsNearOcean.jpg) no-repeat center / cover;     
 }
 
 .overlayer {
@@ -1129,6 +1129,7 @@ table, th, td {
 }
 
 .section-features p {
+    font-size: 16px;
     color: var(--VeryLightGray);
 }
 
@@ -1408,7 +1409,7 @@ a.github-bg:hover {
 
 .copyright p {
     font-family: 'minecraftchmc';
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--VeryLightGray);
 }

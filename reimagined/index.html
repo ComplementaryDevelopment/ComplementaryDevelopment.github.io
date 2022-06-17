@@ -76,37 +76,13 @@
     </header><!-- /#mastheaed -->
 
     <div id="hero" class="hero overlay reimagined-hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Complementary<br><span style="color: var(--ThemeColor)">Reimagined Shaders</span></h1>
-                    <p>Reimagining the original Minecraft design. Releasing on June 17.</p>
-                    <a href="#trailer" class="btn btn-border">Watch the Trailer</a>
-                    <a href="https://www.patreon.com/emingt" class="btn btn-border">Get Early Access</a>
-                    <p id="countdown" style="max-height: 0px;">.</p>
-                    <script>
-                        var countDownDate = new Date(Date.UTC(2022, 5, 17, 20, 0, 0)).getTime();
-
-                        function setDate() {
-                            var currentDate = new Date().getTime();
-                            var distance = countDownDate - currentDate;
-                            
-                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                            
-                            document.getElementById("countdown").innerHTML = days+"d "+hours+"h "+minutes+"m "+seconds+"s ";
-                            
-                            if (distance < 0) {
-                                document.getElementById("countdown").innerHTML = "Refresh the page!";
-                            }
-                        }
-
-                        setDate();
-                        setInterval(setDate, 1000);
-                    </script>
-                </div><!-- /.hero-text -->
-            </div><!-- /.hero-content -->
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Complementary<br><span style="color: var(--ThemeColor)">Reimagined Shaders</span></h1>
+                <p>Reimagining the unique style of Minecraft.</p>
+                <a href="https://www.mediafire.com/file/iiqccxr7qk1y3i6/ComplementaryReimagined_r1.0.zip/file" class="btn btn-border">Download</a>
+            </div><!-- /.hero-text -->
+        </div><!-- /.hero-content -->
     </div><!-- /.hero -->
 
     <main id="main" class="site-main">
@@ -115,7 +91,7 @@
                 <div class="row">
                     <div class="col-md-12" style="text-align:center;">
                         <p>
-                            Complementary Reimagined Shaders is a Minecraft Java Edition shader pack that aims for perfection, while preserving the core aesthetics of Minecraft.
+                            Complementary Reimagined is a Minecraft Java Edition shader pack that aims for perfection, while preserving the core aesthetics of Minecraft.
                             <br>Reimagined offers a ton of high quality effects, incredible attention to detail, an issueless experience, and top tier optimization.
                             <br>There is no better summary for Reimagined other than that it is a shaderpack trying to achieve the ultimate vanilla Minecraft visuals.
                             <br>Trying to complement Minecraft in the best way possible, Reimagined aims to please everyone who loves Minecraft.
@@ -170,14 +146,5 @@
     <script src="assets/js/script.js"></script>
   
 </body>
-
-<div id="trailer" class="overlayer">
-    <a class="close" href=""></a>
-    <div class="popup">
-        <div class="content">
-            <iframe width="960" height="540" src="https://www.youtube.com/embed/q897tXWMccM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
 
 </html>

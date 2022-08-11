@@ -46,7 +46,7 @@
 
     --ThemeColor: var(--IndexColor);
 
-    --VeryDarkGray: rgb(40, 40, 41);
+    --VeryDarkGray: rgb(40, 40, 42);
     --DarkGray: rgb(68, 68, 72);
     --VeryLightGray: rgb(254, 254, 254);
 
@@ -1146,10 +1146,7 @@ table, th, td {
 .section-screenshots img {
     padding-top: 50px;
     display: block;
-    width: 960px;
-    height: auto;
-    left: 0;
-    right: 0;
+    max-width: 64%;
     margin: auto;
 }
 

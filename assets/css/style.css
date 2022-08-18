@@ -49,7 +49,7 @@
     --VeryDarkGray: rgb(40, 40, 42);
     --DarkGray: rgb(68, 68, 72);
     --VeryLightGray: rgb(254, 254, 254);
-
+    --LinkColor: rgb(100,200,255);
     --ScreenshotOverlayColor: rgba(0, 0, 0, 0);
 }
 
@@ -1025,6 +1025,10 @@ html, body {
 
 .contact-hero {
     background: url(../img/v4screenshots/MountainsNearOcean.jpg) no-repeat center / cover;     
+}
+
+.mod-issues-hero {
+    background: url(../img/Taiga.jpg) no-repeat center / cover;     
 }
 
 .overlayer {

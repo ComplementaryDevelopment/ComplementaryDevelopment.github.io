@@ -1,0 +1,51 @@
+Changes over r1.2.2:
+- Added "Rain Puddles" as an option
+   - Comes with "Puddles" and "Full Coverage" modes
+   - The style of puddle waves are affected by the "Water Style" option
+   - Puddle waves can also be observed on water if the Water Style is set to "Reimagined"
+- Added "Motion Blur" as an option
+- Added a setting to modify the selection outline
+- Added a setting to modify the warmness of blocklight
+- Added an option to disable Underwater Distortion
+- Added an option to allow waving in closed areas
+- Added support for resource pack skyboxes
+- Added support for curved surface shading which some mods use
+- Added "Subtle" option to Dynamic Handheld Lighting
+- IntegratedPBR Changes:
+   - Added "Glowing Redstone Block" option
+   - Added fancy shading to Candles
+   - Added emission to Structure Block and Jigsaw Block
+   - Tweaked the brightness of Froglights, Sea Lantern, Glowstone, End Rod, Beacon Beam and Shroomlight
+   - Tweaked Sea Lantern, End Rod, Gold Block and Diamond Block specular materials
+   - Slightly tweaked the color of rain splash particles
+- Improved performance when Water Quality is set to Low
+- Tweaked clouds to fade off later than the previous distance
+- Tweaked ambient lighting in a bunch of subtle ways
+- Tweaked shading on foliage
+- Tweaked Cave Lighting calculation to improve the visibility of darker areas
+- Tweaked Light Shafts to look less dark after passing through glass
+- Tweaked Sun/Moon Horizon to look more natural
+- Tweaked rain atmosphere during night
+- Tweaked internals for a slight general performance improvement
+- Slightly tweaked the morning/sunset sky
+- Slightly tweaked TAA to reduce smudging
+- Slightly tweaked water reflection intensity calculation to improve the look of some complex scenes
+- Fixed boats causing glitchy shadows to appear on terrain
+- Fixed boats showing water shadows inside them in some situations
+- Fixed modded translucents' colored shadows being too bright
+- Fixed some blocks like Sand looking a bit brighter than usual in the distance
+- Fixed Lightning Bolts not being visible if RP Support is set to Basic
+- Fixed Vines having incorrect lighting in some situations
+- Fixed a calculation oversight causing reflections to look darker on some smooth surfaces
+- Fixed End Portals/Gateways being broken with Optifine on Apple processors. Thanks to SpacEagle17#1350
+- Fixed Soul Lanterns looking incorrect with some resource packs
+- Fixed Coral Fans not having Coral properties when placed on a wall
+- Fixed Crimson/Warped Pressure Plates not having IntegratedPBR materials
+- Extended the activation parameters of Scene-Aware Light Shafts
+- Neatly reorganised Preference Settings
+- Reduced bloom on Beacon Beams at distance
+- Increased the intensity of Generated Normals
+- Generated Normals and Coated Textures are now under Preference Settings
+- Separated the options for Waving Foliage and Waving Leaves
+- "Very High" Profile now increases Light Shaft Quality to Very High
+- Updated license

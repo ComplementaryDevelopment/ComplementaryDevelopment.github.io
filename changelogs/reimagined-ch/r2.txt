@@ -1,0 +1,22 @@
+Changes over r1.0:
+- Added Dynamic Handheld Lighting
+- Added "Realistic-ish" Water Style setting
+- Added "Cave Lighting" setting
+- Added setting to disable foliage waving or enable waving on leaves
+- Slightly tweaked the atmosphere
+- IntegratedPBR Changes:
+   - Added "Glowing Ores" option
+   - Added "Generated Normals on Water" option
+   - Added support for "Groovy Levers" and "Redstone Power Levels" resource packs by Vanillatweaks
+   - Fixed Generated Normals causing slightly incorrect lighting during noon
+   - Fixed Coated Textures causing textures to appear slightly brighter
+   - Fixed cauldron water incorrectly having Generated Normals
+- Added lower Bloom Strength options
+- Added "License" file
+- Tweaked the emissive animations of Warden to appear smoother
+- Fixed entity shadows having gaps on Iris
+- Fixed visuals breaking in the Nether if Border Fog is disabled
+- Fixed the Darkness effect causing black screen in the Nether
+- Fixed atmospheric fog appearing in closed areas
+- Fixed some resource pack foliage waving incorrectly
+- A bunch of tiny tweaks

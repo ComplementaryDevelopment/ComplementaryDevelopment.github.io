@@ -1,0 +1,27 @@
+Changes over r1.1.1:
+- Added Aurora Borealis that appear in snowy biomes during full moon
+- Added "Outlined World" option
+- Added underwater distortion
+- Added fancier light shading to regular Torches, End Rods and Campfires (IntegratedPBR)
+- Improved clouds with better interior detection and the ability to show shadows
+- Improved sample distribution of Light Shafts
+- Improved light source and particle handling when IntegratedPBR is disabled
+- Tweaked the atmospheric fog and the upper part of the sky to appear brighter during daytime
+- Tweaked rain lighting colors and brightness depending on the "Brightness" slider
+- Reduced bloom on End Rods and Sea Lanterns (IntegratedPBR)
+- Fixed many modded blocks and/or resource pack models having some incorrect dark shading
+- Fixed fire on entities looking very dark
+- Fixed Maps in Item Frames having broken lighting
+- Fixed Glow Item Frames looking a bit too bright
+- Fixed Slime entities flickering
+- Fixed some foliage waving incorrectly
+- Fixed some connected textures having flickering issues
+- Fixed lava fog not working correctly in some situations
+- Fixed wall banners looking incorrect with Coated Textures (IntegratedPBR)
+- Slightly tweaked TAA jittering
+- Slightly tweaked the color of Light Shafts during noon
+- Slightly tweaked foliage lighting
+- Slightly tweaked Soul Torch, Soul Lantern and Soul Campfire colors (IntegratedPBR)
+- Ultra Profile now sets Shadow Distance to 16 Chunks
+- Updated license
+- Some very subtle tweaks

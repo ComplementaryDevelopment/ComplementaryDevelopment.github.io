@@ -64,8 +64,9 @@
                         <li><a href="/shaders-v4" style="--ThemeColor: var(--VersionFourColor);">Version 4</a></li>
                         <li class="dropdown"><a href="/contact" class="dropdown-toggle" data-toggle="dropdown">Information<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                <li><a href="/mod-issues">Mod Issues</a></li>
                                 <li><a href="/contact">Contact</a></li>
+                                <li><a href="/changelogs">Changelogs</a></li>
+                                <li><a href="/mod-issues">Mod Issues</a></li>
                             </ul>
                         </li>
 
@@ -88,21 +89,19 @@
 
     <main id="main" class="site-main">
 
-        <section class="site-section section-features">
-            <div class="hero-text">
+        <section class="site-section">
+            <div class="hero-text section-features">
                 <h2>Complementary Shaders</h2>
             </div>
             <div class="container">
-                <div class="index-shader index-reimagined">
+                <div class="index-shader index-reimagined" onclick="location.href='reimagined';" style="--ThemeColor: var(--ReimaginedColor);">
                     <h2>Complementary<br><span style="color: var(--ReimaginedColor);">Reimagined</span></h2>
                     <p style="margin: -20px 0 20px">Embrace Minecraft's original design.</p>
-                    <a href="reimagined" class="btn btn-border btn-reimagined" style="--ThemeColor: var(--ReimaginedColor);">Learn More</a>
                 </div><!-- /.hero-text -->
 
-                <div class="index-shader index-v4">
+                <div class="index-shader index-v4" onclick="location.href='shaders-v4';" style="--ThemeColor: var(--VersionFourColor);">
                     <h2>Complementary<br><span style="color: var(--VersionFourColor);">Version 4</span></h2>
                     <p style="margin: -20px 0 20px">Extend Minecraft's visual elements.</p>
-                    <a href="shaders-v4" class="btn btn-border btn-v4" style="--ThemeColor: var(--VersionFourColor);">Learn More</a>
                 </div><!-- /.hero-text -->
             </div>
         </div>

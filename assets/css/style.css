@@ -557,7 +557,7 @@ select {
     background-color: var(--VeryDarkGray);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.5s ease-in-out;
     text-align: left;
 }
 

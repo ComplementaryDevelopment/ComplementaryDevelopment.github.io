@@ -1,0 +1,27 @@
+Changes over v3.01:
+- Improved performance.
+- Added an option to disable all particles.
+- Added "Disabled" mode to Selection Color settings.
+- Added specular maps to all sandstone variants. (Compatible with Optifine's sandstone connected textures)
+- Added specular maps for all signs.
+- Fixed and re-added "Black Outline" and "Promo Art Outline" options.
+- Fixed and re-added underwater water reflections.
+- Tweaked nether lighting to use the 1.16+ shading. (When playing on 1.16+ of course)
+- Tweaked bloom to be a bit stronger during rain.
+- Tweaked sun/moon reflection size.
+- Tweaked the default Shadow Brightness and Sun Path Rotation values.
+- Tweaked specular maps of all ores , Blazes and End Crystals.
+- Improved the specular maps of Snow, Snowy Grass, Crafting Table and Iron Block.
+- Improved performance (more) with Compatibility Mode profile.
+- Fixed and improved skylight reflections in the End dimension.
+- Fixed sun/moon light appearing insanely bright in some situations.
+- Fixed sun/moon reflections being incorrectly colored on OldPBR metals.
+- Fixed underwater particles being incorrectly colored.
+- Fixed particles not showing up when render distance is very low.
+- Fixed Respawn Anchors with one charge seeming dimmer than the ones with no charges because of dynamic lights.
+- Fixed Magma Block, Warped Stem, Warped Hyphae, Crimson Stem and Crimson Hyphae looking darker than usual in some situations.
+- Fixed filled flower pots being brighter than empty flower pots in some situations.
+- Fixed entity hit effect still being red with the 50 ShadeRs of Grey option.
+- Added "Broken Water Light Shafts" option to the Debug/Other menu. Looks cool but very buggy.
+- Something about "The Forbidden Option".
+- Many other tweaks/additions/fixes here and there.

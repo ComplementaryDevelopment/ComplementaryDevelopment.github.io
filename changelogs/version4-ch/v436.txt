@@ -1,0 +1,55 @@
+Changes over v3.12:
+- Massively improved performance with high render distances
+- Improved TAA discarding which should fix stuff getting too blurry when moving
+- Improved shadows to switch to skylight shadows when shadow distance is exceeded
+- Improved TAA shadow filtering
+- Improved reflection accuracy
+- Improved lighting on leaves
+- Added water refraction (enabled on High profile)
+- Added projected water caustics (enabled on High profile)
+- Added specular sky reflections (enabled on High profile)
+- Added a new light shaft type called "Hybrid"
+- Added support for all AbyssalCraft modded dimensions
+- Added 400+ modded block IDs to the block.properties. Thanks to Lunaruu_ and SenZ
+- Tweaked lava and fire shading
+- Tweaked vanilla ambient occlusion handling
+- Tweaked clouds during rain
+- Tweaked rain color
+- Tweaked labPBR subsurface scattering
+- Tweaked labPBR complex fresnel handling
+- Tweaked rain puddle handling
+- Tweaked underwater light shafts
+- Tweaked underwater caustics
+- Tweaked parallax self shadowing
+- Tweaked SSAO and its reflections to be more consistent
+- Re-tweaked shadow bias handling to fix several shadow banding issues
+- Fixed early-sunrise/late-sunset sky not working properly when real-time shadows are disabled
+- Improved alternative outline to no longer be inconsistent when the thickness is set to any value higher than 1
+- Added sliders for tweaking distance blur strength under rain or water
+- Added an option to disable water/translucent sky reflections
+- Tweaked underwater range of vision to be closer to vanilla Minecraft
+- Tweaked the RTX-ish water type to be less rough
+- Tweaked blocklight flickering to be slower
+- Tweaked the slider values for directional lightmap strength, blur strength and shadow distance
+- Tweaked metal albedo handling (ComplementaryResources)
+- Slightly tweaked rough reflections
+- Removed the underwater particles (ComplementaryResources)
+- Slightly decreased specular/rough reflection intensity
+- Increased lighting addition of the brightness slider in the nether
+- Increased brightness of foliage during rain
+- Reduced Vanilla-ish water opacity
+- Light shafts now appear/disappear more slowly at sunrise/sunset
+- Slightly lowered the default shadow distance value
+- Removed colored shadows option
+- Default mode for the alternative outline is now Dungeons
+- Fixed sign text showing a sun/moon glow behind it
+- Fixed Snow Real Magic mod's snowy foliage blocks having incorrect shading
+- Fixed Subterranean Wilderness mod's "Water Puddle" block not looking like shader water
+- Fixed some labPBR packs having darker than usual colors if normal mapping and pom is disabled
+- Fixed labPBR material ao not working when normal mapping and pom is disabled
+- Fixed held items having incorrect material formatting on labPBR
+- Fixed world border not being visible if the player haven't opened their inventory after loading in a world (Only for Optifine G7 and above)
+- Fixed water being glitchy if water bumpiness is set to 0.25
+- Fixed water opacity slider not working if the water type is set to Vanilla-ish
+- Fixed shader sun/moon not disappearing during rain if shader clouds are disabled
+- Fourteen very tiny changes

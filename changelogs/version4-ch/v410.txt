@@ -1,0 +1,11 @@
+Changes over v1.8:
+- Made blindness effect match the Vanilla behaviour.
+- Added an AO Quality slider and made it scale up with higher profiles. This also fixes a problem with AO on photo mode.
+- Fixed/improved end portals+gateways, thanks to fayer3#2332.
+- Added bone block speculars.
+- End portal frame specular maps have been redone.
+- Fixed a weird issue that sometimes occured underwater.
+- Fixed an issue regarding Jack o'Lanterns.
+- Fixed many things getting too bright near a light source. (Hopper, lever, ladder, glass pane, iron bar, flower pot, end portal frame, chorus plant/flower, all foliage, all rails, repeater and comparator.)
+- Improved lightmaps for some blocks. (Water, ice, honey block, slime block and all stained glasses.)
+- As always more small tweaks here and there.

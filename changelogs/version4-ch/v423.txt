@@ -1,0 +1,21 @@
+Changes over v2.9:
+- Changed the installation paths, because of the following two things:
+- Added auto-dedection for ComplementaryResources. If you're not using it, the shader will automatically switch to labPBR.
+- Merged Fast Compatibility Mode with the Compatibility Mode. There is only one Compatibility Mode now, and it's the fastest profile.
+- Fixed stuttering issues and high VRam usage. This was done by switching to a way better method of disabling mipmap levels on problematic textures.
+- Improved sunlight/moonlight handling. Light now smoothly transitions between sun/moon in the morning/evening.
+- Added ambient occlusion support (affected by light levels) to labPBR material format.
+- Improved normal map handling (switched to the proper method) on labPBR material format.
+- Reworked atmospheric fog intensities.
+- Added specular maps for netherite armor.
+- Improved specular maps of Iron Block and Redstone Lamps.
+- Added emissives to Blaze Rod, Blaze Powder, Brewing Stand, Magma Cream, Eye of Ender and Fire Charge.
+- Improved brightness and opacity for all particles.
+- Improved translucent handling in Compatibility Mode.
+- Fixed water looking brighter than usual in some situations (again).
+- Fixed nether being too dark on any Minecraft version below 1.16.
+- Added "Force Distance Blur in Nether" and "Nether Distance Blur Strength" options to the DOF/Distance Blur menu.
+- Added "Force Water Waves" option to the Water menu. Enabling it makes waves appear on Vanilla and RTX-ish water types.
+- Tweaked enchantment glint brightness.
+- Fixed underwater fog being broken especially on low render distances.
+- Some other changes/tweaks/fixes here and there.

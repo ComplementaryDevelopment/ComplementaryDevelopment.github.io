@@ -1,0 +1,16 @@
+Changes over v2.0:
+- Some tweaks to Compatibility Mode, including:
+   - Compatibility Mode now works way better with labPBR.
+   - Switching to Compatibility Mode now automatically enables labPBR.
+   - Improved lava and nether bloom on Compatibility Mode.
+- Decreased the sky brightness during day.
+- Waving foliage now no longer wave when they aren't exposed to sky.
+- Improved water to look better in terms of lighting and color.
+- Tweaked the sky lightmap to no longer look glitchy between 0 and 1 sky light.
+- Tweaked specular highlight to no longer cut out instantly on low sky light situations.
+- Tweaked Auto Exposure.
+- Fixed The Twilight Forest being broken on FTB Revelation.
+- Fixed water looking wrong on The Twilight Forest.
+- Slightly improved Self Shadows.
+- Added "Sun Glare" option (enabled by default) to Shader Options\Sky.
+- Many other small tweaks here and there.

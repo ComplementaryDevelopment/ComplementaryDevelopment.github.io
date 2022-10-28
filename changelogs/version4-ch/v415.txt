@@ -1,0 +1,16 @@
+Changes over v2.1:
+- Added complete Minecraft 1.16 support that includes:
+   - Added changing fog color according to the biome in the nether.
+   - Added specular maps for all of the new 1.16 blocks. (All hand-crafted and fully tested)
+- Added "Water Type" options that are:
+   - "Realistic-ish (Default)": Realistic waves, realistic colors, no water texture and realistic sun/moon reflections.
+   - "Vanilla-ish": No waves, vanilla water colors, vanilla water texture and smooth sun/moon reflections.
+   - "RTX-ish": No waves, improved RTX Beta water colors, vanilla water texture and smooth sun/moon reflections.
+- Added underwater caustics.
+- Added waving leaves as an option.
+- Improved rain and snowfall.
+- Improved the block lightmap to no longer look too dark in some situations.
+- Made the default blocklight color less red.
+- Fixed pixels with low opacity being broken on entities. (Fixes glowing damaged iron golems)
+- Fixed Compatibility Mode's normal problems with some mods.
+- Many other tweaks, changes and fixes here and there.

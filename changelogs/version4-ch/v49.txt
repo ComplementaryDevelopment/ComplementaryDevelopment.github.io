@@ -1,0 +1,13 @@
+Changes over v1.7:
+- Improved the lightmaps to hide the limitations of Minecraft's lightmaps.
+- Improved the stars.
+- Added an option to un-improve the stars.
+- Added subtle star reflections to water/ice/stained glass.
+- Improved the night sky, fog and clouds.
+- Tweaked water/ice/stained glass reflections.
+- Tweaked sun/moon reflections.
+- Improved glowstones, gravels, coal ores, gold ores, myceliums and redstone lamps.
+- Added specular maps for composters, wools, hay bales, nether wart blocks, cactuses, tnts and dried kelp blocks. ComplementaryResources should be pretty much block complete for 1.13, 1.14 and 1.15 now.
+- Made EminPBR's G:254 function usable with G:1 too. Which is used for wools and to make the following fix.
+- Fixed leaves, grass blocks, dirts, coarse dirts, podzols and grass paths reflecting light sources way too much.
+- Some other small tweaks.

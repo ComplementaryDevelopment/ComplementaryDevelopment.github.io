@@ -1,0 +1,7 @@
+Changes over v1.6:
+- Depth Of Field is back, with some tweaks.
+- Slightly improved water/ice/stained glass reflections.
+- Made jigsaw and structure blocks emissive.
+- Tweaked command blocks.
+- Fixed sky reflections appearing indoors.
+- Many small tweaks here and there.

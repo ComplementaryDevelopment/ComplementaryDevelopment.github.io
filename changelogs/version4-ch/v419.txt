@@ -1,0 +1,18 @@
+Changes over v2.5:
+- Improved underwater colors, fog and caustics to make things even more underwater-y.
+- Improved the water surface to look more correctly colored.
+- Improved the accuracy of water, block and translucent reflections.
+- Increased the performance by about %2 which is magnificent isn't it?
+- Improved the Compatibility Mode to be more compatible than ever. (Fixes bright lines on some modded stuff)
+- Added "Fast Compatibility Mode" profile. It's the fastest profile with compatibility for mods, but no PBR to gain about %40 more fps (everything else is the same).
+- Added "Selection Color" setting under "Colors" in Shader Options. Includes 4 different modes. (Works properly only in Mc 1.15+)
+- Added "Show Light Levels Below 8" option under "Debug/Other" in Shader Options. (Disable smooth lighting in Video Settings for precise results)
+- Added a subtle emissive detail to Tridents.
+- Fast leaves are now supported with the Compatibility Mode.
+- Slightly improved End dimension clouds.
+- Tweaked vanilla ambient occlusion.
+- Some things in Shader Options have been moved, renamed, tweaked.
+- Fixed Ender Dragon fireball looking very wrong.
+- Fixed Soul Fire being very dark with Compatibility Mode.
+- Fixed an error with macOS running devices.
+- Some other small changes here and there.

@@ -1,0 +1,14 @@
+Changes over v2.7:
+- Improvements to the atmospheric fog, including:
+   - Slightly improved colors and performance.
+   - Added subtle morning fog.
+   - Increased the rain fog.
+   - Fixed water being brighter than usual when looked at from certain angles.
+- Fixed normal maps not working on certain pixels of a texture.
+- Tweaked Lava, and Fire brightnesses.
+- Tweaked and fixed Sea Lanterns, Glowstones, Magma Blocks and Shroomlights looking weird-ish under some very specific situations.
+- Added attention to detail emissives for the item forms of (Soul) Lanterns, (Soul) Campfires, Lava Buckets and End Crystals.
+- Changed "Rough Reflections" to "Rough-ish Reflections" and made it way less buggy, but also way less rough. Also it's enabled by default now. (Note: The old rough reflections were very unsuitable for the "don't produce false reflections" goal of Complementary, so what I'm doing here is recycling it to be useful. I'm still not done with rough reflections but this will do it for now since my tests of other methods failed to be fast, issueless and good looking at the same time.)
+- Changed the third option of Waving Stuff to "Plants, Leaves + More", which now includes Vines and Lilypads.
+- Tweaked particle opacities. (Better Campfire smoke is back)
+- Some other tweaks and changes.

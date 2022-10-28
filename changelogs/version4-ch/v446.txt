@@ -1,0 +1,4 @@
+Changes over v4.3.1:
+- Fixed "Show Light Levels" option not working in Minecraft 1.18
+- Fixed emissive ores causing subtle flickering in the distance, most noticeable in the 1.18 caves
+- Added a couple modded leaves to block.properties

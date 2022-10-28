@@ -1,0 +1,19 @@
+Changes over v4.2.2:
+- Improved reflection ray tracer for water/translucents which fixes incorrect reflections and reduces noise
+- Improved TAA to no longer do jittering when moving
+- Tweaked the End dimension sky color and star distribution 
+- Retweaked the color calculation of rainbows
+- Support for Minecraft 1.7.10 is back
+- Added "Double Reflection Quality" option. Enabled by default on the Extreme profile
+- Added "Entity Shadows" and "Block Entity Shadows" options. Both are disabled on the "Low" Profile
+- IntegratedPBR changes:
+   - Added fancy emission to Amethyst Buds
+   - Improved reflectance of a bunch of "should be shiny" materials including Diamond, Emerald, Amethyst, Quartz, and more
+   - Improved Auto-Generated Normals. They are generally more noticeable in the distance now
+- Fixed inconsistent lighting on foliage during sunset/sunrise when Real-Time Shadows are disabled
+- Fixed water caustics appearing in shadows on AMD Mesa drivers. Thanks to gri573
+- Fixes for Iris:
+   - Fixed reflections on water in the distance looking darker and not fading with the border fog
+   - Fixed water surface having incorrect reflections when observed from underwater
+- Fixed setting Optifine's "Render Quality" option to "2x" breaking TAA
+- Fixed things behind campfire smoke flickering with TAA

@@ -1,0 +1,12 @@
+Changes over v2.2:
+- Added stylized purple clouds to the end dimension.
+- Completely revamped "The Twilight Forest" modded dimension.
+- Added support for "The Beneath" modded dimension.
+- Improved the stars to no longer instantly cut out at horizon, and no longer look weird behind clouds.
+- Added "Vanilla" Star Type option.
+- Added "Lite" and "Intense" choices to the "Auto Exposure" option.
+- Disabling "Round Sun & Moon" now enables vanilla ones.
+- Added a new "Debug / Other" menu to Shader Options.
+- Fixed Depth Of Field and Distance Blur causing weird lines on AMD GPUs (again).
+- Improved some 1.16 blocks' specular maps.
+- Many other small changes, additions and fixes here and there.

@@ -1,0 +1,4 @@
+Changes over v1.1:
+- Temporarily disabled light shafts because of the problems with Optifine 1.15.2.
+- Some specular maps have been redone. (Melon, pumpkin, mushroom blocks, bamboo, netherrack, lily pad)
+- Some new specular maps have been added. (Scaffolding, sponges, cartography table, beehive, bee nest, loom, fletching table, coral blocks, vines)

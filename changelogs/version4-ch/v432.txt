@@ -1,0 +1,31 @@
+Changes over v3.08:
+- Reworked clouds. Big thanks to Capt Tatsu for helping.
+- Improved light shafts in several ways including smoothness and sample distance.
+- Improved nether portal visuals. (CR)
+- Improved sky and light color timings.
+- Improved star color handling and fixed them getting brighter just before sunrise.
+- Improved stained glass shadows when colored shadows are off.
+- Improved blocklight flickering.
+- Added emission to ender chest, enderman particles and redstone particles. (CR)
+- Fixed reflections not appearing on ice blocks.
+- Fixed colored sign text looking too dark.
+- Fixed vanilla clouds appearing too bright during rain.
+- Fixed light shafts getting less visible when they are closer to the screen edges.
+- Fixed two issues with campfire smoke particles. (CR)
+- Fixed many particles appearing incorrectly colored or not showing up at all. (CR)
+- Fixed cloud reflections on filled cauldrons not matching with the clouds in the sky. (CR)
+- Fixed sun glare not working with some old setting files.
+- Fixed stars instantly disappearing when it starts raining.
+- Fixed water opacity slider not doing anything with the RTX-ish water type.
+- Fixed item frame infinity rooms.
+- Fixed DoF / Distance Blur causing white lines with some GPUs.
+- Fixed particles always rendering behind light shafts on Minecraft 1.15 and above.
+- Fixed issues with waving stuff on Minecraft 1.12 and below.
+- Fixed a problem with custom skyboxes.
+- Fixed OpenGL error 1282.
+- Tweaked redstone lamp, concrete, diamond and emerald reflections. (CR)
+- Tweaked the default sun light color during morning/evening.
+- Increased light shaft and distance blur strengths during rain.
+- Increased reflection intensity for blocks, and the default nether blur strength.
+- Colored shadows are now also enabled with the Bedrock RTX-ish profile.
+- Many small tweaks and stuff.

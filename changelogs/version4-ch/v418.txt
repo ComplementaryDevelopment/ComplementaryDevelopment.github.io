@@ -1,0 +1,16 @@
+Changes over v2.4:
+- Increased the performance by about 15 to 40 percent compared to the last versions of Complementary (on same default settings), without changing anything in-game.
+- Added "Bedrock RTX-ish" preset to Shader Options that is similiar to Bedrock RTX Beta but runs well.
+- Disabling shader clouds now automatically enables vanilla clouds.
+- Improved stars (both types) to come out in more accurate times.
+- Improved vanilla clouds' colors during rain.
+- Improved the sun & moon (both types) to look better during sunset and sunrises.
+- Fixed entities being slightly too dark under sunlight.
+- Added grass and leaves of several popular mods to block.properties.
+- Added support for legacy The Midnight modded dimension.
+- Added "Dark The Beneath Dimension" option to "Debug / Other" menu in Shader Options.
+- Fixed Twilight Forest modded dimension on FTB Revelation modpack (again).
+- Fixed changing stars in Shader Options breaking Twilight Forest modded dimension.
+- Tweaked Twilight Forest modded dimension's brightness.
+- Tweaked Atum modded dimension's fog amount.
+- Some changes in Shader Options.

@@ -1,0 +1,5 @@
+Changes over v4.0:
+- Fixed flickering enchantment glint on armor pieces
+- Fixed inconsistency of the lighting on translucent overlays from resource packs
+- Fixed inconsistency of Vanilla Skybox Brightness slider values
+- Added more values to some sliders

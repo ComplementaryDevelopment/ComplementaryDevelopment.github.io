@@ -1,0 +1,11 @@
+Changes over v2.6:
+- Nether ambient lighting now changes between different biomes.
+- Slightly tweaked Nether fog.
+- Slightly improved block reflections.
+- Fixed Twilight Forest being broken on Fast Compatibility Mode.
+- Fixed some transparent modded textures going black. (Includes Twilight Forest fireflies)
+- Fixed changing Selection Color causing issues on Compatibility Mode.
+- Fixed lava brightness being broken on Minecraft versions below 1.13.
+- Fixed Subsurface Scattering making foliage brighter even in underground.
+- Added reflections to water in a cauldron.
+- Some other small changes.

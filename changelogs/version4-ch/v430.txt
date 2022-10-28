@@ -1,0 +1,29 @@
+Changes over v3.06:
+- Slightly improved performance.
+- Improved default water normal settings.
+- Improved baked ambient occlusion to take lighting into account.
+- Improved light shafts. They no longer look screen-space-ish now.
+- Improved CompPBR light source handling. You can expect improvements like consistent campfire/furnace/torch/lantern variations and several improved emissives.
+- Improved hand bloom reduction and added an option to disable it.
+- Fixed four different problems with light shafts.
+- Fixed outlines causing big problems.
+- Fixed items in players' hands being slightly translucent.
+- Fixed broken terrain when atmospheric fog distance is set to 0.
+- Fixed some problems with underwater recoloring and caustics.
+- Fixed dragon egg looking wrong without ComplementaryResources.
+- Fixed "Twilight Forest" mod's maps having issues with POM.
+- Tweaked the lightmap to go slightly further.
+- Tweaked sky gradient.
+- Tweaked beacon beams.
+- Tweaked atmospheric fog.
+- Tweaked vanilla cloud colors.
+- Tweaked sun and moon.
+- Added an option to disable the altitude factor of atmospheric fog.
+- Added an option to make overworld fog less saturated/vibrant.
+- Added settings to separately tweak world curvature for the three dimensions.
+- Added a slider to tweak the underwater distortion intensity.
+- Clouds and stars are now synced between players in the same world and in about the same coordinates.
+- Shaders stars have been replaced by improved vanilla stars to fix inconsistencies with view bobbing.
+- Increasing the water opacity with RTX-ish water now increases visibility of the water texture.
+- Rough water reflections are now only enabled with the RTX-ish water type.
+- Tons of minor changes, tweaks and stuff.

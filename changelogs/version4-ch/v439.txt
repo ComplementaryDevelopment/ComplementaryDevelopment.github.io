@@ -1,0 +1,11 @@
+Changes over v4.0.1:
+- Added reflections and stuff for all the remaining Minecraft 1.17 blocks (IntegratedPBR)
+- Added an option for emissive nether ores (IntegratedPBR)
+- Added a slider for changing the intensity of emissive ores (IntegratedPBR)
+- Slightly improved performance in scenes with a bunch of rough reflections
+- Fixed auto-exposure acting a bit weird when looking directly up in The End
+- Fixed incorrect time of day with some mods and their dimensions (only works in Optifine G8 and above. Real-Time Shadows must be enabled)
+- Fixed incorrect shadows getting cast by end gateway beams
+- Fixed resource packs being able to completely disable a color when the player is underwater
+- Fixed lava texture being broken with some resource packs
+- Fixed vanilla stars being visible below horizon

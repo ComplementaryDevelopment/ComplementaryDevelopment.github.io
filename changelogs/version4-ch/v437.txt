@@ -1,0 +1,72 @@
+Changes over v3.13:
+- ComplementaryResources are now integrated into Complementary, which means:
+   - You can get the full Complementary experience without using any resource packs
+   - Every single block in the game had its material properties separately reworked. With even more attention to detail than before
+   - It's now also compatible with Minecraft versions below 1.13, and programmer art textures
+   - It's even compatible with vanilla resource packs like Faithful, Compliance and a lot of Vanilla Tweaks packs
+   - Also added support for a bunch of Minecraft 1.17 stuff, including deepslate, glow squid, amethyst, hanging glow berries and copper
+   - There is now a "Resource Pack Support" setting so that you can still use your favorite resource packs like before
+- Compatibility Mode is now a seperate option rather than being a profile
+- Substantially improved frame rates
+- Added optional "Scene-Aware Colored Lighting"
+- Added optional galaxies in the night sky
+- Added proper support for overlays of mods like Litematica, Tweakeroo and MiniHUD
+- A bunch of water changes:
+   - Improved water waves, parallax, and stylised sun/moon reflections
+   - Tweaked water color, reflection intensity, and opacity handling
+   - Added subtle underwater fog when the player is outside of the water
+   - Fixed border fog not being able to hide terrain reflections on water
+- Retweaked the sky color handling
+- Retweaked volumetric light sampling
+- Tweaked clouds to look a bit more fluffy
+- Fixed TAA artifacts caused by moving entities, particles, and the player's hand
+- Fixed block breaking animations of other players appearing in the air
+- Fixed jittering on leaves when TAA, SSS and Shadow Filtering are enabled
+- Fixed TAA not fully working on some devices
+- Slightly improved reflection accuracy
+- Added support for colored resource pack clouds
+- Added an option to make lime-dyed blocks green screens
+- Added an option to disable the border fog in the nether
+- Added a setting to change the border fog type
+- Added more settings for water and sky, and removed some settings for water and sky
+- Added a slider to adjust the waving speed of waving stuff
+- Added "None" option to the world curvature sliders
+- Added new Low and Medium profiles
+- Previous Medium (Default) and High profiles were renamed to High (Default) and Ultra
+- Reorganised shader options
+- Retweaked stars with more options for customisation
+- Tweaked the sun glare when the player is underwater
+- Tweaked the block lightmap for entities, block entities, held items, and translucents
+- Enabled normal mapping on entities and handheld items in Minecraft 1.17 and above
+- Close-up Particle Reduction is now disabled by default, and can be enabled on compatibility mode too
+- Anti-aliasing on Compatibility Mode is now also set to FXAA+LiteTAA by default
+- Increased sun and sky reflection intensities on blocks
+- Increased minimum lighting on translucents including water to make them actually visible in dark areas
+- Border fog in the nether is now spherical instead of cylindrical
+- Specular highlight is now also enabled outside of the shadow distance
+- Seperated the options for waving stuff
+- Removed labPBR subsurface scattering. It caused more than a dozen of issues thanks to my outrageous implementation
+- Removed per biome weather option
+- Underwater water particles are no longer disabled, but reduced in terms of amount compared to vanilla
+- Fixed projected caustics being inconsistent with shadows when it's raining
+- Fixed maximum rain puddle coverage not being full-coverage
+- Fixed RTX-ish water type looking wrong in some biomes
+- Fixed some items not giving light when held, but doing so when dropped
+- Fixed the light shafts and the border fog not being very coherent when the render distance is below 12. Now they are not very coherent below 8
+- Fixed "Rare Ice" and "DynamicTrees" mods' blocks not being correctly shaded
+- Fixed modded fluids looking pitch black
+- Fixed custom biomes causing the sky to turn full white
+- Fixed low shadow distance values breaking underwater lightshafts
+- Fixed kelp incorrectly waving in some scenarios
+- Fixed missing shading on entities
+- Fixed the daytime sky being darker on Intel GPUs
+- Fixed the vanilla bug where particles start flickering in some situations
+- Fixed the vanilla bug where item frames start flickering when put under a pressure plate
+- Fixed maps in item frames having different sun/moon light amounts depending on the player's view angle
+- Fixed lightning bolts not affecting the sky consistently. Also works in Compatibility Mode now
+- Fixed lightning bolts making the atmospheric fog glow
+- Fixed incorrect shading on extended piston heads
+- Fixed black spots appearing on distant reflections
+- Fixed stars sometimes being visible in the void
+- Fixed auto-exposure not working well with hybrid light shafts
+- Over a hundred minor changes. Not including the hundreds of reworked block materials

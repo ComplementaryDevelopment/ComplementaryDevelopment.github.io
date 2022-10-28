@@ -1,0 +1,17 @@
+Changes over v1.11:
+- Added "Compatibility Mode" profile for the people who really want to play with mods, resource packs and Minecraft versions 1.12.2 or below. This profile assumes everything is part of an unknown mod, and prepares the shader for a lot of situations.
+- Fixed the labPBR material format to work perfectly with labPBR resource packs. (A lite version of the compatibility mode automatically turns on when labPBR is selected)
+- Added unique support for some modded dimensions, including:
+   - Twilight Forest 3.10.1013
+   - The Midnight 0.5.7-3
+   - Atum 2.0.17
+- Overworld shaders have been put in place for other modded dimensions.
+- Added "Shading Strength" option to Shader Options -> Shadows.
+- Improved the redstone lamps.
+- Improved translucent particles.
+- Fixed campfire particles being visible behind the vanilla fog.
+- Fixed vanilla stars appearing under the shader stars for real this time. (Using the star detection of Builderb0y)
+- Fixed the default normals being slightly inclined.
+- Fixed damaged mobs appearing too bright.
+- Fixed some light sources getting wrongly affected by shading.
+- Made many other small tweaks all around the shader.

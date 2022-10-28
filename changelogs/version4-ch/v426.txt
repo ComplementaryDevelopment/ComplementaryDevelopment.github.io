@@ -1,0 +1,22 @@
+Changes over v3.02:
+- Improved clouds to be smoother, fluffier and no longer look stretched.
+- Improved water reflections in several ways, including the return of cloud reflections and more accurate sky reflections.
+- Improved nether color handling. You can expect an overall brighter nether.
+- Improved Distance Blur.
+- Improved Ambient Occlusion.
+- Improved "Show Light Levels Below 8" option in several ways.
+- Improved bloom tiles and tweaked bloom strength.
+- Improved underwater light shafts' color and intensity.
+- Improved lighting for The Twilight Forest dimension.
+- Added "below y level 0 darkening" that is similiar to what happens in vanilla under y level 0.
+- Added "Plants, Leaves + More" choice to the Subsurface Scatter(ing) setting.
+- Fixed false reflections appearing at the edges of block intersections.
+- Tweaked labPBR hardcoded metals.
+- Slightly tweaked several specular maps.
+- Vignette is now enabled by default with 0.50 strength.
+- Fixed carpets getting too bright near a light source.
+- Fixed nether portals being brighter in the nether.
+- Leaves, vines and lilypads are now brighter under skylight.
+- Disabling Border Fog (previously called Vanilla Fog) no longer disables lava and blindness fogs.
+- Underwater brightness is no longer affected by water color intensity.
+- Many more stuff.

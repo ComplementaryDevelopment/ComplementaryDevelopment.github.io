@@ -1,0 +1,10 @@
+Changes over v1.5:
+- Improved the reflections even more. Now there should be close to zero false reflections on blocks.
+- Added "IntenseTAA" option. Provides near perfect image for screenshots, but not suitable for gameplay.
+- Reworked beacons. You can tell that they are one of the most valuable things in the game now.
+- Tweaked beacon beams. Especially the colored ones should look better now.
+- Slightly tweaked sea lanterns, campfires, torches, sea pickles, magma blocks and redstone torches.
+- Fixed extinguished campfires looking too dark.
+- Gave Mister Jack o'Lantern even more love.
+- Added "Photo Mode" profile. Not suitable for gameplay.
+- Changed the Medium (default) preset to not enable subtle distance blur. This should increase the performance by a lot on default settings.

@@ -1,0 +1,24 @@
+Changes over v3.05:
+- Slightly improved performance.
+- Shadow filtering is now stronger on foliage and produces overall smoother shadows.
+- Improved sky gradient.
+- Improved smoothness and accuracy of reflections on translucents and water.
+- Improved visibility under some situations by reducing the opaqueness of particles that are very close to the point of view. (Can be disabled in Shader Options)
+- Improved underwater lighting and reflections.
+- Tweaked cloud colors.
+- Tweaked Compatibility Mode bloom to be closer to normal bloom.
+- Tweaked snowfall particles to be more opaque.
+- Added support for reflections on modded fluids. (Please let me know about the fluids that I haven't added reflections yet)
+- Added support for the "Flexible Block Placement" overlay of "Tweakeroo" mod. (Disabled on Compatibility Mode because of incompatibilities)
+- Added emission to the dragon head block/item/helmet.
+- Underwater color is now determined mostly by the vanilla underwater fog color. This adds support for modded fluids' underwater colors.
+- Brightness slider in Video Settings now also affects blocklight lightmap.
+- Fixed underwater fog not properly working in some situations including behind glass.
+- Fixed slightly incorrect water color in Minecraft versions below 1.13.
+- Fixed incorrect water with water elevator backport mods.
+- Fixed regular glass and glass pane looking weird when viewed from a distance.
+- Fixed broken mipmap fix not working when POM is enabled.
+- Fixed weird lightshafts in the overworld void.
+- Fixed weird specular on shulker boxes.
+- Reduced intensity of directional lightmaps.
+- Some minor tweaks/changes/additions.

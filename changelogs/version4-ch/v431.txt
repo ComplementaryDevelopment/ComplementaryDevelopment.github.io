@@ -1,0 +1,33 @@
+Changes over v3.07:
+- Improved atmosphere and fog colors especially during sunrise/sunset.
+- Improved water normals/waves.
+- Improved sun and moon reflections, seperately for water and blocks.
+- Improved light shafts.
+- Improved underwater terrain colors when viewed from outside. (Colored Shadows has to be on)
+- Improved the border fog to be cylindrical instead of spherical.
+- Tweaked brightness of several emissives including fire and lava.
+- Tweaked colors and opacity handling of clouds.
+- Water inside cauldrons are now consistent with the normal water.
+- Water particles are back with proper water colors set in Shader Options.
+- Sweeping particles are back without being too bright.
+- Added several sliders for tweaking light shafts.
+- Added an "Emissive Config" menu for tweaking various things.
+- Added sliders for tweaking the intensity of SSS.
+- Added a slider for tweaking the intensity of normal maps.
+- Added sliders for tweaking underwater colors.
+- Added an option for more visibility under lava.
+- Added an option for glowing ancient debris.
+- Added a separate option for water displacement.
+- Added more modded stuff to the block.properties
+- Fixed lava and vanilla water texture issues with POM.
+- Fixed weird specular highlight on leaves with SSS, and SSS on leaves are on by default now.
+- Fixed a problem with enchanted items when world curvature is enabled.
+- Fixed outlines in the nether and the end.
+- Fixed a problem with underwater in Minecraft 1.12.2 and below.
+- Fixed a problem regarding labPBR ambient occlusion.
+- Fixed blindness effect when the player is underwater.
+- Fixed modded maps having issues with POM.
+- Fixed some modded blocks waving when they shouldn't.
+- Fixed Twilight Forest dimension's stars not rendering.
+- Fixed Twilight Forest mod's fireflies turning black.
+- Some more tweaks, and tons of minor stuff.

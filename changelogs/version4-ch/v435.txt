@@ -1,0 +1,34 @@
+Changes over v3.11:
+- Improved performance
+- Improved vanilla clouds
+- Improved, tweaked, and fixed tons of stuff about reflections
+- Added "Ender Nebula" to The End dimension
+- Added an option to disable real-time shadows
+- Added "Potato" profile which is about 2x faster than medium
+- Added a subtle sky blur to make clouds smoother and stars fancier
+- Added subsurface light to translucents
+- Added optional "Starter Settings"
+- Added emissive lapis and redstone block options
+- Re-added the "No Foliage Shadows" option
+- Tweaked rain-clear transition to be smoother
+- Tweaked water shadow, waves and opacity handling
+- Tweaked lighting in The End
+- Tweaked vanilla ao handling
+- Fixed several issues with handheld lights
+- Fixed custom sized screenshots and/or replay mod footage looking a bit weird
+- Fixed an issue where shadows got broken on some devices
+- Fixed flickering shadows on distant terrain with high shadowmap resolution
+- Fixed giant shadows appearing when shadow distance is exceeded in The End
+- Fixed blocks of "MrCrayfish's Furniture Mod" having broken shading
+- Re-fixed the Tweakeroo overlay fix to fix the problem where the fix didn't work in newer versions
+- Normal mapping is now an option that is disabled by default in all profiles except High
+- Tons of tiny tweaks, fixes and additions
+ComplementaryResources:
+- Added auto-generated normals on high profile or when normal-mapping is enabled
+- Added emission to charged creepers and shroomlight-ish parts of nether fungi
+- Tweaked some metals, diamond/emerald, prismarine, and obsidian (includes variants of all)
+Compatibility Mode:
+- Fixed Joy of Painting mod's paintings
+- Fixed tons of different issues in The Twilight Forest
+- Fixes to Atum and The Betweenlands dimensions
+- Fixed water reflections being wrong with the BetterEnd mod

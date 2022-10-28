@@ -1,0 +1,9 @@
+Changes over v4.3.2:
+- Added options to separately disable emission for every overworld ore
+- Added "Vanilla Lava Fog Color" option
+- Fixed the clouds getting broken in worlds where the world day is a massive number
+- Fixed armored Drowned and Stray entities having incorrect emission (IntegratedPBR)
+- Fixed two of "Show Light Levels" options breaking the rendering if "Shader Handheld Lights" is disabled
+- Fixed small inconsistency with PBR ambient occlusion on entities, block entities, player hand and handheld items
+- Cave darkening is no longer activated above a y-level of 5 instead of 50
+- Metalness darkening now gets disabled if Specular Reflections option is disabled

@@ -1,0 +1,50 @@
+Changes over v4.3.3:
+- Improved fake shadow switching calculation to better hide the point where the shadow distance ends
+- Improved the quality of Bloom on high screen resolutions
+- Improved the quality of Aurora reflections
+- Tweaked the Overworld Border Fog to appear farther from the player, similar to the fog tweak of Mc 1.18
+- Added "Nether Refraction" option which adds heat refraction to the nether in the distance. Set to "Subtle" by default
+- Added support for the "Darkness" fog and lighting effect, also including intense bloom (Mc 1.19)
+- Added support for the bioluminescent layers and animations of the Warden (Mc 1.19)
+- Added "Underwater Bloom Strength" slider
+- Added "Subsurface Scatter Quality" slider to smoothen the noise on subsurface scattered blocks
+- Added "Sun/Moon Horizon" option to be able to disable sun/moon/overlays fading out below the horizon level
+- Added "White" Vignette option
+- Added "Rain Waving Intensity Mult" slider
+- IntegratedPBR Changes:
+   - Added emission and speculars to the Ancient City blocks (Mc 1.19)
+   - Added noticeable specular reflections to most overworld ores when they are set to not be emissive
+   - Improved Auto-Generated Normals to have a smoother falloff
+   - Improved the Fancy Nether Portal effect with some parallax fade out
+   - Improved the End Portal effect
+   - Auto-Generated Normals and Noise Coated Textures now also apply to all block entities like chests
+   - Fixed Glowstone and Magma Block looking noisy in the distance
+   - Fixed Command Blocks having incorrect emission on Iris
+   - Fixed lanterns getting too bright when Specular Reflections are disabled
+   - Fixed Glowing Redstone/Lapis Block options not working well with the Snow Mode option
+   - Fixed Auto-Generated Normals and/or Noise Coated Textures looking incorrect with some resource packs or mods
+   - Added "RP Compatible Generation" option for Auto-Generated Normals and Noise Coated Textures to work better with resource packs that contain textures that have different resolutions
+   - Tweaked active Conduits to also be emissive on the center
+   - Slightly tweaked reflections and noise coating on most Stripped Wood/Log blocks
+   - Removed handheld lava bucket emissive pixels because it caused problems
+   - Reduced emission on Copper Ore
+   - Reduced emission on Block of Lapis/Redstone (if enabled)
+- Reduced lighting color saturation in the Nether
+- Rain puddles now also appear near light sources if Rain Puddle Coverage is set to 100
+- The "Vanilla / RTX-ish" profile now has Auto-Generated Normals enabled by default
+- Tweaked Enderman and Spider emission when IntegratedPBR is disabled
+- Fixed slightly shaking screen in Mc 1.12.2 and below
+- Fixed the Optifine bug where the block breaking animation gets distorted if a beacon beam is somewhere close
+- Fixed stars disappearing below an altitude of 0
+- Fixed the ears and chest of the Warden looking glitchy (Mc 1.19)
+- Fixed rain causing visual problems on some servers
+- Fixed disabling water caustics and enabling rain puddles at the same time causing the visuals to break
+- Fixed Subsurface Scattering being disabled causing foliage to have incorrect lighting
+- Fixed beacon beams not showing up in Mc 1.7.10
+- Fixed Water Refraction causing the water to look weird in Mc 1.7.10
+- Fixed weather particles not being affected by handheld lighting
+- Fixed Water Displacement waves still happening in closed areas (only fixed on Mc 1.18 and above)
+- Fixed "Modern Life" mod's canvases looking incorrect with Parallax Occlusion Mapping
+- Water Opacity slider is now capped at 0.99 to fix two problems
+- Rainbow Selection Outline Mode is now more affected by the Intensity slider for outlines
+- The Blur Strength slider can now also be set to 48.0

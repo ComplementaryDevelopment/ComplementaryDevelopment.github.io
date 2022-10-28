@@ -1,0 +1,14 @@
+Changes over v3.0:
+- Improved opacity handling for clouds.
+- Fixed lightning bolts not showing up properly. The fix can be disabled in Debug / Other menu.
+- Fixed shadows (sometimes) disappearing when an end gateway is loaded.
+- Fixed frost walker ice having broken reflections.
+- Fixed terrain flashing white when some specific mods are installed.
+- Improved colors and fog for the "Atum 2" modded dimension.
+- Added a way to use some PBR packs together with ComplementaryResources.
+- Added "Vignette Strength" option to Post Process / Camera menu.
+- Added "Entity Hit Effect" option to World menu.
+- Added leaves from "Better With Mods", "Rustic" and flowers from "Future MC", "Dungeon Tactics" to block.properties.
+- Fixed POM causing problems with ComplementaryResources.
+- Fixed previous frame reflections causing big problems, by removing it. Buffers don't grow on trees okay?
+- Some more but very small changes.

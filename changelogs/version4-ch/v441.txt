@@ -1,0 +1,83 @@
+Changes over v4.1:
+- Added rainbows that appear just after rainfall during morning or evening
+- Added "Water Absorption" option. Enabled by default on the Extreme profile. Thanks to Niemand for the trick
+- Reworked the colors and atmospherics during night and/or rainfall
+- Tweaked the tonemap to get a more diverse color range on most displays
+- Tweaked the early sunrise and late sunset color to look warmer
+- Tweaked the light color on the ground during morning/evening
+- Tweaked the sky horizon during the day
+- Tweaked the blocklight curve when the Brightness slider in Video Settings is increased
+- Tweaked subsurface scattering on foliage
+- Tweaked both ambient occlusion types
+- Improved the end portal/gateway effect to look three dimensional
+- Added a new color calculation for the Ender Nebula during the ender dragon boss battle
+- Added blocklight caustics to the underwater caustics
+- Added "Chromatic Aberration" and "Chromatic Blur" options
+- IntegratedPBR changes:
+   - Added IntegratedPBR emission to Sculk Sensor and Enchanting Table
+   - Glow lichen blocks are now emissive, but only in the dark in order to not ruin a builder tool
+   - Improved the nether portal effect with a three dimensional look and some color tweaks
+   - Increased the smoothness of Deepslate
+   - Reduced the intensity of Noise-Coated Textures on a bunch of blocks
+   - Tweaked Sea Lantern, Glowstone and Shroomlight emission
+   - The "Emissiveness Multiplier" slider now also affects IntegratedPBR emissives
+   - Fixed Lit Redstone Ore having too little block lighting
+   - Fixed some blocks looking incorrect when World Curvature is enabled
+   - Fixed cauldrons and copper ores having incorrect emission with some resource packs
+   - Fixed deepslate copper ores having subtle emission on the deepslate texture
+   - Fixed Deepslate Coal Ore not having a smoothness value
+   - Fixed tripwire being slightly too bright near a light source
+   - Partially fixed some emissives looking too bright with "Faithless" or "Bare Bones" resource packs
+- Increased visibility in The Nether by pushing the fog away from the player
+- Fixed the notorious problem where foliage shadows appear disconnected from the foliage
+- Fixed maps in item frames flickering when observed from a distance
+- Fixed Distance Blur causing excessive blur when zooming. Can be reverted via the new "FOV Scaled Blur" option
+- Fixed block selection outline disappearing in Mc 1.17 when World Curvature is enabled
+- Reworked the "Show Light Levels" option alongside a new "Hold Spider Eye" mode for it
+- Added bloom scaling. This means you will get consistent results with the bloom regardless of your resolution
+- Added "Night Brightness" slider together with options to tweak the night brightness during different moon phases
+- Added an option to disable emission on specifically Iron Ore
+- Added a slider to adjust the animation speed of the Ender Nebula
+- Added "Waving Intensity" slider
+- Tweaked the Nether ambient lighting
+- Tweaked the labPBR emission handling to better match expectations
+- Tweaked the "Versatile" selection outline mode to better do its job
+- Tweaked Lens Flare to not activate during full moon
+- Tweaked emission of end gateway beams
+- Slightly tweaked blocklight color
+- Slightly tweaked water caustic intensity
+- Slightly tweaked water parallax intensity
+- Made the wrong sky reflection fix on water slightly less aggressive
+- Lava fog is now way less obstructive in Spectator Mode on Mc 1.17 and above
+- Reduced the default Shadow Distance values
+- Water reflections are now disabled on the Potato profile
+- Removed "Legacy" light shaft type and renamed the default type to "Balanced"
+- Fancy vanilla cloud shading now also work with Mc 1.18 cloud height
+- Translucent reflections and the IntegratedPBR end portal effect now also work in Mc 1.12.2 and below
+- The Ender Nebula now always overrides the BetterEnd sky. Versions and editions of BetterEnd that have different skybox internals have outgrown my ability to support all of them
+- The "Handheld Bloom Reduction" is now disabled by default since it's not needed for most use cases
+- Replaced the "Nether Bloom Multiplier" slider with a "Nether Bloom Strength" slider to overcome widespread misconception
+- Changed how the fog distance sliders work to overcome widespread confusion
+- Changed how the Vignette Strength slider works to make the results still look decent with higher values
+- Turning "Real-Time Shadows" off no longer disables sun/moon reflections on blocks if "Specular Reflections" are enabled
+- Merged the "Fancy Nether Portal" and "Alternative Nether Portal" options to a single setting
+- The starter option Complementary Overlay is now an actual overlay
+- Fixed Atmospheric Fog color not being consistent with the sky color during noon
+- Fixed incorrect shadows sometimes appearing at the end of the shadow distance
+- Fixed incorrect reflections on the windows of some underwater bases
+- Fixed light shafts looking glitchy with odd resolutions on non-Nvidia GPUs
+- Fixed translucents looking very slightly emissive with some settings
+- Fixed Snow Mode causing a compile error when PBR is disabled 
+- Fixed void/cave sky fix breaking the visuals in some worlds
+- Fixed "FramedBlocks" mod's blocks having broken ambient occlusion
+- Fixed custom skies from resource packs not showing up below the horizon (applies to Mc 1.17 and above)
+- Fixed some map icons disappearing when looking at maps at a specific angle
+- Fixed beacon beams not having the correct handling in older Mc versions, or Iris, or future Optifine versions
+- Fixed selection outline still being visible in some situations when Selection Mode is set to Disabled
+- Fixed incorrect sun/moon reflections on water in some situations with Colored Shadows
+- Fixed "Pixelated Shadows" option causing weird shadows on held items
+- Fixed setting a rain color channel to 0 causing problems
+- Fixed high Vanilla AO Strength values causing broken ambient occlusion
+- Fixed IntegratedPBR enderman effect not being disabled on different RP Support modes
+- Fixed custom water colors causing issues with Projected Caustics
+- A ton of tiny changes

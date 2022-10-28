@@ -1,0 +1,26 @@
+Changes over v3.03:
+- Reworked atmospheric fog. It's now altitude based, looks more atmospheric and is much more apparent.
+- Fixed compatibility with Intel GPUs. (Thank you so much Capt)
+- Improved water reflection accuracy.
+- Tweaked sunrise/sunset lighting to be warmer.
+- Tweaked sunrise/sunset color timings to watch the vanilla ones.
+- Improved night sky colors.
+- Sky/fog/water colors are now mixed with vanilla sky/fog/water colors by set percentages. This means added compatibility with sky/fog/water color changing modifications.
+- Added sliders to (separately) change the vanilla sky, fog and water color influence percentages.
+- Added support for entities with the glowing status effect. (Can be disabled in the Workarounds section in Debug/Other)
+- Added "Blocklight Flickering" option.
+- Added "Half" Promo Outline Mode that disables the black outline part of the Promo Outline.
+- Added a slider for underwater brightness.
+- Tweaked rain lighting.
+- Tweaked Light Shafts.
+- Tweaked cloud distribution.
+- Fixed clouds forming a line where they disappear.
+- Fixed end gateway beams being incorrectly colored without ComplementaryResources.
+- Fixed Parallax Occlusion Mapping causing fps drops even with ComplementaryResources.
+- Normalmap related effects are now enabled by default with the High profile.
+- Fixed world border not being visible unless the player is very close to it.
+- Fixed endermen glowing in older Minecraft versions when PBR is on.
+- Fixed fog color not getting affected by the void darkening.
+- Enabling "Force Water Waves" now also enables waving water itself.
+- Tried to add support for The Betweenlands. (Not complete, and The Betweenlands shaders must be turned off in the config)
+- Many more tweaks here and there.

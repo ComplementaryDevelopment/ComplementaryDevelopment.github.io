@@ -1,0 +1,14 @@
+Changes over v1.10:
+- Changed the behaviour of water waves to be more intense when it's raining, and be almost completely still when the water is in a closed area.
+- Improved the unloaded area hiding fog to be perfectly precise.
+- Improved the Nether Portals to look even more magical.
+- Improved water to no longer look dirty when looked at from steep angles.
+- Added specular maps to glass and glass panes. (And they're fully compatible with connected textures)
+- Tweaked the beacons to look stronger.
+- Fixed vanilla stars appearing behind the shader stars.
+- Fixed doors getting too bright near a light source.
+- Tweaked, changed and added some shader options, which includes, but not limited to:
+- Low profile have been improved to look better while providing more fps.
+- Fog distance sliders and the option to disable the fogs have been seperated.
+- Minimum Light Boost option have been changed to Minimum Light and now it can be used to decrease the minimum light aswell, while not affecting open areas.
+- And many other small tweaks here and there.

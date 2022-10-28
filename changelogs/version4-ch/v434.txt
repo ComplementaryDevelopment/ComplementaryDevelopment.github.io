@@ -1,0 +1,33 @@
+Changes over v3.10:
+- Reworked (under)water lighting and added caustic light shafts.
+- Improved the sky/atmosphere in many ways.
+- Improved the snow mode option.
+- Improved the RTX-ish water.
+- Improved reflections in many small ways.
+- Added Rain Puddles option.
+- Added Aurora Borealis. (All credit goes to Capt Tatsu)
+- Added moon phases. New moon and full moon are synced with vanilla, rest of the time there will be a crescent moon.
+- Added more options for the outlines, alongside slight improvements.
+- Added Fake Cloud Shadows option.
+- Added a setting for adjusting the strength of vanilla ao.
+- Added Anamorphic Blur option.
+- Added a slider to adjust the intensity of enchantment glints.
+- Added tons of modded stuff to the block.properties.
+- Added some more weird/fun options.
+- Added subtle star twinkling and increased the brightness of them.
+- labPBR ambient occlusion is now applied more correctly, under shadows when there aren't much blocklight around.
+- Tweaked a bunch of default settings.
+- Tweaked magma block, rails, bamboo, water particles, and sea lantern. (CR)
+- Changed how the atmospheric fog color is being calculated, also added more settings for it.
+- Changed the default sun/moon path rotation to -40 degrees.
+- Changed cloud movement/direction to be the same as vanilla.
+- Fixed an error that made water and particles broken on some GPUs/drivers.
+- Fixed flashing sky with the "BetterEnd (Forge)" mod.
+- Fixed "Create" mod's liquids and mossy/overgrown blocks.
+- Fixed "Snow! Real Magic!" mod's blocks.
+- Fixed glowing pollen particles. (CR)
+- Fixed broken stuff in dimensions other than the Overworld when Snow Mode is enabled.
+- Fixed broken mipmapping for glass.
+- Fixed some issues regarding particle blending.
+- Fixed brightness level being broken for some people.
+- Tons of minor changes, fixes and additions.

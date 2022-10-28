@@ -1,0 +1,59 @@
+Changes over v4.0.2:
+- Added back the Colored Shadows option
+- Added support for Mc 1.17 powder snow fog effect
+- Added "Extreme" profile
+- Added "Pixelated Shadows" option. Thanks to Capt Tatsu
+- Improved Parallax Self Shadowing. Thanks to null511
+- Improved TAA edge handling
+- Improved color and intensity handling of (projected) caustics
+- Improved the sun/moon glow on light scattering blocks such as leaves and foliage
+- A lot of IntegratedPBR stuff:
+   - Reworked Auto-Generated Normals
+   - Added "Noise Coated Textures", enabled by default on Ultra and Extreme profiles
+   - Added "Alternative Nether Portal" option
+   - Added back the beacon beam effect from older Complementary versions
+   - Fixed nether portals looking weird on Mc 1.17
+- Tweaked sign text handling to work well with Mc 1.17's glow ink feature
+- Tweaked the sun glow when the player is underwater
+- New "glow" items of Mc 1.17 now give a small amount of light when held
+- Glow berry vines, candles and sea pickles now emit correctly colored blocklight if Scene-Aware Colored Lighting is enabled
+- Clouds are now going to slowly cover up the sun/moon when it's starting to rain
+- Fixed rain puddles appearing in non-rainy biomes if rain puddle coverage is set to maximum
+- Fixed enchanted items in item frames looking glitchy
+- Fixed water surface having a dark circle when looked at from underwater
+- Fixed emissives from pbr resource packs being dimmer than usual on Compatibility Mode
+- Added "Light Shaft Quality" slider, increased by default on the Extreme profile
+- Added daytime sky color multiplier sliders
+- Added more modded blocks to the block.properties. Thanks to Yorae
+- Tweaked water refraction
+- Reworked the Selection Outline Mode "Alternative" (renamed to "Versatile" now) to highlight all blocks very well, and actually work on Mc 1.17
+- Even more IntegratedPBR stuff:
+   - Slightly reduced the sun/moon reflection intensity on leaves
+   - The lava and powder snow inside cauldrons are now exactly consistent with the normal lava and powder snow
+   - The "Normal Multiplier" slider now actually affects the auto-generated normals
+   - Edges of sea lanterns are now reflective
+   - Tweaked glow squid emissives
+   - Changed specular handling on honeycomb block, beehive and dried kelp block
+   - Fixed spawners and dragon eggs being excessively bright with some resource packs
+   - Fixed Emissive Nether Ores option causing problems with amethyst clusters and/or Programmer Art textures
+   - Fixed water inside cauldrons not looking fancy on Mc 1.17
+- Slightly improved "Hybrid" Light Shaft Type's filtering to cause less edge artifacts
+- Re-enabled normal mapping for entities, held items and block entities on Mc 1.16 and above
+- Some items now give slightly more light when held
+- Increased Snow Mode option's tendency to put snow on inclined normals
+- Tweaked Parallax Depth option so that "1.0" means exactly 25 cm which labPBR suggests. The default value is now 0.6 which is 15 cm
+- Sun/Moon Reflection Intensity sliders now also affect the sun/moon highlight on RTX-ish water type
+- Distance blur is now only enabled by default on the Extreme profile
+- Fixed maps in item frames getting darker depending on the player's view angle
+- Fixed projected caustics incorrectly appearing on boats
+- Fixed item frames having low quality shading
+- Fixed inconsistent underwater lighting on translucents and some overlays from resource packs
+- Fixed subtle sun/moon reflections appearing under shadows with resource packs that have intense normal maps
+- Fixed Parallax Self Shadowing not blocking sun/moon reflections
+- Fixed clouds having an incorrect sky color hardcoded on them
+- Fixed Snow Mode noise being applied incorrectly in some cases
+- Fixed underwater light shafts looking wrong in some specific situations
+- Fixed Journey Map mod's waypoints losing color in some situations
+- Fixed "Rubinea" from the BetterEnd (Forge) mod having broken rendering (Compatibility Mode)
+- Fixed glowing entities getting incorrectly affected by dynamic handheld lighting
+- A ton of minor changes

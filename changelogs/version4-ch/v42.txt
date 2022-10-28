@@ -1,0 +1,3 @@
+Changes over v1.0:
+- Fixed all glass types, bookshelves and sandstones not working with Optifine's connected textures.
+- Fixed the water and stained glass panes getting too bright when they are near a light source.

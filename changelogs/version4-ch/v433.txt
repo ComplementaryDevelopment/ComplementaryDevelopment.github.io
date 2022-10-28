@@ -1,0 +1,35 @@
+Changes over v3.09:
+- Improved clouds.
+- Improved light shafts.
+- Improved water reflection accuracy.
+- Improved ambient occlusion. Thanks to Capt Tatsu.
+- Improved The Midnight modded dimension.
+- Added support for labPBR subsurface scattering.
+- Added support for the BetterEnd mod.  (Compatibility Mode recommended)
+- Added hand sway setting.
+- Added snow mode option.
+- Added emission to dripping lava and enchanting table particles. (ComplementaryResources feature)
+- Tweaked night lighting on terrain for better visibility, more so if the brightness slider in Video Settings is increased.
+- Tweaked subsurface scattering.
+- Tweaked vanilla skybox handling to fix issues with some resource packs.
+- Tweaked the end portal shader.
+- Tweaked rain color.
+- Increased distance blur when the player is underwater.
+- Increased tonemap upper curve.
+- Decreased atmospheric fog opacity.
+- Moved some internal/debug settings to a new super secret settings menu. I wonder how many people are going to find it.
+- Fixed particles not being affected by fog.
+- Fixed water looking wrong when viewed behind vanilla clouds.
+- Fixed light shafts looking brighter at the edges of the screen with low field of view values.
+- Fixed visible banding on light shafts.
+- Fixed several problems with the colored sign text improvements.
+- Fixed disabling Ender Clouds option not applying to reflections.
+- Fixed circle sun/moon reflection on stained glass when vanilla sun/moon is present.
+- Fixed "Sun/Moon Light Jump Fix" not working well with some GPUs.
+- Fixed an issue with shadows.
+- Fixed two issues that happened underwater.
+- Light shafts are now also enabled with the Compatibility Mode profile. Because they are now smooth enough to look good without TAA.
+- Added more mods' stuff to block.properties (thanks to choraibe), including Atmospheric, Autumnity, Neapolitan, and Upgrade Aquatic.
+- Increased exposure in The Midnight dimension.
+- Fixed wrongly shaped particles, excessive blur, and low performance in The Betweenlands dimension.
+- Tons of small stuff here and there.

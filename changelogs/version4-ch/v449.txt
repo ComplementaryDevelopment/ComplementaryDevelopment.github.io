@@ -1,0 +1,20 @@
+Changes over v4.4:
+- Complementary v4 is now compatible with Apple M1 devices. Thanks to IMS#7902
+- Added subsurface scattering to Mangrove Leaves
+- Slightly reduced the default Vibrance value
+- IntegratedPBR changes:
+   - Added fancy emission to Froglights and the Allay
+   - Added specular mapping to all Mangrove and Mud variants
+   - Fixed the enchanting table having incorrect glowing pixels if the Noise Coated Textures option is enabled
+   - Fixed Auto-Generated Normals not working on translucents
+   - Glow Lichen emission is no longer affected by blocklight, and is affected by skylight only
+   - Tweaked the end portal effect
+   - Tiny tweaks regarding some other Wild Update blocks
+- Fixed Galaxies not working on Mc 1.12.2
+- Fixed Frogs having flickering feet
+- Reduced the strength of Nether Refraction by a factor of two on all settings
+- Disabling Entity Shadows no longer disables the player shadow (Iris-only feature)
+- Disabling Border Fog now also disables fog on vanilla clouds
+- Reduced the extra opacity of Tinted Glass
+- Improved the look of water when both sky and normal reflections are disabled on water/translucents
+- Fixed incorrect information on Magma Blocks when the Show Light Levels option is enabled

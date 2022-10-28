@@ -1,0 +1,20 @@
+Changes over v3.04:
+- Improved the atmospheric fog in several ways, including but not limited to:
+   - Fixed superflat worlds (actually all low-altitude locations) looking too foggy.
+   - Tweaked fog behaviors in many different situations.
+   - Improved how the atmospheric fog is getting faded, so the fading line is no longer noticable.
+- Tweaked many default color/tonemap settings.
+- Reworked glowing entity fix to be an outline just like the vanilla glowing effect.
+- IntenseTAA is no longer that intense, and is suitable for gameplay.
+- The "Brightness" slider in Video Settings now also change the light/ambient brightness during night/rain, and dimension color intensity in the nether.
+- Fixed DOF, Distant Blur and Nether Blur getting almost unnoticeable when zoomed. (Thanks to Builderb0y and Capt Tatsu)
+- Bloom is now more intense underwater.
+- Fixed turning off Rough Reflections or enabling PBR with the Compatibility Mode causing the shader to die.
+- Fixed Black Outline not working properly.
+- Fixed shader stars instantly getting brighter during sunset/sunrise.
+- Tweaked shader stars' size, fading and amount.
+- Tweaked handheld emissives to be slightly less bright.
+- Tweaked clouds to look better in some situations.
+- Added bookshelf speculars that are compatible with Optifine's bookshelf connected textures.
+- Added emissions to bottle o' enchanting and filled end portal frames.
+- Tweaked Nether Gold Ore specular map.

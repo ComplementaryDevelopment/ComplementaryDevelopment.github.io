@@ -1,0 +1,3 @@
+Changes over v2.3:
+- Fixed fog not affecting water in some specific situations.
+- Fixed "The Twilight Forest" modded dimension being broken.

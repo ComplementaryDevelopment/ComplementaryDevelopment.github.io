@@ -1,0 +1,11 @@
+Changes over v1.4:
+- Added distance blur that makes light sources scatter over distance. By default this effect is very subtle, but its strength can be increased in the shader options.
+- Improved the bloom even more.
+- Gave the nether a seperate bloom to simulate the effect of high temperature/fog, without adding even more fog.
+- Tweaked clouds.
+- In the night, clouds are now more opaque and decrease the brightness of the moon and stars when they are behind the clouds.
+- Added per pixel ambient occlusion support to the... EminPBR? This will be needed for the future updates. (It uses alpha channel of the specular map. Lower the alpha, bigger the ambient occlusion.)
+- Mister Jack o'Lantern got some love.
+- Clamped the hand lightmap to make handheld emissives less blinding.
+- Removed DOF option. It was too buggy to be kept alive.
+- Some other small tweaks.

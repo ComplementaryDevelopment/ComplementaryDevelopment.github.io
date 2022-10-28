@@ -1,0 +1,6 @@
+Changes over v4.5:
+- Added missing sun/moon reflection to "Vanilla-ish" Water Type
+- Slightly improved performance of Scene-Aware Colored Lighting
+- Fixed disabling Normal Mapping with Generated Normals causing the visuals to break
+- Fixed the Darkness effect causing black screen in the Nether
+- Added "License" file. Overrides the previous agreement

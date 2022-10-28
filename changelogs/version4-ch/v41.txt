@@ -1,0 +1,16 @@
+Complementary Shaders started development during 2019, but the version 1.0 was based on the April 28 2020 development version of BSL v7.2.
+
+Changes over BSL v7.2 Development Version April 28 2020:
+- Changed tons of internal values ranging from colors to atmospherics.
+- Created a resource pack that must be used with the shader pack to supply PBR and other material data.
+- Added a lot of material specific effects ranging from per-pixel emissives to metallic blocks.
+- Removed some material specific effects of BSL.
+- Retweaked the sky.
+- Retweaked the shape and colors of clouds.
+- Reworked lightmap to appear much steeper and stronger.
+- Fixed a bunch of blocks getting too bright near a light source.
+- Fixed rain/snow effects disappearing after switching dimensions.
+- Added chunk border hiding fog.
+- Improved ray tracer to avoid incorrect reflections.
+- Reduced the intensity of TAA to mitigate artifacts.
+- A lot of minor tweaks.

@@ -1,0 +1,9 @@
+Changes over v1.3:
+- Tweaked the bloom tiles to complement per pixel emissives.
+- End rods, magma blocks, glowstones and campfires have been improved.
+- Made blazes', phantoms' and withers' eyes emissive.
+- Made sea pickles' bright bits emissive since sea pickles emit light in this game.
+- Slightly reduced the brightness of sunrises and sunsets.
+- Slightly changed the water config.
+- Added an easter egg, because why not.
+- Removed Waving Fire/Water/Lava options as they are prone to bugs.

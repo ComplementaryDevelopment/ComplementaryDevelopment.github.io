@@ -1,0 +1,18 @@
+Changes over v2.8:
+- Added actual Rough Reflections using hardcoded normal multipliers (usually about 4 million texels per texture) that change roughness depending on smoothness of the material. Unlike most other methods, it runs pretty fast and produces nearly zero false reflections.
+- Added OldPBR as a Material Format option.
+- Added "Shadow Brightness" slider to Shadows section in Shader Options. It basically changes ambient lighting intensity during all times.
+- Fixed broken shadows/reflections on entities and block entities in Minecraft 1.15 and 1.16. You can disable the fix in Shader Options if you want to.
+- Improved the color handling of metals on all material formats.
+- Improved some specular maps including Iron/Gold/Prismarine Blocks.
+- Improved water reflections (on all water types).
+- Improved the lightmaps when using the Compatibility Mode or labPBR or OldPBR or no PBR.
+- Added "LiteTAA + FXAA" anti-aliasing option and it's enabled by default instead of FXAA now.
+- Added "Disable Foliage Shadows" option to Shadows section in Shader Options.
+- Fixed bright lines appearing at the edges of water.
+- Fixed changing Shading Strength causing problems with the Compatibility Mode light sources.
+- Fixed a problem with transparent textures underwater in Compatibility Mode (Fixes sea plants from "Underwater World" mod)
+- Water now casts shadows when "Sunlight Leak Fix" is set to OFF in order to make underwater less broken.
+- Added "Dynamic Trees" modded leaves to the block.properties.
+- Added "50 ShadeRs of Grey" option to the Colors menu in Shader Options.
+- Many other small changes/tweaks here and there.

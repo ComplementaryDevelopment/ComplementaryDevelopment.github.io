@@ -1,0 +1,5 @@
+Changes over v1.2:
+- Removed unnecessary textures from the resource pack in order to reduce loading times and potentially increase the performance.
+- Reworked Redstone Lamps to look less unlike vanilla Minecraft.
+- Vexes' eyes, wings and hands are now emissive as they should be.
+- Dead chorus fruits' orbs have been made emissive to give the End more of a magical look.

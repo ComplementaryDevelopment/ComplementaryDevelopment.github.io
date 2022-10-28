@@ -1,0 +1,11 @@
+Changes over v4.2.1:
+- Fixed clouds having noticeable banding during rain
+- Fixed particles in the distance having weird colors in the End with Ender Nebula or in the Nether with Nether Smoke enabled
+- Fixed beacon beams missing the outer layer after the Optifine H1 pre3 update
+- Fixed the atmosphere getting a bit too bright when it's just about to rain
+- Fixed a black screen problem in the Nether with a couple mods
+- IntegratedPBR changes:
+   - Added an option to disable emission on Copper Ore
+   - Added an option to turn Blue Concrete and Blue Wool into blue screens
+   - Fixed sides and bottom of Wet Farmland having incorrect reflections
+   - Fixed reflections on Deepslate Iron/Copper Ore being inconsistent with regular Deepslate

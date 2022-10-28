@@ -1,0 +1,14 @@
+Changes over v1.9:
+- Improved the unloaded area hiding fog. This fixes the precision issues that are caused by changing y levels.
+- Improved the specular maps of stones, grass blocks, bedrocks, concrete powders and sands in order to make them compatible with Alternate Blocks. Feel free to give feedback about tiling of these blocks' reflections.
+- Gave the dragon egg some love.
+- Added a "Minimum Light Boost" slider. Can be useful for long caving sessions, especially for streamers.
+- Somewhat reorganized the Shader Options.
+- Fixed water getting too bright in some rare situations.
+- Fixed little issues with jack o'lanterns, redstone lamps and sea pickles.
+- Fixed waving stuff appearing blurry with Photo Mode/IntenseTAA
+- Fixed the Distance Blur causing issues on AMD gpus.
+- Light Shafts have been re-enabled in the Medium (Default) and higher profiles. (Since the latest Optifine for 1.15.2 no longer has issues with it.)
+- Sky has been slightly tweaked.
+- Specular maps of planks have been slightly improved.
+- As always, some other small tweaks here and there.

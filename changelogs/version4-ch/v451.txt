@@ -1,0 +1,27 @@
+Changes over v4.5.1:
+- A bunch of general color and lighting tweaks to achieve a more natural look, including:
+   - Tweaked daytime sky saturation and brightness
+   - Tweaked daytime light shaft colors
+   - Tweaked sunlight color temperature during sunrise/sunset
+   - Tweaked ambient lighting brightness during day
+   - Tweaked lighting brightness on leaves
+   - Tweaked lighting brightness on block sides
+- Improved vanilla clouds to have an extended range and also appear taller
+- Added "Depth Of Field Focus" option for taking screenshots
+- Added "Water Waves" option. Disabled on "Potato" and "Vanilla / RTX-ish" profiles
+- Added Froglights to Scene-Aware Colored Lighting
+- Tweaked emissive layers of Warden, Endermen and Spiders
+- Tweaked the look of Glow Lichen (IntegratedPBR)
+- Reduced brightness of Glowstone, Sea Lantern, Jack o'Lantern and End Rod (IntegratedPBR)
+- Updated SSAO to Complementary Reimagined SSAO
+- Updated LiteTAA to Complementary Reimagined TAA
+- Fixed many modded blocks and/or resource pack models having some incorrect dark shading
+- Fixed labPBR/SEUSPBR/POM causing entities to have broken nametags
+- Fixed labPBR/SEUSPBR/POM causing broken textures for some (modded) blocks
+- Fixed labPBR/SEUSPBR/POM not working in older Minecraft versions
+- Slightly increased cloud movement depending on the camera altitude
+- Slightly tweaked water bumpiness handling
+- Optifine's dynamic lighting is no longer mostly disabled
+- Removed the feature where Rain Puddles are reduced near Light Sources if Rain Puddle Coverage isn't set to 100
+- Changing Water Type to "RTX-ish" or "Vanilla-ish" no longer reduces water bumpiness by itself
+- Updated license

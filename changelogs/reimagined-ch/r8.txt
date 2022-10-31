@@ -1,0 +1,5 @@
+Changes over r1.3:
+- Fixed water becoming invisible in the distance
+- Fixed entities having incorrect shadows on Optifine
+- Fixed Better Nether mod's Fireflies looking like black holes
+- Fixed snowy Podzol and Mycelium having inconsistent snow color (IntegratedPBR)

@@ -1,0 +1,2 @@
+Changes over r1.3.1:
+- Fixed incorrect shadows in multiple different scenarios

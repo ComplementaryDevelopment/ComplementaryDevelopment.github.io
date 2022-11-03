@@ -72,7 +72,7 @@
 	/* site-section */
 	.site-section {
 	   padding: 60px 0 100px;
-	} 
+	}
 
 	.heading-separator {
 		padding-bottom: 50px
@@ -141,14 +141,14 @@
 	}
 
 	/* PAGES */
-	/* 
+	/*
 	 * Portfolio-item
 	 */
 	.project-info h5 {
 		margin-top: 25px;
 	}
 
-	/* 
+	/*
 	 * Blog
 	 */
 	/* Sidebar */
@@ -178,7 +178,7 @@
 		min-width: 140px;
 		font-size: 14px;
 	}
-	
+
 	/* Elements */
 	/* Tabs */
 	.nav-tabs > li {
@@ -215,7 +215,7 @@
 	.site-header {
 		padding-top: 20px;
 	}
-	
+
 	.navbar-header .site-title {
 		padding-left: 15px;
 	}
@@ -273,8 +273,8 @@
 		background-color: var(--VeryLightGray);
 	}
 
-	.act .slicknav_icon-bar:first-child, 
-	.act .slicknav_icon-bar:last-child  { 
+	.act .slicknav_icon-bar:first-child,
+	.act .slicknav_icon-bar:last-child  {
 		position: absolute;
 		top: 10px;
 		height: 3px;
@@ -305,7 +305,7 @@
 	}
 
 	.slicknav_nav {
-		/*background: url(../img/IceSpikes.jpg) no-repeat center / cover;*/
+		/*background: url(../img/IceSpikes.avif) no-repeat center / cover;*/
 		background-color: rgba(0, 0, 0, 0.85);
 		padding-left: 0;
 		list-style: none;
@@ -407,7 +407,7 @@
 	/* site-section */
 	.site-section {
 	   padding: 30px 0 60px;
-	} 
+	}
 
 	.subheading-text {
 	    font-size: 16px;
@@ -507,14 +507,14 @@
 	.copyright {
 		padding: 15px 0;
 	}
-	
+
 	/* PAGES */
 	/* Portfolio */
 	#grid {
 		margin-top: 25px;
 	}
 
-	/* 
+	/*
 	 * Project item
 	 */
 	.project-img {
@@ -540,7 +540,7 @@
 		margin-top: 5px;
 	}
 
-	/* 
+	/*
 	 * Blog
 	 */
 	.blog-post + .blog-post,
@@ -609,7 +609,7 @@
 		padding-top: 5px
 	}
 
-	/* 
+	/*
 	 * Contact
 	 */
 	/* Section: Contact-us */
@@ -626,13 +626,13 @@
 		margin-top: 25px;
 	}
 
-	.contact-info .list-unstyled + h3, 
+	.contact-info .list-unstyled + h3,
 	.contact-info a + h3 {
 		margin: 15px 0 10px;
 	}
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
 	/* SITEMAIN */
 
@@ -711,7 +711,7 @@
 	}
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
 }

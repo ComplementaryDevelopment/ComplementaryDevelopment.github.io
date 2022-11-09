@@ -552,10 +552,6 @@ select {
     border-color: var(--ThemeColor);
 }
 
-.aaccordion:active {
-    border-color: var(--VeryLightGray);
-}
-
 .apanel {
     margin: 0px 72px;
     background-color: var(--VeryDarkGray);

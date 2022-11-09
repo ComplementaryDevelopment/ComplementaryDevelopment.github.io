@@ -96,7 +96,7 @@
                         <br>Following is a list of changes made to Complementary products with possible exceptions</p>
                         <p></p>
 
-                        <button class="aaccordion aaReimBtn" style="--ThemeColor: var(--ReimaginedColor);">Complementary Reimagined</button>
+                        <button class="aaccordion" id="aaReimBtn" style="--ThemeColor: var(--ReimaginedColor);">Complementary Reimagined</button>
                         <div class="apanel" style="margin-bottom: 40px; --ThemeColor: var(--ReimaginedColor);">
                             <p></p>
                             <p></p>
@@ -157,7 +157,7 @@
                             <p></p>
                             <p></p>
                         </div>
-                        <button class="aaccordion aaV4Btn" style="--ThemeColor: var(--VersionFourColor);">Complementary Shaders v4</button>
+                        <button class="aaccordion" id="aaV4Btn" style="--ThemeColor: var(--VersionFourColor);">Complementary Shaders v4</button>
                         <div class="apanel" style="margin-bottom: 40px; --ThemeColor: var(--VersionFourColor);">
                             <p></p>
                             <p></p>
@@ -481,8 +481,7 @@
         </section><!-- /.section-features -->
 
         <script>
-            var accR = document.getElementsByClassName("aaReimBtn");
-            accR[0].addEventListener("click", function() {
+            document.getElementById("aaReimBtn").addEventListener("click", function() {
                 Array.from(document.getElementsByClassName("cenR")).forEach(function(current, r, arr) {
                     var i = r+1;
                     var txtFile = new XMLHttpRequest();
@@ -500,13 +499,12 @@
                 });
             }, {once : true});
 
-            var accV4 = document.getElementsByClassName("aaV4Btn");
-            accV4[0].addEventListener("click", function() {
+            document.getElementById("aaV4Btn").addEventListener("click", function() {
                 Array.from(document.getElementsByClassName("cenV4")).forEach(function(current, v, arr) {
                     var i = v+1;
                     var txtFile = new XMLHttpRequest();
                     var allText = "Entry can not be loaded.";
-                    txtFile.onreadystatechange = async function () {
+                    txtFile.onreadystatechange = function () {
                         if (txtFile.readyState === XMLHttpRequest.DONE && txtFile.status == 200) {
                             allText = txtFile.responseText;
                             allText = allText.split("\n").join("<br>");

@@ -481,7 +481,7 @@
         </section><!-- /.section-features -->
 
         <script>
-            function load() {
+            function loadChangelogs() {
                 var cenR = document.getElementsByClassName("cenR");
                 var i;
                 for (i = 1; i < cenR.length + 1; i++) {
@@ -516,7 +516,7 @@
                     txtFile.send(null);
                 }
             }
-            window.onLoad = load();
+            window.onclick = loadChangelogs();
 
             var acc = document.getElementsByClassName("aaccordion");
             var i;

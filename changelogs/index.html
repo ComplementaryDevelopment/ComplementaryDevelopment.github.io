@@ -96,7 +96,7 @@
                         <br>Following is a list of changes made to Complementary products with possible exceptions</p>
                         <p></p>
 
-                        <button class="aaccordion" style="--ThemeColor: var(--ReimaginedColor);">Complementary Reimagined</button>
+                        <button class="aaccordion aaReimBtn" style="--ThemeColor: var(--ReimaginedColor);">Complementary Reimagined</button>
                         <div class="apanel" style="margin-bottom: 40px; --ThemeColor: var(--ReimaginedColor);">
                             <p></p>
                             <p></p>
@@ -157,7 +157,7 @@
                             <p></p>
                             <p></p>
                         </div>
-                        <button class="aaccordion" style="--ThemeColor: var(--VersionFourColor);">Complementary Shaders v4</button>
+                        <button class="aaccordion aaV4Btn" style="--ThemeColor: var(--VersionFourColor);">Complementary Shaders v4</button>
                         <div class="apanel" style="margin-bottom: 40px; --ThemeColor: var(--VersionFourColor);">
                             <p></p>
                             <p></p>
@@ -481,7 +481,8 @@
         </section><!-- /.section-features -->
 
         <script>
-            function load() {
+            var accR = document.getElementsByClassName("aaReimBtn");
+            accR[0].addEventListener("click", function() {
                 var cenR = document.getElementsByClassName("cenR");
                 var i;
                 for (i = 1; i < cenR.length + 1; i++) {
@@ -498,7 +499,10 @@
                     txtFile.open("GET", "/changelogs/reimagined-ch/r"+i+".txt", false);
                     txtFile.send(null);
                 }
+            }, {once : true});
 
+            var accV4 = document.getElementsByClassName("aaV4Btn");
+            accV4[0].addEventListener("click", function() {
                 var cenV4 = document.getElementsByClassName("cenV4");
                 var i;
                 for (i = 1; i < cenV4.length + 1; i++) {
@@ -515,8 +519,7 @@
                     txtFile.open("GET", "/changelogs/version4-ch/v4"+i+".txt", false);
                     txtFile.send(null);
                 }
-            }
-            window.onLoad = load();
+            }, {once : true});
 
             var acc = document.getElementsByClassName("aaccordion");
             var i;

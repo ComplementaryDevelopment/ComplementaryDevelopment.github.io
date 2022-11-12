@@ -927,12 +927,14 @@ html, body {
 .index-reimagined {
     float: left;
     max-width: 50%;
+    min-width: fit-content;
     background: url(../img/reimage.jpg) no-repeat top / cover;
 }
 
 .index-v4 {
     float: right;
     max-width: 50%;
+    min-width: fit-content;
     background: url(../img/v4image.jpg) no-repeat top / cover;
 }
 

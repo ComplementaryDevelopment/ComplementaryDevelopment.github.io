@@ -1,0 +1,34 @@
+Changes over r1.3.2:
+- Reworked daytime sky, sunlight, ambient, and cloud colors
+- Reworked rainy atmosphere
+- Improved ambient occlusion intensity calculations to look better in a wide variety of situations
+- Retweaked the tonemap handling with changes to the tonemap settings, a lot of color retweaks, and more
+- Retweaked atmospheric fog with better colors and less obstructive distribution
+- Added wind wave displacement effect to the water surface
+- Added "Snowy World" option
+- Added border fog blending to the clouds
+- Tweaked foliage and leaf shading to look better especially during noon
+- Tweaked the Nether light and fog colors
+- Tweaked TAA to prevent rare smudges and slightly reduce flickering
+- Tweaked entity and block entity lighting when the Entity Shadows option is disabled
+- Tweaked underwater sun glare
+- Changed some atmospheric fog conditions
+- IntegratedPBR Changes:
+   - Improved the look of a bunch of light sources using a new material recolor method
+   - Retweaked a lot of light sources to better fit the new tonemap variables
+   - Added lava particle handling
+   - Added support for Vanillatweaks' "Emeralds to Rubies" pack with Glowing Ores
+   - Tweaked the colors of many emissives including Lava, Fire, and Nether Stems
+   - Tweaked all particle colors to eliminate common particles looking brighter than intended
+   - Tweaked Vex emission to better suit the updated 1.19.3 Vexes
+- Foliage color tweaks are no longer IntegratedPBR exclusive
+- Leaf shadow optimisation is no longer IntegratedPBR exclusive
+- Setting "Shadow Quality" to Low no longer disables shadow filtering
+- Removed setting value colors in preference settings
+- Fixed cloud lighting looking incorrect in situations involving mountains or big structures
+- Fixed sun/moon light appearing on entities or items in caves
+- Fixed Light Shaft colors getting less accurate in the distance
+- Fixed dark cave fog appearing on terrain in some situations
+- Fixed leaves having incorrect lighting when there is a light source block near them
+- Fixed leaves getting split at the edges when waving
+- Fixed Aurora Borealis still being visible with blindness or darkness effects

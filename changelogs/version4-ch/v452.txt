@@ -1,0 +1,19 @@
+Changes over v4.6:
+- Improved Parallax Occlusion Mapping with Slope Normals. All thanks to null511
+- Improved foliage and leaf shading when shadows are disabled
+- Added an option to disable cloud and aurora reflections on water. Disabled on Potato Profile
+- Tweaked water color and reflection intensity when sky or terrain reflections are disabled
+- Tweaked non-real-time shadows to appear smoother
+- Tweaked TAA to prevent some smudges and slightly reduce flickering
+- Tweaked Froglight colors (IntegratedPBR)
+- Fixed visual artifacts on AMD's RX 7000 series GPUs
+- Fixed Parallax Occlusion Mapping being broken with high resolution PBR resource packs on Iris
+- Fixed some particles no longer being visible behind translucents on newer Iris versions
+- Fixed enabling Snow Mode causing the visuals to break in some situations
+- Fixed Rain Puddles making foliage look incorrect when Real-Time Shadows are disabled
+- Fixed sun/moon light and reflections appearing on incorrect texels with some normal maps
+- Fixed Rain Puddles appearing on top of Cauldron Water when Rain Puddle Biome Check is disabled
+- "Potato" Profile now uses the RTX-ish Water Type to look better with no waves
+- Disabled Lens Flare when the camera is underwater
+- Force-disabled Scene Aware Colored Lighting on Mc versions below 1.16.5 to prevent broken lighting
+- Updated license

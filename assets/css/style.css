@@ -1,27 +1,27 @@
 /*
- * Theme Name:
- * Theme URI:
+ * Theme Name: 
+ * Theme URI: 
  * Author: Milan Savov, Nikola Kostov
  * Author URI/Mail: milan.savov@gmail.com, nikolakostov1991@gmail.com
  * Version: 1.0
  * */
 
- /* TABLE OF CONTENT
+ /* TABLE OF CONTENT 
 *
 * - CUSTOM RESETS
     - Buttons
     - Forms
 * - LAYOUT
-* - HEADER
+* - HEADER 
     - Site Logo
     - Navigation
 * - HERO (BANNER)
 * - HOMEPAGE SECTIONS
-    - Features
+    - Features 
     - Services
-    - Map Feature
+    - Map Feature 
     - Portfolio
-    - Newsletter
+    - Newsletter 
 * - FOOTER
 * - PAGES
     - PORTFOLIO
@@ -32,7 +32,7 @@
 *
 */
 
-/*
+/* 
 ================================================== */
 :root {
     --CompRed: rgb(255, 66, 66);
@@ -160,7 +160,7 @@ p + p {
 
 .btn-orange {
     background-color: var(--ThemeColor);
-    color: #fff;
+    color: #fff;  
 }
 
 .btn:hover,
@@ -177,8 +177,8 @@ button.btn:focus {
     color: #fff;
 }
 
-/*
- * Forms
+/* 
+ * Forms 
  */
 /* Input fields */
 .form-group {
@@ -238,7 +238,7 @@ input[type=radio] {
 
 .checkbox {
     margin: 0;
-}
+} 
 
 .checkbox + .checkbox,
 .radio-btn + .radio-btn {
@@ -256,8 +256,8 @@ input[type=radio] {
 .checkbox [type="checkbox"]:checked + label:before {
     content: '';
     position: absolute;
-    left:0;
-    width: 20px;
+    left:0; 
+    width: 20px; 
     height: 20px;
     background-color: #fff;
     border: 1px solid var(--DarkGray);
@@ -345,7 +345,7 @@ input[type=radio] {
 .radio-btn [type="radio"]:checked + label:before {
     content: '';
     position: absolute;
-    left:0;
+    left:0; 
     top: 50%;
     width: 20px;
     height: 20px;
@@ -454,7 +454,7 @@ select {
 
 .bootstrap-select.open .dropdown-menu {
     display: block;
-    border: 1px solid var(--VeryLightGray);
+    border: 1px solid var(--VeryLightGray); 
     border-radius: 10px;
 }
 
@@ -484,7 +484,7 @@ select {
     border-top: 6px dashed;
     border-top: 6px solid\9;
     border-right: 6px solid transparent;
-    border-left: 6px solid transparent;
+    border-left: 6px solid transparent;   
 }
 
 .bootstrap-select .selected {
@@ -541,7 +541,7 @@ select {
     outline: none;
     transition: 0.4s;
     border: 2px solid var(--DarkGray);
-
+    
     font-family: 'minecraftchmc';
     font-size: 26px;
     line-height: 36px;
@@ -633,8 +633,8 @@ select {
 .accordion .panel-heading a.collapsed:hover,
 .accordion.accordion-gray .panel-heading a.collapsed:hover,
 .accordion .panel-heading a {
-    background-color: var(--ThemeColor);
-    color: #fff;
+    background-color: var(--ThemeColor);   
+    color: #fff; 
 }
 
 .accordion .panel-heading a.collapsed::after {
@@ -654,7 +654,7 @@ select {
     -webkit-transform: translateY(-50%);
 }
 
-.panel-group .panel-heading+.panel-collapse>.list-group,
+.panel-group .panel-heading+.panel-collapse>.list-group, 
 .panel-group .panel-heading+.panel-collapse>.panel-body {
     border: none;
 }
@@ -717,7 +717,7 @@ html, body {
     /*font-family: 'minecraftchmc';*/
     background-color: var(--VeryDarkGray);
     color: var(--VeryLightGray);
-
+    
     font-size: 1.0em;
 }
 
@@ -762,7 +762,7 @@ html, body {
 }
 
 .site-title:hover {
-    color: var(--VeryLightGray);
+    color: var(--VeryLightGray);   
 }
 
 /*.site-title span {
@@ -783,7 +783,7 @@ html, body {
     display: inline-block;
 }
 
-.navbar-nav > li > a,
+.navbar-nav > li > a, 
 .slicknav_nav > li > a {
     padding: 0;
     font-size: 16px;
@@ -805,17 +805,17 @@ html, body {
     margin-left: 30px;
 }
 
-.nav .open > a,
-.nav .open > a:focus,
+.nav .open > a, 
+.nav .open > a:focus, 
 .nav .open > a:hover,
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus,
 .navbar-nav > li.active > a,
 .navbar-collapse li a:hover,
-.dropdown.open > a,
+.dropdown.open > a, 
 .site-header-white .dropdown.open > a,
-.dropdown-menu a:hover,
-.dropdown:hover > a,
+.dropdown-menu a:hover, 
+.dropdown:hover > a, 
 .dropdown-menu>li>a:focus,
 .dropdown-menu li a:hover,
 .slicknav_nav > li.active a,
@@ -1072,7 +1072,7 @@ html, body {
 }
 
 .shaders-v4-hero {
-    background: url(../img/v4image.jpg) no-repeat center / cover;
+    background: url(../img/v4image.jpg) no-repeat center / cover;   
 }
 
 .contact-hero {
@@ -1098,12 +1098,12 @@ html, body {
     visibility: hidden;
     opacity: 0;
 }
-
+  
 .overlayer:target {
     visibility: visible;
     opacity: 1;
 }
-
+  
 .popup {
     margin: 80px auto;
     background: var(--VeryDarkGray);
@@ -1112,11 +1112,11 @@ html, body {
     position: relative;
     transition: all 0s ease-in-out;
 }
-
+  
 .popup .content {
     overflow: auto;
 }
-
+  
 .close {
     position: absolute;
     top: 0px;
@@ -1129,7 +1129,7 @@ html, body {
     text-decoration: none;
     color: white;
 }
-
+  
 .close:hover {
     color: var(--ThemeColor);
 }
@@ -1140,7 +1140,7 @@ html, body {
 
 table, th, td {
     margin-top: 35px;
-    margin-left: auto;
+    margin-left: auto; 
     margin-right: auto;
 
     border:1px solid var(--VeryLightGray);
@@ -1230,7 +1230,7 @@ table, th, td {
 }
 
 .service-info {
-    font-size: 13px;
+    font-size: 13px; 
 }
 
 .counter {
@@ -1285,8 +1285,8 @@ table, th, td {
 }
 
 .portfolio-item-title {
-    width: 150px;
-    top: 15px;
+    width: 150px; 
+    top: 15px;  
     transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
     -moz-transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
     -webkit-transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
@@ -1426,7 +1426,7 @@ table, th, td {
 
 a.discord-bg {
     color: #5865F2;
-    border-color: #5865F2;
+    border-color: #5865F2; 
     background: url(../img/companylogo/discord2.png) no-repeat center;
     background-color: #5865F2;
 }
@@ -1493,7 +1493,7 @@ a.github-bg:hover {
     color: #fff;
 }
 
-/*
+/* 
  * Portfolio
  */
 .portfolio-sorting li:nth-child(-n+3){
@@ -1508,8 +1508,8 @@ a.github-bg:hover {
 
 .portfolio-sorting li .active {
     background-color: var(--ThemeColor);
-    color: #fff;
-    box-shadow: none;
+    color: #fff;  
+    box-shadow: none;   
 }
 
 #grid {
@@ -1530,7 +1530,7 @@ a.github-bg:hover {
     opacity: 0.3;
 }
 
-/*
+/* 
  * Portfolio-item
  */
 .project-img {
@@ -1558,7 +1558,7 @@ a.github-bg:hover {
 
 .project-date-category p span {
     font-size: 14px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     color: var(--VeryLightGray);
     font-weight: 400;
 }
@@ -1577,7 +1577,7 @@ a.github-bg:hover {
     padding-top: 0;
 }
 
-/*
+/* 
  * Blog
  */
 .blog-post + .blog-post {
@@ -1611,7 +1611,7 @@ a.github-bg:hover {
 }
 
 .post-content a {
-    color: var(--VeryLightGray);
+    color: var(--VeryLightGray);   
 }
 
 .post-content .read-more {
@@ -1623,7 +1623,7 @@ a.github-bg:hover {
 .post-content .read-more:after {
     content: '';
     display: block;
-    background-color: var(--VeryLightGray);
+    background-color: var(--VeryLightGray);  
     width: 20px;
     height: 2px;
     position: absolute;
@@ -1637,7 +1637,7 @@ a.github-bg:hover {
 }
 
 .post-content .read-more:hover:after {
-    background-color: var(--ThemeColor);
+    background-color: var(--ThemeColor); 
 }
 
 .blog-post a:hover + .post-content .post-title a,
@@ -1686,7 +1686,7 @@ a.github-bg:hover {
     margin-top: 60px;
 }
 
-/*
+/* 
  * Blog post
  */
 /* Post Comments */
@@ -1774,7 +1774,7 @@ a.github-bg:hover {
     font-size: 18px;
     margin: 0 0 30px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1px;   
 }
 
 .widget .list-unstyled a:hover {
@@ -1795,7 +1795,7 @@ a.github-bg:hover {
     border-top: 1px solid rgba(224, 224, 224, 0.05)
 }
 
-/*
+/* 
  * Contact
  */
 /* Section: Contact-us */
@@ -1811,7 +1811,7 @@ a.github-bg:hover {
     margin: 0 0 10px 20px;
     color: var(--VeryLightGray);
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 300; 
 }
 
 .section-contact-us textarea {

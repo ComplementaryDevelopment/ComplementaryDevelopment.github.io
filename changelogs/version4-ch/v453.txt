@@ -1,0 +1,2 @@
+Changes over v4.7:
+- Fixed crash on Optifine 1.19.3

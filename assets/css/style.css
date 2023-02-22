@@ -905,9 +905,14 @@ html, body {
   z-index: 0;
 }
 
+.index-shader-container {
+    display: block;
+}
+
 .index-shader {
-    max-width: 890px;
-    width: 100%;
+    width: 45%;
+    float: left;
+    min-width: fit-content;
     margin-bottom: 50px;
     margin-left: -20px;
     margin-right: -20px;
@@ -925,16 +930,10 @@ html, body {
 }
 
 .index-reimagined {
-    float: left;
-    max-width: 45%;
-    min-width: fit-content;
     background: url(../img/reimage.jpg) no-repeat top / cover;
 }
 
 .index-v4 {
-    float: left;
-    max-width: 45%;
-    min-width: fit-content;
     background: url(../img/v4image.jpg) no-repeat top / cover;
 }
 
@@ -953,7 +952,6 @@ html, body {
     position: relative;
     margin: 30px 0 30px;
     font-size: 20px;
-    line-height: 50%;
     color: var(--VeryLightGray);;
     max-width: 100%;
 }
@@ -966,6 +964,8 @@ html, body {
     font-size: 16px;
     color: var(--VeryLightGray);;
     max-width: 55%;
+    min-width: 340px;
+    margin-bottom: 50px;
 }
 
 .index-shader .btn {

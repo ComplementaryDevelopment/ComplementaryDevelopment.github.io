@@ -926,14 +926,14 @@ html, body {
 
 .index-reimagined {
     float: left;
-    max-width: 50%;
+    max-width: 45%;
     min-width: fit-content;
     background: url(../img/reimage.jpg) no-repeat top / cover;
 }
 
 .index-v4 {
-    float: right;
-    max-width: 50%;
+    float: left;
+    max-width: 45%;
     min-width: fit-content;
     background: url(../img/v4image.jpg) no-repeat top / cover;
 }
@@ -956,6 +956,16 @@ html, body {
     line-height: 50%;
     color: var(--VeryLightGray);;
     max-width: 100%;
+}
+
+.index-shader-desc p {
+    float: right;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--VeryLightGray);;
+    max-width: 55%;
 }
 
 .index-shader .btn {

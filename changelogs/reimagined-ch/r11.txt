@@ -1,0 +1,95 @@
+Changes over r1.4:
+- Added "Visual Style" option:
+   * "Reimagined" style has the same visuals as before, and is the default style
+   * "Fantasy" style sets all applicable settings to semi-realistic fantasy variants
+   * Added "Default Style" setting option to all affected settings, replacing previous defaults 
+- Added "Fantasy" Cloud Style option
+- Added "Fantasy" Sun/Moon Style option
+- Added "Fantasy" Aurora Borealis Style option
+- Added "Sun/Moon Angle" setting
+- Added support for labPBR and SEUSPBR resource packs:
+   * Added normal mapping support
+   * Added custom smoothness support
+   * Added custom metalness support
+   * Added custom f0 support
+   * Added custom emission support
+- Added support for older Minecraft versions down to 1.7.10:
+   * Fixed flickering image
+   * Fixed water color, opacity, caustics, and reflection handling
+   * Fixed foliage and leaf lighting
+   * Fixed waving blocks
+   * Fixed IntegratedPBR materials
+- Added Image Sharpening. Set to 3 by default
+- Added "Light Shaft Mode" setting. Modes being "Scene Aware", "Regular", and "Extreme"
+- Added a setting to adjust the intensity of Atmospheric Fog
+- Added an option to disable Cave Fog
+- Added an option to disable Vignette
+- Added an option for Aurora Borealis to appear under full moon "or" in snowy biomes at the same time
+- Added extra directional shading for resource pack PBR to look better in unlit areas
+- Improved night time sky and light shaft balance to provide a darker feel without hurting visibility
+- Improved the End dimension lighting
+- Improved TAA to reduce shimmering and crawling
+- Tweaked sun/moon lighting balance to be more consistent at different angles
+- Tweaked blocklight to no longer appear too bright under sunlight
+- Tweaked light shaft colors during morning, noon, and evening; not including sunrise or sunset
+- Tweaked Border Fog to improve visibility
+- Tweaked underwater color handling to better preserve per-biome water colors
+- Tweaked atmospheric fog color during early sunrise and late sunset
+- Tweaked the opacity handling and caustics of Fantasy water
+- Tweaked the Normal mode brightness of Dynamic Handheld Lighting
+- Tweaked atmosphere when the moon have just appeared / is about to disappear
+- Tweaked sun/moon light to no longer lose brightness when shining into darker areas
+- Tweaked Reimagined clouds' opacity when viewed towards the sun or moon
+- Tweaked shading in the Nether
+- Tweaked sky saturation during night time and rainy day time
+- Tweaked night time rain atmosphere
+- Tweaked moon glare color and brightness
+- Tweaked Aurora Borealis brightness
+- Tweaked Vignette darkness
+- Tweaked held item lighting to improve held map visibility during daytime
+- IntegratedPBR Changes:
+   * Added Generated Normals and Coated Textures support for entities and held items
+   * Reworked bright texture handling to make blocks like Sand and Bone Block distinguishable
+   * Reworked Generated Normals on water
+   * Tweaked the color of Magma Blocks to better match Lava
+   * Tweaked lily pad reflections
+   * Tweaked Crimson Stems to prevent some pixels looking too white
+   * Increased the opacity of Campfire Smoke
+   * Fixed Warped Stems losing their glow in the distance
+   * Fixed Command Blocks looking incorrect with the Faithful resource pack
+   * Fixed emission of Sea Lanterns and Froglights not adjusting to Resource Pack resolution
+   * Fixed brightly colored chains having emission
+   * Fixed Allays looking too bright with some resource packs
+- Slightly tweaked morning atmospheric fog
+- Slightly tweaked water opacity and reflection intensity handling
+- Slightly tweaked the Cave Lighting setting
+- Slightly tweaked waving water height
+- Slightly reduced daytime atmospheric fog brightness during rain
+- Moved all menus under Preference Settings to the main Shader Options menu
+- Both Cloud Layer Altitude settings can now be freely set to values ranging from 8 to 400
+- Increased Shadow Quality on Very High and Ultra profiles
+- Reduced the quality of "High" and "Very High" Shadow Quality options and added a new "Ultra" tier
+- Slightly slowed down the Aurora Borealis animation
+- Renamed "Realistic-ish" Water Style option to "Fantasy"
+- Fixed broken lighting near translucents if shadowmap resolution have been changed
+- Fixed border fog not being correct when viewed towards the direction of the moon
+- Fixed Border Fog not being correctly applied to reflections on water in some situations
+- Fixed light shafts having inverted brightness at specific times of day during rain
+- Fixed Scene-Aware Light Shafts not appearing in some suitable situations
+- Fixed Scene-Aware Light Shafts causing pulsing light shafts
+- Fixed incorrect sky reflections on water in some situations
+- Fixed Reimagined clouds having incorrect opacity in some situations
+- Fixed multiple lighting inconsistencies regarding item frames
+- Fixed multiple lighting problems on vines
+- Fixed some particles no longer being visible behind translucents on newer Iris versions
+- Fixed some resource pack sun/moons not being treated correctly
+- Fixed held translucent items causing flickering behind them
+- Fixed sun getting too bright during early sunrise / late sunset if "Sun/Moon Horizon" is disabled
+- Fixed Bloom Strength setting not affecting the extra bloom of humid conditions
+- Fixed enchantment glint opacity not being correct on Mc versions 1.19.4 and above
+- Fixed some opaque modded blocks getting fully reflective for no reason
+- Fixed water showing an incorrectly colored circle in some situations
+- Fixed some modded surfaces having incorrect lighting
+- Fixed some modded/custom particles looking incorrect
+- Fixed fog on oceans and superflat worlds looking a bit too bright during night
+- Fixed non-specified translucents being treated like Stained Glass

@@ -13,6 +13,9 @@ Changes over r1.4:
    * Added custom metalness support
    * Added custom f0 support
    * Added custom emission support
+- Added "Potato" Profile, using the following new features:
+   * Added "Potato" Shadow Quality value. Disables real-time shadows and applies tweaks to keep things balanced
+   * Added "Potato" Reflection Quality value. Replaces ray-traced reflections with a faster method
 - Added support for older Minecraft versions down to 1.7.10:
    * Fixed flickering image
    * Fixed water color, opacity, caustics, and reflection handling
@@ -45,6 +48,7 @@ Changes over r1.4:
 - Tweaked night time rain atmosphere
 - Tweaked moon glare color and brightness
 - Tweaked Aurora Borealis brightness
+- Tweaked underwater fog when Light Shafts are disabled
 - Tweaked Vignette darkness
 - Tweaked held item lighting to improve held map visibility during daytime
 - IntegratedPBR Changes:
@@ -82,6 +86,7 @@ Changes over r1.4:
 - Fixed multiple lighting inconsistencies regarding item frames
 - Fixed multiple lighting problems on vines
 - Fixed some particles no longer being visible behind translucents on newer Iris versions
+- Fixed the Light Shaft Quality setting not interacting with the Ender Nebula correctly
 - Fixed some resource pack sun/moons not being treated correctly
 - Fixed held translucent items causing flickering behind them
 - Fixed sun getting too bright during early sunrise / late sunset if "Sun/Moon Horizon" is disabled

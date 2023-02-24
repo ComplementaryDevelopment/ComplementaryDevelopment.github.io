@@ -1,0 +1,2 @@
+Changes over r2.0:
+- Fixed older Minecraft versions having broken shadows

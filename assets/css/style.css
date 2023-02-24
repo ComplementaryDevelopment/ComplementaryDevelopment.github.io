@@ -553,7 +553,7 @@ select {
 }
 
 .apanel {
-    margin: 0px 72px;
+    margin: 0px 3%;
     background-color: var(--VeryDarkGray);
     max-height: 0;
     overflow: hidden;

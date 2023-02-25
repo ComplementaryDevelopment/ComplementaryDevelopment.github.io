@@ -1,2 +1,3 @@
 Changes over r2.0:
 - Fixed older Minecraft versions having broken shadows
+- Separated the Real-Time Shadows toggle from the Shadow Sample Quality setting

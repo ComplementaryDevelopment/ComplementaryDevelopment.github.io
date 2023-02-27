@@ -1,0 +1,8 @@
+Changes over r2.0.1:
+- Added edge smoothing to "Potato" quality reflections
+- Fixed incorrect shadows under entities when the Real-Time Shadows option is disabled
+- Fixed setting Cave Lighting to "Very Dark" causing visual problems with RP PBR
+- Fixed vines and cobwebs getting incorrect sun/moon light in closed areas
+- Fixed light shafts being slightly offset, most noticeably in the End or underwater
+- Fixed flickering pixel on campfires (IntegratedPBR)
+- Fixed Generated Normals on water with Physics Mod (IntegratedPBR)

@@ -1,0 +1,5 @@
+Changes over r2.0.2:
+- Fixed lava texture being incorrect with lower mipmap levels
+- Fixed translucent colored light shafts looking brighter than the atmosphere during night
+- Fixed lanterns looking incorrect with some resource packs
+- Fixed broken visuals with Physics Mod

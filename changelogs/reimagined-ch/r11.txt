@@ -16,7 +16,7 @@ Changes over r1.4:
 - Added "Potato" Profile, using the following new features:
    * Added "Potato" Shadow Quality value. Disables real-time shadows and applies tweaks to keep things balanced
    * Added "Potato" Reflection Quality value. Replaces ray-traced reflections with a faster method
-- Added support for older Minecraft versions down to 1.7.10:
+- Added support for older Minecraft versions down to 1.8.9:
    * Fixed flickering image
    * Fixed water color, opacity, caustics, and reflection handling
    * Fixed foliage and leaf lighting

@@ -128,7 +128,9 @@ p + p {
 
 /* Buttons */
 .btn {
-    line-height: 50px;
+    padding: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
     min-width: 200px;
     font-size: 18px;
     font-weight: 300;
@@ -136,7 +138,6 @@ p + p {
     border-radius: 50px;
     color: var(--VeryLightGray);
     background-color: var(--DarkGray);
-    padding: 0;
     transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
     -moz-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
     -webkit-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;

@@ -46,6 +46,7 @@
 
     --ThemeColor: var(--IndexColor);
 
+    --VeryVeryDarkGray: rgb(30, 30, 31);
     --VeryDarkGray: rgb(40, 40, 42);
     --DarkGray: rgb(68, 68, 72);
     --VeryLightGray: rgb(254, 254, 254);
@@ -146,6 +147,10 @@ p + p {
 }
 
 .btn-border {
+    border: 2px solid var(--ThemeColor);
+}
+
+.btn-installer {
     border: 2px solid var(--ThemeColor);
 }
 
@@ -1024,17 +1029,16 @@ html, body {
     max-width: 100%;
 }
 
-.hero-text .btn {
+.hero-text .btn-border {
     position: relative;
     margin: 5px;
     background-color: transparent;
     max-width: 100%;
 }
-
-.hero-text .btn:focus {
+.hero-text .btn-border:focus {
     color: var(--VeryLightGray);
 }
-.hero-text .btn:hover {
+.hero-text .btn-border:hover {
     background-color: rgba(0, 0, 0, 0.25);
     color: var(--ThemeColor);
     border-color: var(--VeryLightGray);
@@ -1166,8 +1170,9 @@ table, th, td {
 
 /* site-section */
 .site-section {
-   padding: 50px 0 60px;
-   background-color: var(--VeryDarkGray);
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: var(--VeryDarkGray);
 }
 
 .subheading-text {
@@ -1210,6 +1215,44 @@ table, th, td {
     position: absolute;
     right: 15px;
     height: 380px;
+}
+
+/* Section: Downloads */
+.section-downloads {
+    margin-top: -15px;
+    margin-bottom: 55px;
+    background-color: var(--VeryVeryDarkGray);
+}
+
+.section-downloads h2 {
+    margin-top: -15px;
+    margin-bottom: -10px;
+}
+
+.section-downloads .download-title {
+    color: var(--ThemeColor);
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.section-downloads p {
+    font-size: 16px;
+    color: var(--VeryLightGray);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.section-downloads .btn-installer {
+    border-color: var(--CompOrange);
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background: url(../img/Rscreenshots/IceSpikesR.jpg) no-repeat top / cover;
+}
+.section-downloads .btn-installer:hover {
+    color: var(--CompOrange);
+    border-color: white;
 }
 
 /* Section: Screenshots */
@@ -1864,4 +1907,14 @@ a.github-bg:hover {
 .section-map {
   height: 500px;
   width: 100%
+}
+
+/* Ad Stuff */
+.adsbygoogle {
+    background-color: var(--VeryVeryDarkGray);
+}
+.ad-div1 {
+    margin-top: -10px;
+    padding-bottom: 40px;
+    text-align: center;
 }

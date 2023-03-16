@@ -150,10 +150,6 @@ p + p {
     border: 2px solid var(--ThemeColor);
 }
 
-.btn-installer {
-    border: 2px solid var(--ThemeColor);
-}
-
 .btn-fill {
     background-color: var(--ThemeColor);
     color: #fff;
@@ -1244,15 +1240,26 @@ table, th, td {
 }
 
 .section-downloads .btn-installer {
-    border-color: var(--CompOrange);
+    border: 2px solid var(--ThemeColor);
+
+    border-color: var(--ThemeColor);
     color: white;
     font-weight: bold;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    background: url(../img/Rscreenshots/IceSpikesR.jpg) no-repeat top / cover;
+    /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
+    background: url(../img/installButton.jpg) no-repeat top / cover;
 }
 .section-downloads .btn-installer:hover {
-    color: var(--CompOrange);
+    color: var(--ThemeColor);
     border-color: white;
+}
+.section-downloads .btn-manual {
+    color: white;
+    background-color: var(--VeryDarkGray);
+}
+.section-downloads .btn-manual:hover {
+    color: white;
+    background-color: var(--DarkGray);
 }
 
 /* Section: Screenshots */
@@ -1913,8 +1920,33 @@ a.github-bg:hover {
 .adsbygoogle {
     background-color: var(--VeryVeryDarkGray);
 }
+
+.ad-vertical {
+    /* background-color: transparent; */
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
+    
+    border: 2px solid rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1100px) or (max-height: 500px) {
+    .ad-vertical {
+        display: none;
+    }
+}
+.ad-v1 {
+    float: left;
+    margin-left: 10%;
+}
+.ad-v2 {
+    float: right;
+    margin-right: 10%;
+}
+
 .ad-div1 {
-    margin-top: -10px;
-    padding-bottom: 40px;
+    margin-top: -30px;
+    padding-bottom: 35px;
     text-align: center;
 }

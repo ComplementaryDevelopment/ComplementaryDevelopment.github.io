@@ -30,6 +30,7 @@ Changes over r2.0.3:
    * Tweaked the color of water splash particles
    * Fixed crying obsidian, respawn anchor and lit furnace looking incorrect with some resource packs
 - "Cloud Shadows" option now also supports "Fantasy" Cloud Style
+- Increased the range of the Tonemap Exposure slider
 - Slightly increased water wave speeds
 - Separated the Reflection Quality setting to "Water" and "Block" variants
 - Fixed many issues on Minecraft versions ranging from 1.8.9 to 1.12.2:

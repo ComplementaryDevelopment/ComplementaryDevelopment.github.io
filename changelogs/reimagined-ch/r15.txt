@@ -1,0 +1,52 @@
+Changes over r2.0.3:
+- Extended support for SEUSPBR/labPBR resource packs, including:
+   * Added Parallax Occlusion Mapping
+   * Added "POM Lighting Mode" setting with "Sharp" and "Smooth" options
+   * Added self shadowing, enabled with POM
+   * Added "Directional Blocklight" option
+   * Tweaked normal handling to improve lighting at shallow angles
+- Added "High" Block Reflection Quality option with smoother reflections using a temporal filter
+- Added water refraction, enabled with "High" Water Quality or higher profiles
+- Added subtle water absorption, always enabled
+- Added over 40 sliders for precise atmosphere and lighting color customization
+- Added color grading settings
+- Added "Water Wave Strength" setting
+- Added more selection outline settings
+- Added "Subtle" SSAO option
+- Added options to make rain puddles appear without needing rain
+- Added an option to disable the interior check for the Reimagined clouds
+- Added automatically appearing instructions to fix lava appearing insanely bright
+- Improved all High and Medium quality reflections:
+   * Improved edge smoothing
+   * Slightly improved performance
+   * Slightly improved general clarity
+   * Fixed incorrect colors at reflection edges
+   * Fixed circle shaped artifacts (thanks to Capt Tatsu)
+- Improved water opacity, fog, color, and shadow handling to fix many inconsistencies
+- Improved small-scale lighting balance when using custom pbr or generated normals
+- IntegratedPBR Changes:
+   * Added "Glowing Lapis Lazuli Block" option
+   * Added an option to disable Generated Normals and Coated Textures on entities
+   * Tweaked the color of water splash particles
+   * Fixed crying obsidian, respawn anchor and lit furnace looking incorrect with some resource packs
+- "Cloud Shadows" option now also supports "Fantasy" Cloud Style
+- Slightly increased water wave speeds
+- Separated the Reflection Quality setting to "Water" and "Block" variants
+- Fixed many issues on Minecraft versions ranging from 1.8.9 to 1.12.2:
+   * Fixed underwater light shafts being incorrectly colored
+   * Fixed water shadows/caustics being incorrectly colored
+   * Fixed water color turning black in swamps with Reimagined water
+   * Fixed multiple errors with the Fantasy water
+   * Fixed custom skyboxes breaking the sky visuals
+   * Fixed sugar canes looking incorrect
+- Fixed sun/moon lighting getting darker at far distances from the camera
+- Fixed waving water styles not having waves when generated normals are active
+- Fixed held items not being able to cast intense reflections when using custom pbr
+- Fixed blocks near water getting incorrect water shadows at distance
+- Fixed some modded blocks or rp translucents with opaque parts looking glitched
+- Fixed sky color breaking in some situations involving mods, resource packs, or data packs
+- Fixed modded translucents casting shadows that are too bright
+- Fixed entity texture problems with some mods, including the Savage & Ravage mod
+- Fixed the selection outline being incorrectly colored in some situations
+- Fixed custom PBR causing problems on water in some rare cases
+- Fixed water foam not being visible in some intended situations

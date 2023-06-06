@@ -1,0 +1,42 @@
+Changes over r2.1:
+- Added support for Minecraft 1.20 additions, including both subsurface and IntegratedPBR materials
+- Added water color multiplier sliders
+- Added sliders to adjust the intensity of light shafts
+- Added "Shadow Light Multiplier" setting to adjust the darkness of shadows
+- Reworked Scene Aware Light Shafts:
+   * Situations where the effect hurts the visibility should now be mostly eliminated (like just entering a small building)
+   * More situations should get intense light shafts, especially the tighter scenes (like navigating deep down in a jungle)
+   * Intense light shafts should no longer disappear when the player gets close, unless they move to a more open area
+   * The speed of Light Shaft intensity change has been changed depending on the situation
+- Improved reflection filtering in multiple different ways to reduce smudging and noise
+- Improved reflection handling for held items to overcome certain limitations
+- Improved underwater light shafts to have more detail
+- Improved the look of water surface from underwater
+- Tweaked sunrise/sunset ambiance colors to be less blue and more pink
+- Tweaked the brightness and amount of water foam on Fantasy water to be less intense
+- Tweaked the waves of Fantasy water style to appear less flat from a distance
+- Tweaked underwater fog (not light shafts) to respect biome colors
+- Tweaked water color handling for better water visibility in caves
+- Tweaked reflection color handling for more convincing smooth surfaces in certain situations
+- IntegratedPBR Changes:
+   * Added "Generated Normal Strength" setting
+   * Added "Coated Texture Strength" setting
+   * Added "Glowing Amethyst" setting with 3 options
+   * Tweaked sun/moon highlights on leaves
+   * Tweaked the colors of some reflective blocks
+   * Fixed material properties not being applied to potted plants
+   * Fixed lighting on doors looking too blocky
+   * Fixed several issues related to command block emission
+- Added back the ability of water to have custom PBR effects
+- Increased the limit of Selection Outline Brightness setting
+- Slightly tweaked Fantasy cloud colors during night
+- Disabled mipmaps on labPBR emissives to fix incorrect looking emission at distance
+- Fixed atmospheric fog not appearing in reflections, causing incorrect reflections especially during rain
+- Fixed highly reflective surfaces being able to cast reflections brighter than the blocks they are reflecting
+- Fixed incorrect reflections on water at some angles
+- Fixed Reimagined clouds not being able to have shadows on the surface if "Prevent Clouds in Interiors" is disabled
+- Fixed Directional Blocklight causing visual glitches in some situations
+- Fixed snowfall particles looking brighter than the terrain
+- Fixed Reimagined clouds opposite of the sun/moon disappearing when viewed from below
+- Fixed custom biome water colors looking incorrect in some cases
+- Fixed line renders having incorrect shading

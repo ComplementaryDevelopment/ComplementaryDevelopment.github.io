@@ -1100,6 +1100,11 @@ html, body {
     background: url(../img/v4screenshots/MountainsNearOcean.jpg) no-repeat center / cover;
 }
 
+.privacy-policy-hero {
+    background: url(../img/Rscreenshots/IceSpikesR.jpg) no-repeat top / cover;
+    box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.3);
+}
+
 .overlayer {
     position: fixed;
     top: 0;

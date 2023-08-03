@@ -1,0 +1,59 @@
+Changes over r2.2.1:
+- Reworked water waves of "Fantasy" and "Reimagined+Waves" Water Style options
+- Improved frame rates of "Potato" and "Low" profiles by over 25% on both by disabling effects that hurt low-end systems
+- Improved the performance of SSAO, while also adding a setting to adjust its quality
+- Improved the accuracy of water reflections on "Potato" Water Reflection Quality
+- Improved water wave parallax. Big thanks to Capt Tatsu
+- Improved Fantasy water caustics to match the new water waves
+- Improved light mixing. This improves the color balance of many scenes that involve different lights
+- Added "Very Low" profile. It runs 20% faster than the old Potato profile (r2.2.1) while having Real-Time Shadows enabled
+- Added "Detail Quality" performance setting. Adjust the quality of: TAA, Reimagined clouds, lighting tweaks
+- Added procedurally generated "Night Nebulae" option
+- Added "Vanilla" cloud style option
+- Added "Waving Lava Texture" option, enabled by default
+- Added a bunch of water wave customization settings
+- Added "Water Opacity Factor" setting
+- Added "Water Fog Factor" setting
+- Added blocklight color sliders replacing the old Cold/Natural/Warm modes
+- Added underwater color sliders
+- Added "Atmospheric Fog Distance" and "Atmospheric Fog Altitude" settings
+- Added "Fantasy - Smaller" Sun/Moon Style option
+- Added settings to freely adjust the intensity of SSAO and Vanilla AO
+- Added "Water Foam Intensity" setting
+- Added "Weather Texture Opacity" setting
+- Added "Chromatic Aberration" option
+- Added a separate "Water Caustic Style" setting
+- Added an option to make water color constant in all biomes
+- Added "Information" section to Shader Options with questions and credits
+- Added "Color Coded Programs" option for development/debug purposes
+- IntegratedPBR Changes:
+   * Added "Ore Glow Strength" option
+   * Added 11 separate options for different glowing ores
+   * Added an option to change the emission of the Glow Lichen
+   * Added a single option to enable/disable all Glowing Ore functionality
+   * Added "Glowing Modded Ores" option with a special ID in block.properties to detect ore pixels
+   * Tweaked vanilla ambient occlusion on Dirt Path blocks to look less intense
+   * Tweaked several emissive blocks to look a bit more natural
+   * Fixed powered rails always looking unpowered when viewed at an angle
+- Tweaked water lighting and reflection handling
+- Tweaked SSAO to appear better distributed
+- Tweaked sun/moon reflection handling
+- Tweaked water color in closed areas to look brighter. This can be disabled in Shader Options
+- Tweaked water biome color to make cold oceans less purple. This can be reverted in Shader Options
+- Atmospheric fog now starts further away from the player at higher render distances
+- Slightly increased sun/moon light and ambient brightness when Real-Time Shadows are disabled
+- Range of "Sun/Moon Angle" options have been extended
+- Look of light shafts behind translucents have been changed to fix blending issues
+- Color of Aurora Borealis is now affected by the Atmosphere Color Multiplier settings
+- Light Shafts can now also be turned off by setting the "Light Shaft Mode" setting to OFF
+- SSAO or Vanilla AO can now (also) be disabled by changing their intensity settings
+- Setting "Water Material Quality" to Low now also disables water wave parallax
+- "Double Reimagined Clouds" is now an option seperate from the Cloud Style setting
+- Fixed Scene-Aware light shafts never getting intense
+- Fixed lava looking brighter than intended on Iris
+- Fixed light shafts looking broken when Optifine or a mod messes with the shadowmap resolution
+- Fixed some modded/custom models looking too bright
+- Fixed water caustics disappearing when viewed at distance
+- Fixed Pink Petals having incorrect shadows during noon
+- Fixed sun/moon looking too bright in scenes that have cave fog
+- Several small menu, setting, and profile changes were made

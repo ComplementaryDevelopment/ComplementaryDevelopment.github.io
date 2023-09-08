@@ -36,7 +36,8 @@
 ================================================== */
 :root {
     --CompRed: rgb(255, 66, 66);
-    --CompOrange: rgb(222, 144, 64);
+    --CompOrange: rgb(255, 180, 80);
+    --CompOrangeBright: rgb(255, 220, 140);
     --CompBlue: rgb(114, 114, 255);
     --CompMiddle: rgb(255, 125, 222);
 
@@ -891,7 +892,7 @@ html, body {
 /* HERO
 ================================================== */
 .hero { 
-    background: url(../img/end.jpg) no-repeat top / cover;
+    background: url(../img/editedScreenshots/end.jpg) no-repeat top / cover;
     height: 100%;
     width: 100%;
     display: table;
@@ -934,7 +935,7 @@ html, body {
 }
 
 .index-reimagined {
-    background: url(../img/reimage.jpg) no-repeat top / cover;
+    background: url(../img/newScreenshots/4.jpg) no-repeat top / cover;
 }
 
 .index-v4 {
@@ -946,10 +947,16 @@ html, body {
     position: relative;
     margin: 0;
     color: var(--VeryLightGray);;
-    font-size: 40px;
-    padding-bottom: 50px;
-    line-height: 130%;
-    color: var(--VeryLightGray);
+    font-size: 35px;
+    padding-bottom: 10px;
+    line-height: 360%;
+    text-shadow:
+    0.5px 1px 0 #000,
+    1px 0.5px 0 #000,
+    1px 1px 0 #000,
+    1px 1.5px 0 #000,
+    1.5px 1px 0 #000,
+    1.5px 1.5px 0 #000;
 }
 
 .index-shader p {
@@ -991,7 +998,7 @@ html, body {
 .hero-content {
     display: table-cell;
     vertical-align: middle;
-    padding-top: 75px;
+    padding-top: 65px;
 }
 
 .hero-text {
@@ -1000,6 +1007,29 @@ html, body {
     margin: 0 auto;
     padding: 0 15px;
     text-align: center;
+}
+
+.hero-shader-text {
+    text-shadow:
+    0.5px 1px 0 #000,
+    1px 0.5px 0 #000,
+    1px 1px 0 #000,
+    1px 1.5px 0 #000,
+    1.5px 1px 0 #000,
+    1.5px 1.5px 0 #000;
+}
+
+.hero-shader-title {
+    text-shadow:
+    0.5px 1px 0 #000,
+    1px 0.5px 0 #000,
+    1px 1px 0 #000,
+    1px 1.5px 0 #000,
+    1.5px 1px 0 #000,
+    1.5px 1.5px 0 #000,
+    1.5px 2px 0 #000,
+    2px 1.5px 0 #000,
+    2px 2px 0 #000; 
 }
 
 .hero-text h1 {
@@ -1028,14 +1058,14 @@ html, body {
 .hero-text .btn-border {
     position: relative;
     margin: 5px;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.25);
     max-width: 100%;
 }
 .hero-text .btn-border:focus {
     color: var(--VeryLightGray);
 }
 .hero-text .btn-border:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     color: var(--ThemeColor);
     border-color: var(--VeryLightGray);
 }
@@ -1081,27 +1111,23 @@ html, body {
 }
 
 .reimagined-hero {
-    background: url(../img/reimage.jpg) no-repeat center / cover;
-}
-
-.shaders-v4-hero {
-    background: url(../img/v4image.jpg) no-repeat center / cover;   
+    background: url(../img/newScreenshots/4.jpg) no-repeat center / cover;
 }
 
 .contact-hero {
-    background: url(../img/Taiga.jpg) no-repeat center / cover;
+    background: url(../img/editedScreenshots/Taiga.jpg) no-repeat center / cover;
 }
 
 .changelogs-hero {
-    background: url(../img/Rscreenshots/dragonBeams.jpg) no-repeat top / cover;
+    background: url(../img/newScreenshots/both6_dragonBeams.jpg) no-repeat top / cover;
 }
 
 .mod-issues-hero {
-    background: url(../img/v4screenshots/MountainsNearOcean.jpg) no-repeat center / cover;
+    background: url(../img/screenshots/MountainsNearOcean.jpg) no-repeat center / cover;
 }
 
 .privacy-policy-hero {
-    background: url(../img/Rscreenshots/IceSpikesR.jpg) no-repeat top / cover;
+    background: url(../img/screenshots/IceSpikesR.jpg) no-repeat top / cover;
     box-shadow: inset 0 0 0 20000px rgba(0, 0, 0, 0.3);
 }
 
@@ -1248,15 +1274,14 @@ table, th, td {
     border: 2px solid var(--ThemeColor);
 
     border-color: var(--ThemeColor);
-    color: white;
-    font-weight: bold;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: var(--VeryLightGray);
     /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
-    background: url(../img/installButton.jpg) no-repeat top / cover;
+    background-color: var(--VeryDarkGray);
 }
 .section-downloads .btn-installer:hover {
     color: var(--ThemeColor);
     border-color: white;
+    background-color: var(--DarkGray);
 }
 .section-downloads .btn-manual {
     color: white;
@@ -1276,6 +1301,15 @@ table, th, td {
     display: block;
     max-width: 64%;
     margin: auto;
+}
+.section-screenshots p {
+    font-size: 16px;
+    color: var(--VeryLightGray);
+    margin-bottom: -20px;
+}
+.section-screenshots h3 {
+    color: var(--VeryLightGray);
+    margin-bottom: -50px;
 }
 
 /* Section: Services */
@@ -1474,7 +1508,7 @@ table, th, td {
 
 /* Copyright */
 .copyright {
-    padding: 20px 0;
+    padding: 10px 0;
     border-top: 1px solid rgba(224, 224, 224, 0.05);
 }
 
@@ -1930,7 +1964,7 @@ a.github-bg:hover {
     /* background-color: transparent; */
     margin: 0;
     position: relative;
-    top: 50%;
+    top: 50vh;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); 
     
@@ -1943,15 +1977,15 @@ a.github-bg:hover {
 }
 .ad-v1 {
     float: left;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 .ad-v2 {
     float: right;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 .ad-div1 {
-    margin-top: -30px;
-    padding-bottom: 35px;
+    margin-top: 15px;
+    padding-bottom: 22px;
     text-align: center;
 }

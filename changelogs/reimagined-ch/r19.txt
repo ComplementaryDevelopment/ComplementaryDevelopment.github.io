@@ -1,0 +1,81 @@
+Changes over r2.3:
+- The Fantasy style has been renamed to "Unbound" to better communicate the recently reworked visuals
+- Reworked Unbound clouds:
+   * Fully volumetric, meaning the player can fly through them
+   * Improved detail, fog and lighting compared to the old Fantasy clouds
+   * No extra performance cost over the Reimagined clouds
+- Reworked the Nether dimension:
+   * Added "Nether Storm" effect. Consists of animated volumetric smoke
+   * Reworked color handling and added "Color Mode" setting to determine biome color influence
+   * Tweaked lighting, fog and bloom handling for better visibility alongside better visuals
+- Reworked rainy/snowy weather visuals:
+   * Reworked color handling to achieve a more natural color balance
+   * Tweaked atmosphere to stay balanced at all times and with all performance settings
+   * Tweaked fog and lighting for better visibility
+   * Added waving effect to the rain/snow texture
+   * Incrased opacity of the rain texture
+- Reworked Unbound water caustics to look more realistic
+- Improved the consistency of Scene-Aware Light Shafts
+- Improved block reflection filtering to reduce smudging around block edges and on held items
+- Improved TAA accuracy. Thanks to Capt Tatsu
+- Improved shadow filtering
+- Added rainbows. They appear after rain during morning/evenings by default
+- Added subtle texture coating to the Unbound moon
+- Added Distance Blur and Depth of Field options alongside many customization settings
+- Added "Versatile" Selection Outline option
+- Added "Lens Flare" option and "Lens Flare Intensity" setting
+- Added Moon Phase Influence options for night lighting and moon reflections
+- Added "Dark Outline" option with two thickness choices
+- Added "World Outline Thickness" and "World Outline Brightness" settings
+- Added an option to completely disable Bloom and added more values to the Bloom Strength slider
+- Added "Cloud Quality" performance setting
+- Added "Cloud Speed", "Cloud Amount", and "Cloud Size" settings
+- Added "Reduce Close-up Particles" option
+- Added "Waving Speed" and "Waving Intensity" settings for waving blocks
+- Added a dimension.properties file for users to add custom dimensions easier (Iris feature)
+- IntegratedPBR changes:
+   * Improved held item reflection handling
+   * Added "Green Screen Lime Blocks" option
+   * Added opacity handling for Physics Mod rain/snow thanks to SpacEagle17
+   * Increased reflectiveness of Honey Block and Slime Block
+   * Reduced the smoothness of End Stone and End Stone Bricks
+   * Slightly reduced intensity of Generated Normals on held items
+   * Fixed amethyst crystals not being as reflective as amethyst blocks
+   * Fixed guardians glowing with some resource packs
+   * IntegratedPBR glowing ores are now enabled by default with the Unbound visual style
+- IntegratedPBR changes that use Iris features:
+   * Added specular and emission support for all held blocks, dropped blocks, and blocks in item frames
+   * Added specular and emission support for all tools, all armor, and a ton of other items
+   * Added "Glowing Armor Trim" option
+   * Made entity flame consistent with normal fire
+- Tweaked sky bottom and atmospheric fog color handling
+- Tweaked block reflection handling to be a bit more intense and natural
+- Tweaked Unbound water parallax effect
+- Tweaked Unbound sun/moon to have better defined edges
+- Tweaked sun/moon handling to be more compatible with resource packs
+- Enabled Nether portal effects on all RP Support modes
+- Reduced sun glare brightness
+- Reduced shadow blurring during rain and in the End dimension to fix incorrect shadowing
+- Slightly improved performance of Low quality Reimagined clouds
+- Slightly tweaked water surface color
+- Slightly reduced sunlight blue intensity during noon
+- Slightly reduced sun/moon reflection intensity on water
+- Slightly reduced the size of Unbound sun/moon
+- Slightly reduced Unbound water medium-wave strength
+- Block Reflection Quality is now set to High by default
+- Reduced default Light Shaft Quality values on Medium and High profiles
+- Detail Quality setting now impacts more effects
+- Detail Quality is now set to High with the Very High profile
+- Increased the range of Cloud Layer Altitude sliders
+- Made the Color Balance settings menu more user friendly
+- Fixed Ender Nebula looking too noisy on lower profiles
+- Fixed lava looking brighter on Iris
+- Fixed blending issues with the "Vanilla" cloud style
+- Fixed shadows looking incorrect during rain with "Very Low" Shadow Sample Quality
+- Fixed reflections turning into patches of darkness in some situations
+- Fixed blocklight blending looking incorrect in some situations
+- Fixed waving vines clipping through blocks
+- Fixed translucent blending of Ender Nebula producing too saturated results
+- Fixed entities in the End having blocky shadows
+- Optimized texture files. Thanks to ColonelGerdauf
+- Updated license agreement

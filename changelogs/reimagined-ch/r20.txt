@@ -1,0 +1,2 @@
+Changes over r5.0:
+- Fixed an error when enabling Atmosphere Color Multipliers while Light Shafts are disabled

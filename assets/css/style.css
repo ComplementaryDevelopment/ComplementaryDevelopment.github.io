@@ -94,7 +94,7 @@ a {
     -o-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     cursor: pointer;
-    color: var(--VeryLightGray);
+    color: var(--LinkColor);
 }
 
 a:focus,

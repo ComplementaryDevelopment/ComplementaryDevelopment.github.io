@@ -1,0 +1,66 @@
+Changes over r5.0.1:
+- Added volumetric cloud, aurora, nebula and star reflections to water when Detail Quality is set to High
+- Added subtle direction waves to Reimagined Water Style when Waving Water Texture is enabled
+- Added "Texture Filtering" performance setting
+- Added waving texture effect to lily pads
+- Added "Nether View Limit" setting
+- Added "Rain Cloud Addition" setting
+- Added an option to remove Sun/Moon during rain
+- Added settings to change the color of the clouds
+- Added "Shadow Smoothing" setting
+- Added "TAA Behaviour" setting
+- Added "Moon Phased Night Atmosphere" option
+- Added "Blocklight Flickering" option
+- Added "Force Glowing Particles" option
+- Added higher Cave Lighting setting values
+- Added "Less Fog Inside Lava or Snow" option replacing the lava-only one
+- Added a block.properties entry for disabling Parallax Occlusion Mapping on specific blocks and block entities
+- IntegratedPBR changes:
+   * Reworked sculk block/vein emission to vary by time
+   * Improved entity and held item reflection handling
+   * Added reflectivity to iron golems and minecarts
+   * Added emission to powered dragon geads
+   * Added reflectivity and emission to the 1.21 crafter block
+   * Added copper material properties to the 1.21 copper blocks
+   * Added emission to the 1.21 copper bulbs
+   * Tweaked Glow Lichen emission to look less noisy in the distance
+   * Tweaked blocklight on Deepslate to make caves look nicer
+   * Fixed reflections on bells looking broken
+- IntegratedPBR changes that use Iris features:
+   * Added reflectivity to chainmail armor and totem of undying
+   * Added emission to glowstone dust, prismarine crystal and end crystal items
+   * Added reflections to 
+   * Tweaked netherite armor/tools to appear rougher
+   * Slightly reduced reflection intensity of shields
+   * Fixed jack o'lanterns looking too dark in some situations
+- Improved labPBR/seuspbr reflection handling to look better balanced
+- Improved parallax occlusion mapping to have more accurate shadowing
+- Slightly improved TAA smoothing
+- Slightly improved rough reflection noise quality
+- Tweaked Unbound water waves to appear less flat in the distance
+- Tweaked Unbound water reflections to appear less scattered
+- Tweaked waving texture effect for water and leaves
+- Tweaked nether fog handling
+- Tweaked stars and nebulae to reduce the inconsistency of them moving faster in the sky during sunrise/sunset
+- Increased reflectivity of water by approximately 30% depending on the angle
+- Increased humidity bloom by 40% in caves
+- Reduced the time it takes for Nether biome colors to change
+- Reduced the time it takes for rainbows to disappear after rain
+- Reduced the impact of Atmosphere Color Multiplier settings on most sky effects
+- Lava buckets now contribute to the Dynamic Handheld Lighting
+- Waving Leaves option is now enabled by default
+- Image Sharpening is now set to 5x by default instead of 3x
+- Fixed rainbows being able to appear when the sun is below horizon
+- Fixed Dark Outline always appearing in front of clouds
+- Fixed disabling all waving settings causing most blocks to become darker
+- Fixed screen edges having dark artifacts
+- Fixed grass having incorrect shading in Minecraft 1.20.3 and future versions
+- Fixed the pack not working on some Linux devices
+- Fixed sun/moon reflections on Unbound water not respecting wave strength settings
+- Fixed light leaking issue on foliage that are close to cave walls
+- Fixed Vanilla cloud style causing an error with some settings
+- Fixed Night Nebulae not being affected by blindness or darkness status effects
+- Fixed reflections not respecting waves if Water Reflection Quality set to Potato and Generated Normals are enabled
+- Fixed block entities not showing any sky reflections
+- Fixed incompatibility with some mods that change the world time speed
+- Updated License Agreement with no term changes and just more clarification

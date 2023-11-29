@@ -556,12 +556,21 @@ select {
 }
 
 .apanel {
-    margin: 0px 3%;
+    padding: 0px 3%;
     background-color: var(--VeryDarkGray);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     text-align: left;
+}
+
+.panel-changelogs .apanel {
+    background-color: var(--VeryVeryDarkGray);
+    border-radius: 10px;
+}
+
+.panel-changelogs p {
+    line-height: 160%;
 }
 
 .aaversion {

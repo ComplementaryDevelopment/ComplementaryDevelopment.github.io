@@ -1,0 +1,4 @@
+Changes over r5.1:
+- Fixed an error when volumetric clouds are disabled while Detail Quality is set to High
+- Fixed black screen when the camera is perfectly rotated to "0 0" with Lens Flare enabled
+- Fixed anisotropic texture filtering not working on rails (IntegratedPBR)

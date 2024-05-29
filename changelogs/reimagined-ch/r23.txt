@@ -63,7 +63,6 @@ Changes over r5.1.1:
 - Changing Color Multiplier settings for Sunrise/Sunset/Noon/Night times will no longer affect the Rainy/Snowy colors apart from intensity
 - Atmosphere Color Multiplier and Moon Phase Influence settings no longer affect the stars
 - The size of Unbound Cloud Shadows now change according to the Cloud Smallness setting
-- Frogspawn now also wave if lily pad waving is enabled
 - Water Refraction Intensity setting can now be set down to zero
 - Water Material Quality setting is now integrated into the Detail Quality setting
 - Renamed "TAA Mode" setting to "Temporal Filter"

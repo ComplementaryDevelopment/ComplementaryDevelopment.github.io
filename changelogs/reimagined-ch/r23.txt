@@ -1,0 +1,88 @@
+Changes over r5.1.1:
+- Added "Advanced Colored Lighting" option:
+  * Using a custom worldspace flood-fill "mixed" system to overcome the shortcomings seen in most other colored lighting implementations
+  * The latest Iris features have been utilized for best performance, so Optifine is not supported with this. Please use Iris
+  * Costs very little performance at lower distance settings, and stays faster than comparable colored lighting shaders at any distance
+  * Massive thanks to sixthsurge for the base. Check out Photon shaders for a really well made realistic shaderpack
+  * Added specific light colors for every light source in the game. Modded lights are not supported for now
+  * Added light color tinting functionality to colored stained glass and some other translucent blocks
+  * Added custom extra blocklight to all the IntegratedPBR emissives and some extra ones
+- Added features that depend on Advanced Colored Lighting being enabled (they depend on ACL voxelization):
+  * Added Colored Light Fog which adds 3D volumetric blocklight to the world, most visible in caves and during night
+  * Added Connected Glass which removes the borders between adjacent glass blocks for a cleaner look
+  * Added a fix for Rain Puddles setting causing puddles to appear in buildings with glass roofs. Enabled if Detail Quality is set to High
+  * Added glowing edge effects to nether and end portals
+- Added support for the Distant Horizons mod:
+  * The latest versions of both Iris and Distant Horizons should be used for this to work
+  * Added proper handling for distant chunks to appear similar to normal chunks
+  * Added (low quality) reflections to water in distant chunks
+  * Added blending functionality to blend distant chunks with normal chunks
+  * Tweaked fog to better fit high render distances
+  * Many small tweaks and code changes to make the experience less rough
+- IntegratedPBR changes:
+  * Added pbr properties to Minecraft 1.21 additions
+  * Tweaked rain particles to look similar to the rain texture
+  * Tweaked lightmap curves for amethyst, trapdoors, deepslate and tuff
+  * Slightly increased reflectivity of deepslate and tuff blocks
+  * Fixed most particle effects and tweaks not working in newer Minecraft or Iris versions
+  * Fixed rain particles causing excessive smudging on rain puddles
+  * Fixed Coated Textures having slight issues with waving blocks
+  * Fixed small artifacts on redstone comparators and calibrated sculk sensors when Texture Filtering is enabled
+- Added snowstorm and sandstorm inspired rain atmosphere to cold and dry biomes
+- Added "Heavy & Colder" rainy weather style option
+- Added "Light Shaft Smoke" option that adds a subtle 3D smoke animation to the light shafts
+- Added Waving Rain Multiplier setting
+- Added "Sky Only" option to the Water Reflection Quality setting
+- Added waving effect to weeping vines, twisting vines, and frogspawn
+- Added a setting to disable the player shadow. Iris-only feature
+- Added Blocklight Intensity setting separate from the colors
+- Added a block.properties entry to make any block emissive regardless of PBR
+- Readded the fix for iron bars flickering when put on the ground
+- Improved the accuracy of block reflection filtering. Fixing some smudging issues
+- Tweaked rain light/atmosphere colors to be a bit more blue around noon time
+- Tweaked rain texture to be slightly less opaque
+- Tweaked stars to be visible during sunrise/sunset
+- Tweaked lighting on vines to be more consistent with leaves
+- Tweaked cave lighting to appear slightly more blue
+- Tweaked fog calculation for the End dimension
+- Reduced the default value of the "Contrast of Darker Colors" setting
+- Reduced the default intensity of cave lighting to better match vanilla Minecraft levels
+- Slightly tweaked the balance of Dynamic Handheld Lighting
+- Slightly tweaked Scene Aware Light Shaft conditions
+- Slightly tweaked the interaction of skylight and blocklight
+- Slightly reduced the emission of armor trims with the Glowing Armor Trim option
+- Border Fog now works in vertical direction as well
+- Dynamic Handheld Lighting now uses the position of the player instead of being stuck to the camera. Iris-only feature
+- Allowed waving blocks to wave in the Nether even if interior waving is disabled
+- Lighting in the End dimension now always comes from directly overhead regardless of settings
+- Disabled waving leaves in snowy biomes because leaves waving with snow on top look weird
+- Color coded Performance Settings and Profiles to better communicate their performance cost
+- Changed Ultra and Very High Profiles to incorporate Advanced Colored Lighting
+- Rain ambient lighting intensity is now affected by the Brightness slider. The old strength corresponds to 100 Brightness
+- Cloud Shadows option now works even if Real-Time Shadows are disabled
+- Changing Color Multiplier settings for Sunrise/Sunset/Noon/Night times will no longer affect the Rainy/Snowy colors apart from intensity
+- Atmosphere Color Multiplier and Moon Phase Influence settings no longer affect the stars
+- The size of Unbound Cloud Shadows now change according to the Cloud Smallness setting
+- Frogspawn now also wave if lily pad waving is enabled
+- Water Refraction Intensity setting can now be set down to zero
+- Water Material Quality setting is now integrated into the Detail Quality setting
+- Renamed "TAA Mode" setting to "Temporal Filter"
+- Temporal Filter setting can now be set to OFF, and some effects have been tweaked to work a little less bad without it. But it is still highly recommended to keep it enabled
+- Fixed water refraction not working
+- Fixed waving rain/snow texture sometimes clipping into closed areas
+- Fixed TAA adding additional aliasing artifacts to the image
+- Fixed bloom looking incorrect at higher screen resolutions
+- Fixed light shafts looking a bit too bright behind some translucents
+- Fixed Texture Filtering causing the visuals to break in older Minecraft versions
+- Fixed Night Nebulae looking incorrect during some nights
+- Fixed held items having thin temporal artifacts around them in some cases
+- Fixed clouds not blending with the sky correctly with custom atmosphere/cloud color settings. Your custom settings may need to be rebalanced as this changes how cloud colors get modified
+- Fixed user-added modded glowing ores having broken/triangular emission. All thanks to touc for finding the solution
+- Fixed disabling Border Fog while using "Vanilla" Cloud Style causing an error
+- Fixed regular glass looking like it is falling behind when the player/camera is moving
+- Fixed rain fog balance being off in some cases
+- Fixed chicken feet flickering when the Temporal Filter setting is set to Intense
+- Fixed Water Foam Intensity setting not working between 1 and 99
+- Fixed incorrect shadows on distant clouds in some rare situations
+- Fixed very slight lighting position issues
+- Many small changes

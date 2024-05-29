@@ -1,33 +1,33 @@
 Changes over r5.1.1:
 - Added "Advanced Colored Lighting" option:
-  * Using a custom worldspace flood-fill "mixed" system to overcome the shortcomings seen in most other colored lighting implementations
-  * The latest Iris features have been utilized for best performance, so Optifine is not supported with this. Please use Iris
-  * Costs very little performance at lower distance settings, and stays faster than comparable colored lighting shaders at any distance
-  * Massive thanks to sixthsurge for the base. Check out Photon shaders for a really well made realistic shaderpack
-  * Added specific light colors for every light source in the game. Modded lights are not supported for now
-  * Added light color tinting functionality to colored stained glass and some other translucent blocks
-  * Added custom extra blocklight to all the IntegratedPBR emissives and some extra ones
+   * Using a custom worldspace flood-fill "mixed" system to overcome the shortcomings seen in most other colored lighting implementations
+   * The latest Iris features have been utilized for best performance, so Optifine is not supported with this. Please use Iris
+   * Costs very little performance at lower distance settings, and stays faster than comparable colored lighting shaders at any distance
+   * Massive thanks to sixthsurge for the base. Check out Photon shaders for a really well made realistic shaderpack
+   * Added specific light colors for every light source in the game. Modded lights are not supported for now
+   * Added light color tinting functionality to colored stained glass and some other translucent blocks
+   * Added custom extra blocklight to all the IntegratedPBR emissives and some extra ones
 - Added features that depend on Advanced Colored Lighting being enabled (they depend on ACL voxelization):
-  * Added Colored Light Fog which adds 3D volumetric blocklight to the world, most visible in caves and during night
-  * Added Connected Glass which removes the borders between adjacent glass blocks for a cleaner look
-  * Added a fix for Rain Puddles setting causing puddles to appear in buildings with glass roofs. Enabled if Detail Quality is set to High
-  * Added glowing edge effects to nether and end portals
+   * Added Colored Light Fog which adds 3D volumetric blocklight to the world, most visible in caves and during night
+   * Added Connected Glass which removes the borders between adjacent glass blocks for a cleaner look
+   * Added a fix for Rain Puddles setting causing puddles to appear in buildings with glass roofs. Enabled if Detail Quality is set to High
+   * Added glowing edge effects to nether and end portals
 - Added support for the Distant Horizons mod:
-  * The latest versions of both Iris and Distant Horizons should be used for this to work
-  * Added proper handling for distant chunks to appear similar to normal chunks
-  * Added (low quality) reflections to water in distant chunks
-  * Added blending functionality to blend distant chunks with normal chunks
-  * Tweaked fog to better fit high render distances
-  * Many small tweaks and code changes to make the experience less rough
+   * The latest versions of both Iris and Distant Horizons should be used for this to work
+   * Added proper handling for distant chunks to appear similar to normal chunks
+   * Added (low quality) reflections to water in distant chunks
+   * Added blending functionality to blend distant chunks with normal chunks
+   * Tweaked fog to better fit high render distances
+   * Many small tweaks and code changes to make the experience less rough
 - IntegratedPBR changes:
-  * Added pbr properties to Minecraft 1.21 additions
-  * Tweaked rain particles to look similar to the rain texture
-  * Tweaked lightmap curves for amethyst, trapdoors, deepslate and tuff
-  * Slightly increased reflectivity of deepslate and tuff blocks
-  * Fixed most particle effects and tweaks not working in newer Minecraft or Iris versions
-  * Fixed rain particles causing excessive smudging on rain puddles
-  * Fixed Coated Textures having slight issues with waving blocks
-  * Fixed small artifacts on redstone comparators and calibrated sculk sensors when Texture Filtering is enabled
+   * Added pbr properties to Minecraft 1.21 additions
+   * Tweaked rain particles to look similar to the rain texture
+   * Tweaked lightmap curves for amethyst, trapdoors, deepslate and tuff
+   * Slightly increased reflectivity of deepslate and tuff blocks
+   * Fixed most particle effects and tweaks not working in newer Minecraft or Iris versions
+   * Fixed rain particles causing excessive smudging on rain puddles
+   * Fixed Coated Textures having slight issues with waving blocks
+   * Fixed small artifacts on redstone comparators and calibrated sculk sensors when Texture Filtering is enabled
 - Added snowstorm and sandstorm inspired rain atmosphere to cold and dry biomes
 - Added "Heavy & Colder" rainy weather style option
 - Added "Light Shaft Smoke" option that adds a subtle 3D smoke animation to the light shafts

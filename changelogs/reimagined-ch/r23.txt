@@ -34,6 +34,7 @@ Changes over r5.1.1:
 - Added Waving Rain Multiplier setting
 - Added "Sky Only" option to the Water Reflection Quality setting
 - Added waving effect to weeping vines, twisting vines, and frogspawn
+- Added "Auto Hide Selection Outline" option. Hides the block selection outline if the player isn't holding anything
 - Added a setting to disable the player shadow. Iris-only feature
 - Added Blocklight Intensity setting separate from the colors
 - Added a block.properties entry to make any block emissive regardless of PBR

@@ -1,0 +1,2 @@
+Changes over r5.2:
+- Fixed setting Shadow Quality to OFF causing the visuals to break

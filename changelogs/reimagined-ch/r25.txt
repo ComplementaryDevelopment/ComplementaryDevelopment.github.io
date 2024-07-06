@@ -1,0 +1,16 @@
+Changes over r5.2.1:
+- Tweaked the colors of end portals to better resemble the vanilla color scheme
+- Tweaked lighting on torches in item form to mitigate some balance issues (IntegratedPBR)
+- Fixed Temporal Filter being broken with Intel GPUs. Thanks to Flopster101
+- Fixed black artifacts appearing in the End dimension if Shadow Sample Quality is set to OFF
+- Fixed Colored Light Fog moving drastically with view bobbing when viewed behind translucent blocks
+- Fixed a rare flickering issue on slabs and stairs with Advanced Colored Lighting
+- Fixed end gateways looking wrong when viewed from specific distances away with Advanced Colored Lighting
+- Fixed blindness and darkness status effects not working well in some situations
+- Fixed Snowy World causing an error with the Distant Horizons mod
+- Fixed "Versatile" selection outline not being visible through water if Detail Quality is set to High
+- Fixed an issue on glowing gold ores with the Programmer Art resource pack (IntegratedPBR)
+- Fixed chorus plants looking too bright with some resource packs (IntegratedPBR)
+- Slightly changed the scene aware calculation of light shafts
+- Switched to 7-Zip for zip creation
+- Changed some incorrect setting descriptions

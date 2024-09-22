@@ -1,0 +1,38 @@
+Changes over r5.2.2:
+- Added "Colored Candle Lighting" ACL exclusive option. Makes lights cast by candles to be the same color as their bases
+- Added "Colored Light Saturation" setting to ACL Features
+- Added "Distant Light Bokeh" option. Applies a tiny single-pixel blur in the distance to make distant light sources look scattered. Includes added IntegratedPBR functionality for most light sources
+- Added "IPBR+ Emissive Mode" option. Allowing users to use labPBR/seuspbr emissive formats to override any IntegratedPBR emissives
+- Added an option to disable special portal effects
+- Added an option to disable IntegratedPBR particle features
+- Added emission to the white eyes of piglin/hoglin variants according to art released by Mojang (IntegratedPBR)
+- Improved several aspects of block reflection filtering in small amounts
+- Tweaked subsurface scattering with reduced ambient occlusion on lit surfaces
+- Tweaked the look of Texture Filtering on cutout blocks
+- Slightly tweaked the "Fix Puddles Under Glass" ACL Feature
+- Slightly tweaked reflection edge falloff
+- "Improved Glass" option is now enabled by default
+- "Improved Glass" option now also works on Iris 1.8 and above instead of only working on Optifine
+- Colored Light Fog intensity is now increased in all low skylight areas to match night and caves
+- Strength of enchantment glints can now be adjusted using Minecraft's "Glint Strength" accessibility setting
+- The Lens Flare setting can now be set to "Sun Only" or "Sun & Moon" modes
+- Pixelated wave effect of "Reimagined + Waves" water style now respects the resolution of the currently used resource pack
+- Tweaked positioning of the "Vanilla" clouds to be better centered when using the latest Minecraft or Iris versions
+- Downgraded the quality of "4x" Texture Filtering for better performance
+- Reduced intensity of moon lens flares when "Lens Flare Intensity" setting is set to high values
+- Fixed texture filtering causing broken textures in some situations. Thanks to aceralex
+- Fixed texture filtering causing too much flickering on distant textures
+- Fixed held light colors looking slightly inaccurate with Advanced Colored Lighting
+- Fixed trapdoors having slightly incorrect lighting curves on IntegratedPBR
+- Fixed double slabs not having any IntegratedPBR properties in older Minecraft versions
+- Fixed end portals/gateways losing their special effects on labPBR/seuspbr RP support modes
+- Fixed "Show Light Levels" feature being broken with the latest Iris version
+- Fixed lens flares being visible in the Nether and End dimensions
+- Fixed lens flares still being visible during rain when the "Sun/Moon During Rain" option is disabled
+- Fixed vanilla clouds always being visible with newer Distant Horizons versions
+- Fixed leaves looking too dark in the End dimension with default settings
+- Fixed entities not having proper metalness or f0 with labPBR/seuspbr resource packs
+- Fixed the game crashing in some mod packs that have the FoamFix mod installed
+- Fixed wolf armor looking wrong when held in hand
+- Renamed "Shadow Sample Quality" setting to "Real-Time Shadows"
+- Added an error message for when Advanced Colored Lighting is enabled on Apple devices. Thanks to SpacEagle17

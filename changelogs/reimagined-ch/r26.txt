@@ -1,5 +1,5 @@
 Changes over r5.2.2:
-- Added "Colored Candle Lighting" ACL exclusive option. Makes lights cast by candles to be the same color as their bases
+- Added "Colored Candle Lighting" ACL exclusive option. Makes lights cast by candles be the same color as their bases
 - Added "Colored Light Saturation" setting to ACL Features
 - Added "Distant Light Bokeh" option. Applies a tiny single-pixel blur in the distance to make distant light sources look scattered. Includes added IntegratedPBR functionality for most light sources
 - Added "IPBR+ Emissive Mode" option. Allowing users to use labPBR/seuspbr emissive formats to override any IntegratedPBR emissives

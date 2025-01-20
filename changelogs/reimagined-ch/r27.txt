@@ -1,0 +1,47 @@
+Changes over r5.3:
+- Added special light shaft behaviour for the new Pale Garden biome
+- Advanced Colored Lighting related changes:
+   * Added Advanced Colored Lighting support to the new Creaking Heart and Open Eyeblossom
+   * Added 24 and 32 chunk options for Advanced Colored Lighting
+   * Added an error message when the player is too far away from the world origin for Advanced Colored Lighting to work, or when Shadow Distance setting is set lower than the Advanced Colored Lighting distance
+   * Tweaked light cast from end portals to be more dominant over other lights
+   * Tweaked orange stained glass light tint and orange candle light color (if Colored Candle Lighting is enabled)
+   * The Ultra profile now sets Advanced Colored Lighting to 16 chunks of instead of 12 chunks
+- IntegratedPBR Changes:
+   * Added extra glow to the new Open Eyeblossom, eyes of Creaking, and Creaking Heart
+   * Added the usual PBR properties for the new pale garden blocks and foliage
+   * Added a fade out effect for snow layers that are far away and higher than the player to mitigate aliasing
+   * Added glowing functionality to target blocks when they are powered
+   * Added specular properties to sponge, wet sponge, and target block
+   * Tweaked redstone torches to no longer look pink in newer Minecraft versions
+   * Tweaked candles to have a more noticeable light gradient
+   * Tweaked the "Glowing Armor Trim" IntegratedPBR option to be less intense and not apply to netherite trim material (any other materials on netherite armor will still glow)
+   * Slightly tweaked reflections on leaves and iron golems
+   * Azalea bushes now use a moss-like material to mitigate some bad looking situations
+   * Removed the lightmap tweak specific for deepslate and tuff blocks
+   * Fixed torches having incorrect lighting on their wood bits in newer Minecraft versions
+   * Fixed some entities losing their IntegratedPBR properties when taking damage
+   * Fixed reflective held items having temporal artifacts when moving around (Iris exclusive feature)
+- Pixelation related changes, all thanks to Junder-2 and Nestorboy:
+   * Added "Pixelated Blocklight" option that makes light cast from light source blocks pixelated
+   * Added "Pixelated Edge Shadows" option that makes Minecraft's vanilla ao pixelated
+   * Improved the "Pixelated Shadows" option to work on much more surfaces and more consistently
+- Improved the look of Colored Light Fog in situations that have bright light sources close to the camera
+- Improved the behaviour of Scene Aware Light Shafts near large glass structures
+- Improved blending of Reimagined cloud shadows when Double Reimagined Clouds option is enabled
+- Improved detection of custom skyboxes on Iris
+- Added an option to disable World Outline on entities
+- Changed the "Light" blocks so that they no longer have their own light color or light fog with ACL
+- Slightly tweaked Distant Light Bokeh to give sharper results
+- Distant Light Bokeh option is now enabled by default
+- Slightly increased the default Intensity value of Colored Light Fog from 0.60 to 0.65
+- Light shaft multiplier settings no longer affect underwater light shafts
+- Fixed Connected Glass ACL Feature being broken in Iris 1.8+. With the added bonus of it being more precise in Iris 1.8+ than before
+- Fixed a game crashing issue regarding some AMD graphics cards
+- Fixed the sky brightness and color changing too quickly around early sunrise and late sunset
+- Fixed vanilla sun being cut off below a certain height near the horizon in Iris 1.8 to 1.8.4
+- Fixed clouds looking extra noisy when entities are behind them. This fix is enabled when Cloud Quality and Detail Quality are both set to High or above
+- Fixed some modded items having insanely bright handheld lighting
+- Fixed reflective held items looking too noisy when using custom PBR resource packs
+- Fixed incorrect shadows inside boats in newer Minecraft versions or when RP Support is changed
+- Tiny changes related to reflections on entities

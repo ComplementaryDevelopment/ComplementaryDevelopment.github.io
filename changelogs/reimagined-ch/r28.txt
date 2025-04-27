@@ -33,6 +33,7 @@ Changes over r5.4:
 - Setting "Detail Quality" to "High" now allows waving of some exotic foliage like the torchflower and the new firefly bush
 - Fixed the upper sky color turning very dark during a thunderstorm even if its daytime
 - Fixed TAA ghosting around screen edges in some situations
+- Fixed underwater fog not working correctly in some situations with Advanced Colored Lighting enabled
 - Fixed patches of Lava losing their texture in some specific situations
 - Fixed Beacon Beams having a broken interaction with the border fog
 - Fixed the Pixelated Blocklight option causing artifacts on items and entities in some cases

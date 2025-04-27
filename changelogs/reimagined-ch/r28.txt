@@ -1,0 +1,43 @@
+Changes over r5.4:
+- Improved FXAA and TAA interaction to reduce blurring when moving
+- Improved TAA to better preserve details when moving (Thanks to Capt Tatsu)
+- Added PBR material properties for the new Minecraft 1.21.5 blocks
+- Added a fake variable penumbra shadow method that only works with the Reimagined style of sun angle
+   * Allows shadows to look much sharper when they are very close to the block they are cast by
+   * Costs less than 1% performance, but the simplicity of the effect makes it only work on shadows of full blocks
+   * Will be disabled if the Shadow Quality setting is reduced to Low or below
+- Advanced Colored Lighting related changes:
+   * Added colored lighting for the new Firefly Bush and the Test Blocks
+   * Tweaked the light curve of Lava to be a bit more prolonged compared to other light sources
+   * Tweaked the fire light color to be slightly less yellow and closer to orange
+   * Tweaked the light color of Beacons to be more blue
+   * Advanced Colored Lighting now treats all unknown blocks as non-solid to mitigate problems with additions to the game
+- IntegratedPBR Changes:
+   * Added the "IPBR+ Compatibility Mode" option which changes how some effects are calculated for better compatibility
+   * Added subtle reflectiveness to the Coal Block
+   * Tweaked reflectiveness of several blocks to appear a bit more reflective
+   * Tweaked reflection handling on Deepslate blocks
+   * Tweaked general block reflection handling to prevent smoother blocks from losing their texture
+   * Tweaked emission of Redstone Lamp, Structure Block, and Jigsaw Block
+   * Tweaked the look of Soul Campfire when Advanced Colored Lighting is enabled
+   * Fixed the Creaking Heart not having any shader features applied after Minecraft 1.21.5
+   * Fixed Eyeblossoms not having material properties when put in a pot
+   * Fixed Amethyst Cluster and Torchflower not looking emissive in their item forms
+   * Fixed Ominous Trial Key not having emissive properties
+- Added proper support for the Enhanced Block Entities mod. This fixes several related problems
+- Tweaked the handling of name tags for better readability (Iris exclusive feature)
+- Tweaked the smoothing of shadows when the Pixelated Shadows option is enabled
+- Connected Glass feature now works better with glass panes. Thanks to dbrighthd
+- Reimplemented the Cave Lighting setting to allow a lot more values
+- Setting "Real-Time Shadows" to "Ultra" now makes the shadowmap to render at higher resolution
+- Setting "Detail Quality" to "High" now allows waving of some exotic foliage like the torchflower and the new firefly bush
+- Fixed the upper sky color turning very dark during a thunderstorm even if its daytime
+- Fixed TAA ghosting around screen edges in some situations
+- Fixed patches of Lava losing their texture in some specific situations
+- Fixed Beacon Beams having a broken interaction with the border fog
+- Fixed the Pixelated Blocklight option causing artifacts on items and entities in some cases
+- Fixed the Pixelated Blocklight option causing some edges to have shadows that shouldn't be there
+- Fixed problems where the Distant Horizons mod wouldn't work correctly with AMD GPUs in some cases. Thanks to SpacEagle17
+- Fixed resin armor trims not being affected by the "Glowing Armor Trim" option
+- Fixed standing at a certain distance from a Nether Portal causing a faint circle to appear
+- Several small tweaks and fixes

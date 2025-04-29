@@ -1,0 +1,4 @@
+Changes over r5.5:
+- Fixed a game crashing problem on Apple devices
+- Fixed Pixelated Blocklight causing artifacts on End Rods (IntegratedPBR)
+- Fixed Advanced Colored Lighting error message not appearing on Optifine

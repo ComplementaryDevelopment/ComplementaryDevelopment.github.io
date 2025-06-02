@@ -115,7 +115,7 @@
                 <br>Simply run the installer, choose your <a href="#style-section"><u>style</u></a>, and click install.</p>
                 <p style="margin-top: -6px; color: var(--CompRed); font-weight: 900;">Java is required to run the installer (Minecraft's Java won't work).
                 <a id="down-section" href="https://www.java.com/download/" target="_blank"><u>www.java.com/download</u></a></p>
-                <a href="https://github.com/ComplementaryDevelopment/Complementary-Installer/releases/download/latest/Complementary-Installer-1.3.0.jar" class="btn btn-installer" style="width: 350px;">Download Complementary Installer</a>
+                <div id="installer-buttons"></div>
 
                 <p class="download-title" style="--ThemeColor: var(--VeryLightGray);">Manual Download</p>
                 <p>If you don't want an installer, you can download the shaderpack file from Modrinth.
@@ -182,5 +182,34 @@
     <script src="/assets/js/jquery.countTo.min.js"></script>
     <script src="/assets/js/jquery.shuffle.min.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script>
+        function isWindowsOS() {
+            if (navigator.platform && navigator.platform.startsWith("Win")) {
+                return true;    
+            }
+            
+            if (navigator.userAgent && /Windows/i.test(navigator.userAgent)) {
+                return true;
+            }
+            
+            return false;
+        }
+
+        const installerVersion = "1.3.0";
+        const exeInstallerUrl = `https://github.com/ComplementaryDevelopment/Complementary-Installer/releases/download/latest/Complementary-Installer-${installerVersion}.exe`;
+        const jarInstallerUrl = `https://github.com/ComplementaryDevelopment/Complementary-Installer/releases/download/latest/Complementary-Installer-${installerVersion}.jar`;
+        
+        if (isWindowsOS()) {
+            // Show both .exe and .jar buttons for Windows users
+            document.getElementById('installer-buttons').innerHTML = `
+                <p>Download the Complementary Installer as an .exe for Windows or universal .jar</p>
+                <a href="${exeInstallerUrl}" class="btn btn-installer" style="width: 250px; margin-right: 10px; border: 2px solid var(--CompBlue);">Download Windows Installer</a>
+                <a href="${jarInstallerUrl}" class="btn btn-installer" style="width: 250px; border: 2px solid var(--CompOrange);">Download Installer (.jar)</a>
+            `;
+        } else {
+            document.getElementById('installer-buttons').innerHTML = `<a href="${jarInstallerUrl}" class="btn btn-installer" style="width: 350px; border: 2px solid var(--CompOrange);">Download Complementary Installer</a>`;
+        }
+    </script>
+</body>
 </body>
 </html>

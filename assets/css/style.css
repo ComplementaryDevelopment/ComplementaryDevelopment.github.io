@@ -1288,7 +1288,6 @@ table, th, td {
     background-color: var(--VeryDarkGray);
 }
 .section-downloads .btn-installer:hover {
-    color: var(--ThemeColor);
     border-color: white;
     background-color: var(--DarkGray);
 }

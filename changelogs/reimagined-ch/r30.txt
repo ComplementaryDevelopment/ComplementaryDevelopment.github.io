@@ -1,0 +1,70 @@
+Changes over r5.5.1:
+- Changed the underlying tonemapping function with a Lottes-based custom tonemap:
+   * The main improvement with the new tonemap is colors looking softer especially in bright conditions
+   * Nearly all light and atmosphere colors have been tweaked and rebalanced to work better with the new tonemap
+   * Changes include several color tweaks to materials and other effects
+   * Tonemap settings menu has been reworked to work better with the new function
+- Added support for the upcoming Minecraft 1.21.9 update features:
+   * Added support for the new "End flash" effect in the End dimension, but integrated into Complementary's End Beams
+   * Added IntegratedPBR reflections to all copper additions, including copper tools, armor, and the copper golem
+   * Added colored lighting (Advanced Color Tracing) support for the copper torch and copper lanterns
+   * Fixed small issues caused by the update
+- Changes related to clouds:
+   * Changed Reimagined cloud distribution to use a cloud map based on Vibrant Visuals clouds
+   * Significantly increased cloud distance for both Reimagined and Unbound cloud styles.
+   * Unbound and Reimagined clouds are now synced between players in the same world that have the same cloud settings (Iris only feature)
+   * Altitude of clouds now automatically change in custom worlds that have unusual values (Iris only feature)
+   * Increased cloud distance for "vanilla" clouds option for Minecraft 1.21.6 and above to match the vanilla visuals
+   * Fixed driver-level forced anisotropic filtering causing Unbound clouds to look broken. Although it is still not recommended to use driver-level forced AF as it can cause texture glitches and bad performance
+- Added "World-Space Reflections" option:
+   * Makes reflections be able to reflect blocks that aren't currently visible on the screen by reconstructing the world block by block
+   * Depends on the "Advanced Colored Tracing" option to be enabled, making the effect Iris exclusive
+   * Combined with screen-space reflections to provide maximum total detail, but this can be changed in settings
+   * Enabling this setting also comes with more realistic reflection curves for blocks, more realistic sky reflection falloff, and more accurate screen-space reflections
+   * Reconstructed scenery have simplified geometry with no labPBR/seuspbr handling, but most IntegratedPBR effects do still work
+   * Performance cost is quite high, usually around 15% to 35%, but depends a lot on the scene and shader settings
+   * Massive thanks to FoZy STYLE for writing the intricate system that made this possible
+- Improved general reflection handling:
+   * Improved reflection filtering for much better reflection smoothing and reduce smudging around block edges
+   * Tweaked the way block reflections are applied to make reflections look more natural
+   * Tweaked reflections on entities and held items to look closer to regular block reflections
+   * All non-water or world-space reflections are now rendered in half resolution for performance gains. This optimization can be disabled in material settings but the visual difference isnt that noticeable in most cases
+   * Regular blocks behind translucents (e.g. ocean floor when viewed from outside of the ocean) no longer have reflections. This increases performance in some scenarios that are unusually heavy
+   * Big thanks to gri573 for doing reflection code restructuring and writing resolution controllable reflections
+- Changes related to IntegratedPBR:
+   * Tweaked the reflectiveness of cobblestone and some related blocks to look less harsh
+   * Reduced reflectiveness of planks and wet farmland
+   * Fixed cherry slab and stairs having incorrect material properties
+   * The "IPBR+ Compatibility Mode" setting now simplifies froglight emission as well
+- Added more options for the "Night Star Amount" setting. Thanks to BlueGradientHorizon
+- Improved labPBR/seuspbr reflectivity balance for metals and high-f0 materials
+- Tweaked TAA to reduce the amount of artifacts around entities, held items and particles
+- Tweaked subsurface scattering on leaves to reduce the edge lighting issues
+- The "Ultra" profile now has "World-Space Reflections" enabled, making it even more intensive than before
+- "Advanced Colored Lighting" setting is now called "Advanced Color Tracing"
+- "Entity Shadows" setting now has "OFF", "Regular Entities", and "Full" options
+- "Entity Shadows" setting is now set to "Regular Entities" for "High" and above Profiles
+- The look and distribution of End Beams no longer depend on the Render Distance
+- The "Ore Glow Strength" setting now affects colored lighting intensity as well
+- Quality of Motion Blur now change with the Detail Quality setting. Previous quality level can be achieved at "High" Detail Quality
+- Adjusted the internal quality of each Real-Time Shadows step with foliage getting more samples than other blocks
+- All shader settings that impact performance are now colored yellow aside from the ones in the main "Performance Settings" menu
+- Increased blocklight brightness on particles
+- Reduced the emission on all glowing things under daytime skylight
+- Tweaked TAA on Distant Horizons chunks to reduce flickering when standing still
+- Fixed end dimension colors being stuck at ender dragon fight mode in newer Minecraft versions. Thanks to SpacEagle17
+- Fixed color banding caused by the vignette effect
+- Fixed some lights being able to pass through tinted glass when Advanced Color Tracing is enabled
+- Fixed "Heavy & Colder" rain style causing a bright fog issue underwater
+- Fixed lighting issues near block edges when the Pixelated Shadows option is enabled
+- Fixed Pixelated Blocklight option not affecting held lighting
+- Fixed firefly bushes having broken waving animation in some situations
+- Fixed beacon beams not fading properly when viewed in front of some sky effects
+- Fixed beacon beams appearing very short in the nether with the Distant Horizons mod
+- Fixed Scene Aware Light Shafts behaving a bit differently when the "Connected Glass" ACT Feature is active
+- Fixed "Connected Glass" ACT Feature causing glass shadows to look broken with some resource packs
+- Fixed a reflection issue regarding picked up items and modded entities
+- Fixed shadows cutting off too early even when the Shadow Distance setting is set way beyond Render Distance
+- Fixed shadow glitches near the edges of blocks when using some PBR resource packs with Sun Angle set to 0
+- Updated Complementary License Agreement. Mostly for clarification reasons
+- Several small or unimportant changes

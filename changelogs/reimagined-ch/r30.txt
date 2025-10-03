@@ -4,7 +4,7 @@ Changes over r5.5.1:
    * Nearly all light and atmosphere colors have been tweaked and rebalanced to work better with the new tonemap
    * Changes include several color tweaks to materials and other effects
    * Tonemap settings menu has been reworked to work better with the new function
-- Added support for the upcoming Minecraft 1.21.9 update features:
+- Added support for the Minecraft 1.21.9 update features:
    * Added support for the new "End flash" effect in the End dimension, but integrated into Complementary's End Beams
    * Added IntegratedPBR reflections to all copper additions, including copper tools, armor, and the copper golem
    * Added colored lighting (Advanced Color Tracing) support for the copper torch and copper lanterns

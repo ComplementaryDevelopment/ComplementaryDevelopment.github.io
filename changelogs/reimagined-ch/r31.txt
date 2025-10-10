@@ -1,0 +1,8 @@
+Changes over r5.6:
+- Fixed the shaders not working in older Iris versions
+- Fixed moss blocks starting to wave if Detail Quality is set to High
+- Fixed open eyeblossoms not waving even if Detail Quality is set to High
+- Fixed leaves in world-space reflections not having proper cutouts in their textures
+- Fixed some of the world-space reflection issues regarding snow layers, dirt paths, farmlands, and stairs
+- Fixed the bottom side of wall-mounted torches looking a little bit brighter than usual (IntegratedPBR)
+- Updated the setting description of "Entity Shadows"

@@ -1,0 +1,76 @@
+Changes over r5.6.1:
+- Added a fade-in effect for chunks that are loading (Iris version 1.10.3 or above is required)
+- Added pixelated "Reimagined" style option for the Rainbows. All thanks to FoZy STYLE
+- Added a new light filtering method for Advanced Color Tracing that fixes most light and color leaking issues near block edges. Only enabled when "Detail Quality" is set to "High"
+- Added glowing visuals to the Ender Dragon death animation (newer Iris versions are required)
+- Added "Blocklight Contrast" setting that adjusts how quickly blocklight fades away as it travels distance away from the light source
+- Improved the look of light shafts at sunrise and sunset times
+- Improved water absorption and caustic color balance for both Reimagined and Unbound water styles
+- Changes regarding World-Space Reflections:
+   * Added the "WS Player Reflections" option that allows the main player model to be reflected inside world-space reflections. All thanks to FoZy STYLE for writing the player ray-tracing system and making this possible
+   * Added a workaround for world-space reflections looking too grainy in newer Iris versions
+   * Improved WSR block texture quality and performance. All thanks to FoZy STYLE
+   * Improved the color balance of colored shadows, block lighting, extra ACT lighting, and emission inside world-space reflections to better match the actual terrain
+   * Improved accuracy of screen-space reflections when world-space reflections are enabled
+   * Held item lighting, cloud shadows, cave lighting, and night vision are now properly reflected in world-space reflections
+   * Increased intensity of underwater water reflections when world-space reflections are enabled
+   * Reduced the aggressiveness of sky reflection leak prevention in the End dimension when world-space reflections are enabled on newer Minecraft versions
+   * Flowing lava, lime carpets and amethyst buds now appear more accurately in world-space reflections
+   * Fixed most issues regarding resource packs breaking world-space reflections. Thanks to Kirilpro6284
+   * Fixed enabling world-space reflections breaking the shaders on AMD 
+   * Fixed world-space reflections having incorrect block lighting in the End dimension in newer Minecraft versions
+   * Fixed some of the edge cases where world-space reflections disappeared too early in the distance
+   * Fixed some cases where world-space reflections had dotty artifacts
+   * Fixed world-space reflections on handheld items glitching in some situations
+   * Fixed some small blocks causing flickering in world-space reflections
+- IntegratedPBR Changes:
+   * Added material reflections to all spear variants, netherite horse armor, glasses of happy ghasts, and all nautilus armor variants
+   * Added emission to the eyes of Zombie Nautilus and Parched mobs
+   * Added a feature that makes all glass variants look more reflective at a distance to make glass buildings look more realistic, without reducing visibility
+   * Added a "Mirror-like Tinted Glass" option that increases reflectivity of Tinted Glass blocks
+   * Tweaked the IPBR values of netherite tools, netherite armor, Stray, dripstone, red sand, all red sandstone blocks, daylight detector, and all deepslate blocks
+   * Slightly tweaked opacity handling of Glass and Tinted Glass
+   * Slightly increased reflectivity of Tinted Glass by default
+   * Fixed redstone torches having slightly incorrect emission at some angles
+- Added 5 new settings to adjust the behaviour of Temporal Filtering and FXAA in better detail. They replace the previous "Temporal Filter" mode setting
+   * Temporal Smoothing: Adjusts the aggressiveness of the smoothing that the Temporal Filter applies. Higher values reduce flickering but increase blur
+   * Temporal Jitter: Allows Temporal Filter to better anti-alias the image, but higher values come with more flickering and blurriness
+   * Catmull-Rom Sampling: Disabling this option makes Temporal Filter switch to the sampling method used before the r5.5 update which was slightly blurrier
+   * "FXAA Strength" and "Reduce FXAA While Moving" settings which are self-explanatory
+- Added support for the Colorwheel mod. All thanks to SpacEagle17
+- Added support for Fullbright mods. Thanks to SpacEagle17
+- Added "Light Shaft Sunset Color" setting that allows tweaking the color of sunrise/sunset light shafts
+- Added a slight extra sun glow to the Unbound clouds
+- Slightly improved Temporal Filter smoothing consistency. Making distant terrain flicker less while moving, and slightly reducing blurriness on closer objects at the same time
+- Increased the brightness of atmospheric fog at noon time
+- Reworked the "Shadow Light Multipler" setting to handle higher values in a much better looking way and increased the maximum value
+- Rotation of the Reimagined clouds and the direction of all wind effects have been rotated 90 degrees to point towards the south. This improves sunrise/sunset visuals alongside adding more movement to cloud shadows if they are enabled
+- Tweaked the look of Reimagined water style when Rain Puddles are active
+- Moon Phase Influence settings are now interpolated between the user-defined 3 values into 5 different values when the sun/moon style is set to Reimagined
+- Turning off the "Sun/Moon During Rain" option now makes lighting during rain look less contrasty with less noticeable shadows, and also adds a subtle sun/moon glare to the sky
+- Rainbows are now visible from underwater and blend correctly behind translucents
+- Increased internal quality of light shafts when the Temporal Filter is disabled
+- Very slightly reduced sky horizon brightness during noon time
+- Very slightly tweaked lighting intensity during rain depending on several conditions and settings
+- Very slightly tweaked Advanced Color Tracing calculation for a really tiny performance improvement
+- Small emission and light tweaks for the enchanting table
+- Removed the skybox detection workaround from newer Iris versions due to it no longer being needed. Thanks to SpacEagle17
+- Fixed Texture Filtering not working correctly on leaves after the Minecraft 1.21.11 update
+- Fixed Copper Golems holding some light sources resulting in an extreme glow
+- Fixed cloud positions stuttering when moving around at very far away from the center of the world
+- Fixed a lighting issue that caused streaks of lit sections on leaves
+- Fixed lightning bolts not looking correct in newer Minecraft versions. All thanks to SpacEagle17
+- Fixed pixelation effects causing artifacts on nametags. Thanks to SpacEagle17
+- Fixed reflections in the End dimension getting broken after a while of moving the camera around
+- Fixed an issue that sometimes resulted in the world being quickly covered by a dark and thick fog when Advanced Color Tracing is enabled
+- Fixed an issue that resulted in some reflections showing more fog than expected
+- Fixed glass casting dark shadows with some configurations. Thanks to SpacEagle17
+- Fixed chains of hanging signs having incorrect lighting in some situations
+- Fixed a sky glare reflection issue inside water
+- Fixed a fog color issue during rain inside water
+- Fixed Low Cloud Quality option causing clouds to instantly change position when the camera moves through certain coordinates
+- Fixed enabling Motion Blur with High Detail Quality causing oceans to look too bright in some conditions
+- Fixed the brightness of rainbows being lower than intended when using lower render distance settings
+- Fixed three code errors that might have caused issues in the future
+- Turning some shader settings off will no longer turn the option color to red unless turning that setting off has potential unforeseen consequences that the user must prepare for
+- Stopped the Iris color space setting from changing the colors since it is often changed accidentally by some users

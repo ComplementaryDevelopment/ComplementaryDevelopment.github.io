@@ -42,6 +42,7 @@ Changes over r5.6.1:
 - Added "Light Shaft Sunset Color" setting that allows tweaking the color of sunrise/sunset light shafts
 - Added a slight extra sun glow to the Unbound clouds
 - Slightly improved Temporal Filter smoothing consistency. Making distant terrain flicker less while moving, and slightly reducing blurriness on closer objects at the same time
+- Slightly reduced the performance cost of Unbound clouds at the cost of slightly blurrier look at Medium quality or in reflections
 - Increased the brightness of atmospheric fog at noon time
 - Reworked the "Shadow Light Multipler" setting to handle higher values in a much better looking way and increased the maximum value
 - Rotation of the Reimagined clouds and the direction of all wind effects have been rotated 90 degrees to point towards the south. This improves sunrise/sunset visuals alongside adding more movement to cloud shadows if they are enabled
@@ -64,6 +65,7 @@ Changes over r5.6.1:
 - Fixed reflections in the End dimension getting broken after a while of moving the camera around
 - Fixed an issue that sometimes resulted in the world being quickly covered by a dark and thick fog when Advanced Color Tracing is enabled
 - Fixed an issue that resulted in some reflections showing more fog than expected
+- Fixed shadow artifacts in single-block gaps in some specific circumstances 
 - Fixed glass casting dark shadows with some configurations. Thanks to SpacEagle17
 - Fixed chains of hanging signs having incorrect lighting in some situations
 - Fixed a sky glare reflection issue inside water

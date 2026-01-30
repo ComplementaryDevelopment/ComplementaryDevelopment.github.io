@@ -1,0 +1,5 @@
+Changes over r5.7:
+- Improved atmospheric fog balance in reflections
+- Fixed "Moon Phase Influence" settings messing with the brightness during the day time
+- Fixed reflections looking broken behind campfire smoke and water particles
+- Partially fixed world-space reflections showing sky gaps when set to WSR Only mode with the default half resolution reflections

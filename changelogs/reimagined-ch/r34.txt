@@ -1,63 +1,63 @@
 Changes over r5.7.1:
 - Added support for the Voxy mod using the same baseline as Distant Horizons, but with Voxy getting some exclusive features
-  * Nearly all IntegratedPBR emission and color effects are supported on Voxy chunks
-  * Ambient occlusion is supported on Voxy chunks
-  * Distant Light Bokeh effect is supported when Voxy is enabled as well
+   * Nearly all IntegratedPBR emission and color effects are supported on Voxy chunks
+   * Ambient occlusion is supported on Voxy chunks
+   * Distant Light Bokeh effect is supported when Voxy is enabled as well
 - Improved lod mod support for both Voxy and Distant Horizons
-  * Added real-time shadows to lod chunks using screen-space shadowing. All thanks to Capt Tatsu for letting me use his implementation from BSL Shaders
-  * Lod chunks now support proper screen-space reflections
-  * Added sun/moon highlight reflections to lod water
-  * Slightly improved Temporal Filter behaviour on lod chunks
-  * Tweaked fog balance and color when an lod mod is enabled
-  * Water caustics and colored shadows now fade away towards the edge of real chunks
-  * World Outline effect now fades away towards the edge of real chunks
-  * Fixed very low performance in the Nether when Border Fog is disabled or when Nether View Limit is set to Limitless
-  * Fixed sun/moon reflections on water looking inconsistent between normal chunks and lod chunks
-  * Fixed Nether fog looking too intense on lod chunks
-  * Fixed distant End beams being visible through lod terrain
-  * Fixed bloom fog intensity being slightly higher than intended on lod chunks
-  * Fixed TAA having worse smudging on the sky with Voxy or Distant Horizons mods
+   * Added real-time shadows to lod chunks using screen-space shadowing. All thanks to Capt Tatsu for letting me use his implementation from BSL Shaders
+   * Lod chunks now support proper screen-space reflections
+   * Added sun/moon highlight reflections to lod water
+   * Slightly improved Temporal Filter behaviour on lod chunks
+   * Tweaked fog balance and color when an lod mod is enabled
+   * Water caustics and colored shadows now fade away towards the edge of real chunks
+   * World Outline effect now fades away towards the edge of real chunks
+   * Fixed very low performance in the Nether when Border Fog is disabled or when Nether View Limit is set to Limitless
+   * Fixed sun/moon reflections on water looking inconsistent between normal chunks and lod chunks
+   * Fixed Nether fog looking too intense on lod chunks
+   * Fixed distant End beams being visible through lod terrain
+   * Fixed bloom fog intensity being slightly higher than intended on lod chunks
+   * Fixed TAA having worse smudging on the sky with Voxy or Distant Horizons mods
 - Changes that only affect the Distant Horizons mod
-  * Added a fade effect for Distant Horizons chunks to better blend with real chunks
-  * Reduced overdraw protection to reduce gaps in the world while traveling
-  * Fixed beacon beams not rendering in the correct position if Distant Horizons chunks are involved
+   * Added a fade effect for Distant Horizons chunks to better blend with real chunks
+   * Reduced overdraw protection to reduce gaps in the world while traveling
+   * Fixed beacon beams not rendering in the correct position if Distant Horizons chunks are involved
 - Rewritten Light Shafts and End Beams, resulting in:
-  * Improved performance on default settings by around 2-3% in the Overworld, and 20-30% in the End dimension
-  * Overworld Light Shafts should look nearly identical to before aside from possibly fixing slight edge case issues
-  * End Beams are now completely volumetric in the world space instead of being tied to the camera altitude
-  * Rebalanced End Beams to appear more like a smooth and connected fog instead of bright individual beams
-  * Both Light Shafts and End Beams blend better with Voxy & Distant Horizons chunks, fixing some fog intensity issues
+   * Improved performance on default settings by around 2-3% in the Overworld, and 20-30% in the End dimension
+   * Overworld Light Shafts should look nearly identical to before aside from possibly fixing slight edge case issues
+   * End Beams are now completely volumetric in the world space instead of being tied to the camera altitude
+   * Rebalanced End Beams to appear more like a smooth and connected fog instead of bright individual beams
+   * Both Light Shafts and End Beams blend better with Voxy & Distant Horizons chunks, fixing some fog intensity issues
 - Changes for the End dimension:
-  * Added proper reflection support to End Beams alongside improved reflection handling in the End
-  * Improved the color and intensity balance of the End Beams, End Flashes, and the Ender Dragon battle effect
-  * End Stars no longer fade out towards the horizon unless the camera is at the same level as the End Beams
-  * End Flashes now take longer to fade out and provide light for longer
-  * Added "End Beams Intensity" option to adjust how bright the End Beams are
-  * Added "End Stars Intensity" option to adjust the brightness of stars in the End sky
-  * Added "End Beams Center Altitude" option to be able to move beams higher or lower in altitude
-  * Added "End Beams Height" option to adjust how tall the beams appear
-  * Added an option to disable support for End Flashes
-  * Fixed End Beams not changing position over time
+   * Added proper reflection support to End Beams alongside improved reflection handling in the End
+   * Improved the color and intensity balance of the End Beams, End Flashes, and the Ender Dragon battle effect
+   * End Stars no longer fade out towards the horizon unless the camera is at the same level as the End Beams
+   * End Flashes now take longer to fade out and provide light for longer
+   * Added "End Beams Intensity" option to adjust how bright the End Beams are
+   * Added "End Stars Intensity" option to adjust the brightness of stars in the End sky
+   * Added "End Beams Center Altitude" option to be able to move beams higher or lower in altitude
+   * Added "End Beams Height" option to adjust how tall the beams appear
+   * Added an option to disable support for End Flashes
+   * Fixed End Beams not changing position over time
 - Added improved rainfall/snowfall weather texture handling with shader-based blending
-  * Weather textures now use slightly better color handling to blend better with every scene
-  * Weather textures are colored with nearby lighting colors when Advanced Color Tracing is enabled
-  * Fixes rain not appearing behind translucent blocks including the optional Improved Glass
-  * This feature does not work on older Optifine versions or on Apple devices and gets automatically disabled
+   * Weather textures now use slightly better color handling to blend better with every scene
+   * Weather textures are colored with nearby lighting colors when Advanced Color Tracing is enabled
+   * Fixes rain not appearing behind translucent blocks including the optional Improved Glass
+   * This feature does not work on older Optifine versions or on Apple devices and gets automatically disabled
 - Changes related to World-Space Reflections
-  * Improved performance of world-space reflections, resulting in up to 5% fps increase depending on the situation. All thanks to FoZy STYLE
-  * Improved ambient occlusion inside world-space reflections.  All thanks to FoZy STYLE
-  * World-Space Reflections no longer use the heavier manual filtering for colored lighting. Resulting in a big fps improvement for settings that have "High" Detail Quality
-  * Slightly moved the position of the player reflection away from the camera with the World-Space Player Reflections option in order to reduce weird cases
-  * Fixed Generated Normals on water not looking correct with World-Space Reflections enabled (IntegratedPBR)
+   * Improved performance of world-space reflections, resulting in up to 5% fps increase depending on the situation. All thanks to FoZy STYLE
+   * Improved ambient occlusion inside world-space reflections.  All thanks to FoZy STYLE
+   * World-Space Reflections no longer use the heavier manual filtering for colored lighting. Resulting in a big fps improvement for settings that have "High" Detail Quality
+   * Slightly moved the position of the player reflection away from the camera with the World-Space Player Reflections option in order to reduce weird cases
+   * Fixed Generated Normals on water not looking correct with World-Space Reflections enabled (IntegratedPBR)
 - Changes to IntegratedPBR
-  * Rebalanced the "More Reflective Distant Glass" feature and also added an option to disable it
-  * Improved the consistency of Generated Normals in the distance. All thanks to plazmal
-  * Added "Generated Normal Resolution" setting
-  * Added "Hide Armor" optional feature that turns worn armor and elytra invisible (Iris only)
-  * Fixed powered rails having inconsistent glowing parts when Texture Filtering is enabled
-  * Fixed underwater Sea Pickles losing their glow effect when viewed at an angle
-  * Fixed "IPBR+ Emissive Mode" setting not working in some cases.
-  * Removed the IntegratedPBR lava brightness pulsing mitigation tweak because it doesn't seem to work well anymore
+   * Rebalanced the "More Reflective Distant Glass" feature and also added an option to disable it
+   * Improved the consistency of Generated Normals in the distance. All thanks to plazmal
+   * Added "Generated Normal Resolution" setting
+   * Added "Hide Armor" optional feature that turns worn armor and elytra invisible (Iris only)
+   * Fixed powered rails having inconsistent glowing parts when Texture Filtering is enabled
+   * Fixed underwater Sea Pickles losing their glow effect when viewed at an angle
+   * Fixed "IPBR+ Emissive Mode" setting not working in some cases.
+   * Removed the IntegratedPBR lava brightness pulsing mitigation tweak because it doesn't seem to work well anymore
 - Optimized manual filtering code for colored lighting. Resulting in an fps improvement for settings that have Advanced Color Tracing and "High" Detail Quality
 - Improved alpha balancing of Reimagined and Unbound clouds to look better next to mountains or when the camera is inside clouds
 - Added improved World Outline calculation. All thanks to plazmal

@@ -1,0 +1,7 @@
+Changes over r5.8:
+- Player shadow can now be disabled in Shader Settings regardless of other settings or Iris version
+- Disabled Generated Normals on Banners because they look weird with some patterns (IntegratedPBR)
+- Fixed visuals breaking in the Nether when the Rain Puddles option is enabled with low Block Reflection Quality
+- Fixed "Vanilla" style clouds not blending correctly with Voxy chunks in the distance
+- Fixed block entities not having correct fog in Minecraft version 26.1 and above
+- Fixed a slight balance error on rain puddles

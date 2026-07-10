@@ -76,7 +76,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>   
+            </div>
         </nav><!-- /.site-navigation -->
     </header><!-- /#mastheaed -->
 
@@ -94,7 +94,7 @@
         </div><!-- /.hero-content -->
     </div><!-- /.hero -->
 
-    <main id="main" class="site-main">        
+    <main id="main" class="site-main">
         <!-- Horizontal Ad 1 -->
         <div class="ad-div1">
             <ins class="adsbygoogle"
@@ -124,7 +124,7 @@
                 <a href="https://modrinth.com/shader/complementary-reimagined/versions" target="_blank" class="btn btn-manual" style="width: 270px; --ThemeColor: var(--CompOrange);">Complementary Reimagined</a>
             </div>
         </section><!-- /.section-downloads -->
-            
+
         <section id="style-section" class="site-section section-screenshots">
             <div class="hero-text" style="margin-top: -12px;">
                 <h2>Choose Your Style</h2>
@@ -184,20 +184,20 @@
     <script>
         function isWindowsOS() {
             if (navigator.platform && navigator.platform.startsWith("Win")) {
-                return true;    
+                return true;
             }
-            
+
             if (navigator.userAgent && /Windows/i.test(navigator.userAgent)) {
                 return true;
             }
-            
+
             return false;
         }
 
-        const installerVersion = "1.3.0";
+        const installerVersion = "1.4.0";
         const exeInstallerUrl = `https://github.com/ComplementaryDevelopment/Complementary-Installer/releases/download/latest/Complementary-Installer-${installerVersion}.exe`;
         const jarInstallerUrl = `https://github.com/ComplementaryDevelopment/Complementary-Installer/releases/download/latest/Complementary-Installer-${installerVersion}.jar`;
-        
+
         if (isWindowsOS()) {
             // Show both .exe and .jar buttons for Windows users
             document.getElementById('installer-buttons').innerHTML = `

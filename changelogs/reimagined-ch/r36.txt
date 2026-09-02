@@ -1,0 +1,84 @@
+Changes over r5.8.1:
+- Added fog and atmosphere coloring for the new "Sulfur Caves"
+- Added end beam and star reflection support to water and translucent blocks in the End dimension
+- Improved frame rates by around 3% to 10% in most cases thanks to a few small performance improvements:
+   * Improved terrain and shadow rendering performance a bit. Most noticeable with higher render distances. Thanks to cortex
+   * Improved regular fog performance. Thanks to plazmal
+   * Improved performance in scenes with lots of transparent particles. Thanks to plazmal
+- Improved blending of held translucent items
+- IntegratedPBR Changes:
+   * Added IntegratedPBR support for the all new Sulfur and Cinnabar block variants
+   * Added slight glow to the eyes of Iron Golems
+   * The "Improved Glass" option is now enabled by default
+   * Reflectivity of all glass variants now get reduced when the camera gets very close. Allows for better admiring the view out of glass windows
+   * "Mirror-like Tinted Glass" setting now has 35%, 70%, and 100% options. The previous "ON" value is equivalent to 70%
+   * Slightly tweaked the look of glowing Ancient Debris
+   * Fixed eyes of baby Drowned mobs not glowing
+   * Fixed bamboo leaves not having subsurface scattering in newer Minecraft versions
+   * Fixed chorus plants in Voxy mod chunks not having correct emission
+   * Fixed glowing gold and copper ores having issues with connected textures. Thanks to plazmal
+   * Fixed the shading of Pointed Dripstone looking a bit too dark
+- Added a fade-in effect for entity shadows instead of suddenly appearing. All thanks to plazmal
+- Added "Square" Lens Flare options that better suit the Reimagined style
+- Added blending for block reflections to no longer abruptly end at the start of Voxy / Distant Horizons mod chunks
+- Added "Torch/Fire Color Warmness" ACT setting to control the color of torch/fire related light sources when Advanced Color Tracing is enabled
+- Added separate "Noon" and "Sunset" intensity settings for light shafts
+- Added "Ultra" tier for the "Detail Quality" setting:
+   * Allows the improved colored lighting blending to also work inside World-Space Reflections
+   * Allows Texture Filtering to work on translucent blocks and water
+   * Allows sky effects like clouds and aurora borealis to appear in reflections on opaque blocks
+   * Fixes reflection filter sometimes causing a small amount of reflection smudging to surfaces behind the reflecting block
+   * These combined can cost up to 30% of your frame rates on even the most powerful systems. Discretion advised
+- Added some settings that were previously only determined by "Detail Quality". These settings are set to "Set By DQ" by default, which means they will be set by the Detail Quality setting
+   * "Sky Effect Reflections"
+   * "Leaf Shadow Optimization"
+   * Existing setting "Temporal Filtering" now also uses the same system. Setting it to ON or OFF overrides Detail Quality
+- Tweaked sky horizon to look less saturated during noon
+- Tweaked TAA in the End dimension to reduce smudging on the End sky
+- Tweaked Scene-Aware Light Shafts' intensity calculations to more accurately check for sky and ignore glass that is close to the camera
+- Tweaked ambient occlusion for the Voxy mod to improve the look of grass. Thanks to plazmal
+- Tweaked Voxy / Distant Horizons mod chunk shadows in the End dimension to appear more consistent with regular chunks
+- Slightly tweaked noon lighting color of Reimagined/Unbound clouds
+- Slightly tweaked shading of "Vanilla" clouds
+- Rebalanced several tiers of Performance Profiles:
+   * The Rain Puddles setting is now enabled at Very High and higher profiles. It is also moved to the Performance Settings menu
+   * "Very High" profile now almost only enables colored lighting and rain puddles. It's suited for people that want most features without going into enthusiast territory. This would be the new default profile if it was compatible with all devices
+   * "Ultra" profile increases several settings by a tier, and also enables World-Space Reflections. It's suited for enthusiasts that care about small details
+   * There is now a new "Complementary" profile which nearly maximizes everything but leaves out setting levels that are nearly impossible to notice in gameplay
+   * The "Medium" profile now uses "Medium" shadow tier instead of "Low"
+   * After these changes, the gap between each profile should be around 15-25% fps, but there still are many exceptional cases
+- Advanced Color Tracing will now work correctly at high world coordinates when using Iris 1.11.3 or newer
+- Increased the internal sample quality of End Beams and reduced End sky smudging when using higher Light Shaft Quality values
+- Reduced noisiness of "Potato" tier of water reflections
+- The "Distant motion blur fog issue fix" is now also activated at "Medium" Detail Quality instead of only activating at "High"
+- Disabled waving effect on waterlogged leaves to avoid some weird looking scenes
+- Fixed some entities and opaque glass edges looking incorrectly semi-translucent in the Nether
+- Fixed "Vanilla" clouds looking extremely dark during thunderstorms
+- Fixed water shadows / underwater lighting being visible on blocks that are outside the water at a distance, especially seen at distant edges of oceans or rivers
+- Fixed some entities looking broken if "World-Space Reflections" option is enabled while "Block Reflection Quality" is set to Low
+- Fixed water being visible through some entities when using the Distant Horizons mod
+- Fixed the Distant Horizons mod causing the sky visuals to break in some cases. Thanks to SpacEagle17
+- Fixed visuals breaking on Linux Mesa drivers if "Advanced Color Tracing" option is enabled when "Detail Quality" set to High. Thanks to rrtt169
+- Fixes specifically for World-Space Reflections:
+   * Fixed selection outline looking glitchy with World-Space Reflections in some situations
+   * Fixed World-Space Reflections on held items and angled surfaces jumping around when the player moves
+   * Fixed World-Space Reflections having floating dust-like artifacts in some cases
+   * Fixed World-Space Reflections on water under-surface being incorrectly offset by one block of distance
+   * Fixed World-Space Reflections looking broken when observed behind translucent particles
+   * Fixed WS Player Reflections not working in Minecraft 26.2 and above
+   * Fixed visuals breaking on some GPUs/drivers with the WS Player Reflections option enabled. Thanks to SpacEagle17
+   * Partially fixed a slight position issue with WS Player Reflections
+- Fixed Redstone Dust and String items looking translucent in newer Minecraft/Iris versions
+- Fixed there being a subtle dark gray coat of noise on the screen in the End dimension
+- Fixed rare faint black glitches in night reflections
+- Fixed waterlogged leaves looking incorrect if the "RP Support" setting isn't set to IntegratedPBR+
+- Fixed nether portal effects not working if the "RP Support" setting isn't set to IntegratedPBR+
+- Fixed visuals breaking when using the "Vanilla" cloud style while "Border Fog" is disabled and using the Voxy mod
+- Fixed "Potato" tier of water reflections cutting off too early in the distance
+- Fixed shadows behind water/translucents looking pixelated when using "Low" quality of Real-Time Shadows
+- Fixed some textures breaking while using some resource packs if "IPBR+ Emissive Mode" setting has been changed
+- Fixed Pixelated Shadows causing slight issues in some edge cases. Thanks to plazmal
+- Fixed netherite armor trim not being hidden by the Hide Armor option
+- Updated license agreement to disallow edits that could be considered AI slop
+- Added more info to the "Information" section in shader settings alongside some reformatting
+- Several very small changes

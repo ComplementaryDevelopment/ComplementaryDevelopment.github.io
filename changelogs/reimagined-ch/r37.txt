@@ -1,0 +1,13 @@
+Changes over r5.9:
+- Tweaked foliage shadows to reduce the flatness of daytime lighting especially when the sun is exactly in the middle of the sky
+- Added a workaround for rain puddles not being visible behind IntegratedPBR Improved Glass
+- Changed shader alpha cutout value for terrain to hopefully get foliage looking more consistent between certain configurations
+- Removed translucents completely from screen-space reflections due to them causing inconsistencies more often than not
+- Removed screen-space shadows from water in Voxy chunks to fix some shadow glitches when moving quickly
+- Fixed "Vanilla" style of clouds having broken lighting during night by reworking Vanilla cloud lighting colors
+- Fixed most entities behind glass not having light shaft fog on them at all
+- Fixed translucent block entities not having correct fog blending. Thanks to SpacEagle17
+- Fixed translucent parts of entities not having correct fog blending in certain conditions. Thanks to SpacEagle17
+- Fixed all glowing ores still having a lot of issues with connected textures. Thanks to plazmal and FoZy STYLE
+- Fixed "Fix Puddles Under Glass" ACT Feature removing some puddles that shoudn't be removed
+- Fixed "Water Opacity Factor" setting not affecting the visibility of light shafts behind water

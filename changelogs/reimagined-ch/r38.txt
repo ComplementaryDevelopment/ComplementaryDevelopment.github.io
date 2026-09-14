@@ -1,0 +1,4 @@
+Changes over r5.9.1:
+- Tweaked the Improved Glass feature to further mitigate blending inconsistencies (IntegratedPBR)
+- Fixed some entities looking transparent when viewed in certain conditions in open areas
+- Fixed some entities looking transparent when viewed behind stained glass in newer Minecraft versions

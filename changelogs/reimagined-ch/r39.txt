@@ -1,0 +1,3 @@
+Changes over r5.9.2:
+- Added support for the new way enchantment glints work in Minecraft 26.3
+- Fixed changing the Water Opacity Factor setting breaking visuals with the Distant Horizons mod

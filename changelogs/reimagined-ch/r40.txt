@@ -25,6 +25,7 @@ Changes over r5.9.3:
    * Slightly reduced sun reflection intensity on Hay Bales
 - Added support for block textures on the chunks of the Distant Horizons mod
 - Added support for Physics Mod ocean physics. Only applised to newer Physics Mod versions
+- Added support for the new "real-time settings" functionality of Iris that allows setting changes without reloading the shader pack. But only applicable for "float" settings for now
 - Added "Pixelated Cloud Shadows" option in Pixelated Lighting settings. It makes cloud shadows look much more pixelated than regular shadows
 - Added "Waving Water Brightness" setting that was previously only determined by the Detail Quality setting. Default option is set by Detail Quality
 - Added "Water Refraction" setting that was previously only determined by the Detail Quality setting. Default option is set by Detail Quality

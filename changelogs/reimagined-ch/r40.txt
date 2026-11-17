@@ -1,0 +1,74 @@
+Changes over r5.9.3:
+- Added "Dynamic Colored Lighting" feature
+  * Works similar to the functionality of dynamic lighting mods, but with correct light colors for each light source, and doesn't require any mods
+  * Dynamic colored light can be cast by all light sources that appear dropped on the ground, held by mobs, held by other players, put in item frames, or carried by sulfur cubes
+  * In addition to existing light sources, several special entity light sources have been added with this system. Including glow squids, experience orbs, flame arrows, spectral arrows, copper golems, tridents, end crystals, burning entities, and many more
+  * All instances of dynamic colored light also contribute to Colored Light Fog
+  * The "Advanced Color Tracing" option must be enabled. Dynamic Colored Lighting is enabled by default when ACT is on
+  * All thanks to SpacEagle17 and Chistaphee for the initial implementation
+- Reworked "Dynamic Handheld Lighting"
+  * Lighting curve, intensity, and distance now better match regular blocklight
+  * It now works with several extra colored light sources when Advanced Color Tracing is on, like glowing ores or command blocks
+- Added support for Minecraft 26.4 and remaining Minecraft 26.3 features:
+  * Added special fog handling for the Ice Caves biome
+  * Added colored lighting support for Ice Crystals (Advanced Color Tracing)
+  * Added subsurface scattering and waving support for Poplar Leaves, Poplar Saplings, and Red Shrubs
+  * Fixed Cushions having flickering problems when placed inside blocks
+  * Fixed several new blocks causing problems in World-Space Reflections
+  * Fixed several new blocks having lighting and material inconsistencies
+- IntegratedPBR Changes
+  * Added reflectiveness properties for all new Minecraft 26.3 and 26.4 blocks
+  * Added emission to Spectral Arrows and Dragon Fireballs
+  * Rebalanced snow layer flickering fix to depend on zoom and resolution
+  * Fixed Beacons not glowing when held or put in an item frame
+  * Fixed levers glowing orange with some resource packs (IntegratedPBR)
+  * Slightly reduced sun reflection intensity on Hay Bales
+- Added support for block textures on the chunks of the Distant Horizons mod
+- Added support for Physics Mod ocean physics. Only applised to newer Physics Mod versions
+- Added "Pixelated Cloud Shadows" option in Pixelated Lighting settings. It makes cloud shadows look much more pixelated than regular shadows
+- Added "Waving Water Brightness" setting that was previously only determined by the Detail Quality setting. Default option is set by Detail Quality
+- Added "Water Refraction" setting that was previously only determined by the Detail Quality setting. Default option is set by Detail Quality
+- Added "Bloom Smoothing" option that reduces bloom flickering with the downside of adding smudging
+- Added "Light Shaft Underwater Multiplier" setting
+- Added refraction effect to Nether Portals
+- Added an error message for Optifine 1.7.10. Thanks to SpacEagle17
+- Implemented 7 separate small performance optimizations that shouldn't affect the visuals at all. All thanks TheKineticz
+- Optimized specific block handling of World-Space Reflections, but it doesn't seem to provide a noticeable increase to performance in most cases
+- Rebalanced emissive entity layer handling to be more compatible with mods (Iris-only feature)
+- Tweaked colored lighting color of Copper Torch and Copper Lantern to appear greener
+- Slightly tweaked some colored lighting intensity values
+- Slightly tweaked the brightness of the eyes of Enderman mob
+- Slightly tweaked bloom distribution and very slightly increased bloom performance
+- Slightly tweaked fog optimization to reduce banding
+- Water opacity is now reduced with fullbright or night vision status effect
+- Stars and clouds are now hidden if the player is in deep caves. Thanks to SpacEagle17
+- "Special Portal Effects" setting can now be also set to only work on Nether portals or only End portals
+- Disabled entity shadow distance optimization in the End dimension
+- Fixed using the Vanilla cloud style breaking the visuals in the Nether and the End
+- Fixed leaves having transparency issues in certain configurations. This reverts the alpha cutout consistency tweak that was introduced in r5.9.1
+- Fixed Unbound Water Style having a lot of gaps in the reflections at a distance
+- Fixed World-Space Reflections not being visible on surfaces that aren't part of full blocks
+- Fixed lighting position sometimes slightly glitching for a fraction of a second with Advanced Color Tracing. Thanks to Eclipse
+- Fixed light shafts not being that visible even in Intense mode when using Voxy or Distant Horizons mods
+- Fixed lighting on leaves not looking consistent between normal chunks and Distant Horizons mod chunks. Thanks to SpacEagle17
+- Fixed lava not blending correctly between normal chunks and Distant Horizons mod chunks
+- Fixed Pixelated Shadows causing grass to have edge artifacts on Mc version 26.3 and newer
+- Fixed some labPBR resource packs causing water reflections to disappear at a distance
+- Fixed some entities still looking slightly transparent behind glass in certain situations
+- Fixed Iron Golems having glitchy reflection intensities when moving around
+- Fixed light shafts having a position problem in older Minecraft versions
+- Fixed the chunk fade effect causing some mods (including the Grassier Grass mod) to render blocks sky colored at a slight distance. Thanks to SpacEagle17
+- Fixed some resource packs making held items very slightly transparent (fix is disabled on Potato Detail Quality)
+- Fixed Vanilla clouds being weirdly visible when viewed from underwater with lower render distances
+- Fixed a flickering fix no longer working on item frames and framed maps
+- Fixed cloud shadows looking worse than intended with the Unbound cloud style
+- Fixed lighting on item frames looking slightly off when using an RP Support mode other than IntegratedPBR+
+- Fixed world-space player reflection not having correct lighting in the End dimension
+- Fixed some stairs and slabs not appearing inside World-Space Reflections
+- Fixed slight problems with Parallax Occlusion Mapping that can affect signs, item frames, and filled maps
+- Fixed a slight color balance problem that mainly affects clouds and horizon with the "Heavy & Colder" rain option
+- Fixed some emissives textures on modded blocks causing flickering. Thanks to SpacEagle17
+- Fixed an entity z-fighting problem on Iris Vulkan
+- Fixed player lighting color in world space reflections being tied to camera position instead of the player model position
+- Several miniscule tweaks
+- Updated License Agreement for further clarification and to disallow the usage of Complementary Shaders for AI training purposes

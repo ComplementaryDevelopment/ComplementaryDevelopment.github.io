@@ -69,7 +69,6 @@ Changes over r5.9.3:
 - Fixed slight problems with Parallax Occlusion Mapping that can affect signs, item frames, and filled maps
 - Fixed a slight color balance problem that mainly affects clouds and horizon with the "Heavy & Colder" rain option
 - Fixed some emissives textures on modded blocks causing flickering. Thanks to SpacEagle17
-- Fixed an entity z-fighting problem on Iris Vulkan
 - Fixed player lighting color in world space reflections being tied to camera position instead of the player model position
 - Several miniscule tweaks
 - Updated License Agreement for further clarification and to disallow the usage of Complementary Shaders for AI training purposes
